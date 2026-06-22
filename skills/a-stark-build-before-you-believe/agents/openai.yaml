@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Build Before You Believe"
+  short_description: "Create proof through action before confidence arrives."
+  default_prompt: "Use $a-stark-build-before-you-believe to create proof through action before confidence arrives."

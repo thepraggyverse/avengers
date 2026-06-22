@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Cave Escape Planning"
+  short_description: "Create an escape plan from a trapped or constrained situation."
+  default_prompt: "Use $a-cave-escape-planning to create an escape plan from a trapped or constrained situation."

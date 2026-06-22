@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Project Portfolio Radar"
+  short_description: "Maintain a radar view of active bets, status, and next moves."
+  default_prompt: "Use $a-project-portfolio-radar to maintain a radar view of active bets, status, and next moves."

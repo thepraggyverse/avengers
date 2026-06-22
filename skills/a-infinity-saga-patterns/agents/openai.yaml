@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Infinity Saga Patterns"
+  short_description: "Analyze recurring Infinity Saga structures and payoffs."
+  default_prompt: "Use $a-infinity-saga-patterns to analyze recurring infinity saga structures and payoffs."

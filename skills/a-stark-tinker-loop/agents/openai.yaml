@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Tinker Loop"
+  short_description: "Use tinkering as a disciplined observe-modify-test cycle."
+  default_prompt: "Use $a-stark-tinker-loop to use tinkering as a disciplined observe-modify-test cycle."

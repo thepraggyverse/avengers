@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Training Wheels Protocol"
+  short_description: "Decide how much support, monitoring, or independence to provide."
+  default_prompt: "Use $a-training-wheels-protocol to decide how much support, monitoring, or independence to provide."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Continuous Improvement Loop"
+  short_description: "Create a recurring loop for better versions of work."
+  default_prompt: "Use $a-continuous-improvement-loop to create a recurring loop for better versions of work."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Hulkbuster Contingency"
+  short_description: "Build a contingency for rare high-impact failure modes."
+  default_prompt: "Use $a-hulkbuster-contingency to build a contingency for rare high-impact failure modes."

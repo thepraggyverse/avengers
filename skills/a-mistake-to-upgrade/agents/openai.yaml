@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Mistake To Upgrade"
+  short_description: "Convert a failure into a specific system upgrade and preventi..."
+  default_prompt: "Use $a-mistake-to-upgrade to convert a failure into a specific system upgrade and prevention rule."

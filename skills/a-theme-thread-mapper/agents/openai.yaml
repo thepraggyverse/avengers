@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Theme Thread Mapper"
+  short_description: "Track a theme across movies, scenes, and transcripts."
+  default_prompt: "Use $a-theme-thread-mapper to track a theme across movies, scenes, and transcripts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Fear To Motion"
+  short_description: "Turn fear into one visible action instead of rumination."
+  default_prompt: "Use $a-fear-to-motion to turn fear into one visible action instead of rumination."

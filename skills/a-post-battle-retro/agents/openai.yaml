@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Post Battle Retro"
+  short_description: "Run an after-action review after a project, fight, launch, or..."
+  default_prompt: "Use $a-post-battle-retro to run an after-action review after a project, fight, launch, or miss."

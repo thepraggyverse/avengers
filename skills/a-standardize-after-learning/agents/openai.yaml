@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Standardize After Learning"
+  short_description: "Standardize a process only after the learning loop has found..."
+  default_prompt: "Use $a-standardize-after-learning to standardize a process only after the learning loop has found what works."

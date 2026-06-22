@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Doomsday Foreshadowing"
+  short_description: "Extract possible Avengers Doomsday setup and theory hooks."
+  default_prompt: "Use $a-doomsday-foreshadowing to extract possible avengers doomsday setup and theory hooks."

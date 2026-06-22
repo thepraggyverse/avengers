@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Parallel Build Planner"
+  short_description: "Split work into tracks that can progress in parallel."
+  default_prompt: "Use $a-parallel-build-planner to split work into tracks that can progress in parallel."

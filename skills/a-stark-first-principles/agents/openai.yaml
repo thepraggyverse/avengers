@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark First Principles"
+  short_description: "Strip a challenge to constraints, physics, incentives, and ac..."
+  default_prompt: "Use $a-stark-first-principles to strip a challenge to constraints, physics, incentives, and actual facts."

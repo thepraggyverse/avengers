@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Source Grounded Synthesis"
+  short_description: "Answer using the local Avengers corpus and cite source file n..."
+  default_prompt: "Use $a-source-grounded-synthesis to answer using the local avengers corpus and cite source file names."

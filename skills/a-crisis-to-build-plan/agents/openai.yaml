@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Crisis To Build Plan"
+  short_description: "Turn a crisis into a small sequence of buildable actions."
+  default_prompt: "Use $a-crisis-to-build-plan to turn a crisis into a small sequence of buildable actions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Process Stabilizer"
+  short_description: "Turn chaotic repeated work into a stable process."
+  default_prompt: "Use $a-process-stabilizer to turn chaotic repeated work into a stable process."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - MCU Easter Egg Breakdown"
+  short_description: "Extract callbacks, visual references, comic nods, and hidden..."
+  default_prompt: "Use $a-mcu-easter-egg-breakdown to extract callbacks, visual references, comic nods, and hidden details."

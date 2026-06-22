@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - New Mask Same Task"
+  short_description: "Compare Tony Stark and Doctor Doom parallels around task, mas..."
+  default_prompt: "Use $a-new-mask-same-task to compare tony stark and doctor doom parallels around task, mask, and control."

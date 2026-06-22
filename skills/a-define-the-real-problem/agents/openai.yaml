@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Define The Real Problem"
+  short_description: "Separate the true problem from symptoms, noise, and emotional..."
+  default_prompt: "Use $a-define-the-real-problem to separate the true problem from symptoms, noise, and emotional framing."

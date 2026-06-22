@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Cave Resourcefulness"
+  short_description: "Use limited resources creatively under severe constraints."
+  default_prompt: "Use $a-cave-resourcefulness to use limited resources creatively under severe constraints."

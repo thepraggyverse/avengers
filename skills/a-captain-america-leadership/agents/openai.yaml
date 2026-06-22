@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Captain America Leadership"
+  short_description: "Lead through values, steadiness, courage, and service."
+  default_prompt: "Use $a-captain-america-leadership to lead through values, steadiness, courage, and service."

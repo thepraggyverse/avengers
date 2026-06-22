@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - FRIDAY Fallback System"
+  short_description: "Design backup assistants and recovery paths when primary syst..."
+  default_prompt: "Use $a-friday-fallback-system to design backup assistants and recovery paths when primary systems fail."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Work The Problem"
+  short_description: "Stabilize a messy situation and work the actual problem one m..."
+  default_prompt: "Use $a-work-the-problem to stabilize a messy situation and work the actual problem one move at a time."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Spider Man Legacy Analysis"
+  short_description: "Track Tony's legacy through Peter Parker and the Spider-Man f..."
+  default_prompt: "Use $a-spider-man-legacy-analysis to track tony's legacy through peter parker and the spider-man films."

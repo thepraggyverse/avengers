@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Nanotech Adaptation"
+  short_description: "Make a system modular, adaptive, and fast to reconfigure."
+  default_prompt: "Use $a-nanotech-adaptation to make a system modular, adaptive, and fast to reconfigure."

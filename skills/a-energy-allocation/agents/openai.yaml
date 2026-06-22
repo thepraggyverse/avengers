@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Energy Allocation"
+  short_description: "Match tasks to current energy, attention, and leverage."
+  default_prompt: "Use $a-energy-allocation to match tasks to current energy, attention, and leverage."

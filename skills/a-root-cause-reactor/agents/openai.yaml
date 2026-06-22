@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Root Cause Reactor"
+  short_description: "Find the reactor-level cause that powers repeated failures."
+  default_prompt: "Use $a-root-cause-reactor to find the reactor-level cause that powers repeated failures."

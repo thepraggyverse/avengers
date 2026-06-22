@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Workflow Telemetry"
+  short_description: "Choose measurements that reveal whether the system works."
+  default_prompt: "Use $a-workflow-telemetry to choose measurements that reveal whether the system works."

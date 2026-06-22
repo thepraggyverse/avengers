@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Leader In The Room"
+  short_description: "Decide when to lead, defer, challenge, or support."
+  default_prompt: "Use $a-leader-in-the-room to decide when to lead, defer, challenge, or support."

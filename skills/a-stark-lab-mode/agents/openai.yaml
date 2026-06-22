@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Lab Mode"
+  short_description: "Protect a focused invention session with clear inputs and out..."
+  default_prompt: "Use $a-stark-lab-mode to protect a focused invention session with clear inputs and outputs."

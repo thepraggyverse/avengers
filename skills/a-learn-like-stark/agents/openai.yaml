@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Learn Like Stark"
+  short_description: "Design an aggressive self-education loop around building."
+  default_prompt: "Use $a-learn-like-stark to design an aggressive self-education loop around building."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Curiosity Mastery Synthesis"
+  short_description: "Learn through curiosity, mastery, and cross-domain synthesis."
+  default_prompt: "Use $a-curiosity-mastery-synthesis to learn through curiosity, mastery, and cross-domain synthesis."

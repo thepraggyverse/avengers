@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Salvage Tech Strategy"
+  short_description: "Recover old assets, abandoned work, or scraps into useful inp..."
+  default_prompt: "Use $a-salvage-tech-strategy to recover old assets, abandoned work, or scraps into useful inputs."

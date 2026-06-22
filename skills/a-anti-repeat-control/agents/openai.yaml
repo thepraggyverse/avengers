@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Anti Repeat Control"
+  short_description: "Add controls that prevent the same failure from recurring."
+  default_prompt: "Use $a-anti-repeat-control to add controls that prevent the same failure from recurring."

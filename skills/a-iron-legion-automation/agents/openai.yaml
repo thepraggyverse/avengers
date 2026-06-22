@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Iron Legion Automation"
+  short_description: "Design distributed helper agents or automations with oversight."
+  default_prompt: "Use $a-iron-legion-automation to design distributed helper agents or automations with oversight."

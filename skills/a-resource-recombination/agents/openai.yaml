@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Resource Recombination"
+  short_description: "Combine weak or partial resources into a useful stronger system."
+  default_prompt: "Use $a-resource-recombination to combine weak or partial resources into a useful stronger system."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Improvise Then Engineer"
+  short_description: "Use a temporary hack first, then harden the real system."
+  default_prompt: "Use $a-improvise-then-engineer to use a temporary hack first, then harden the real system."

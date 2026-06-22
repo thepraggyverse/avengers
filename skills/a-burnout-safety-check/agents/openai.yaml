@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Burnout Safety Check"
+  short_description: "Detect overload and redesign the load before damage accumulates."
+  default_prompt: "Use $a-burnout-safety-check to detect overload and redesign the load before damage accumulates."

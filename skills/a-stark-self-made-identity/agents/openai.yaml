@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Self Made Identity"
+  short_description: "Convert identity from waiting to being the builder who acts."
+  default_prompt: "Use $a-stark-self-made-identity to convert identity from waiting to being the builder who acts."

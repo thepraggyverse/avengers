@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Mark One Prototype"
+  short_description: "Define the crude first working version that proves motion is..."
+  default_prompt: "Use $a-mark-one-prototype to define the crude first working version that proves motion is possible."

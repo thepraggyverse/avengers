@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Constraint Inventory"
+  short_description: "List hard constraints, movable constraints, resources, and mi..."
+  default_prompt: "Use $a-constraint-inventory to list hard constraints, movable constraints, resources, and missing parts."

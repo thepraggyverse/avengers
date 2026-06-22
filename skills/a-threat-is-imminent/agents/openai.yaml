@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Threat Is Imminent"
+  short_description: "Anticipate looming threats without letting fear own the solut..."
+  default_prompt: "Use $a-threat-is-imminent to anticipate looming threats without letting fear own the solution."

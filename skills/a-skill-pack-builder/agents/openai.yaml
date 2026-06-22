@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Skill Pack Builder"
+  short_description: "Generate or refresh the Avengers plugin skill pack from the m..."
+  default_prompt: "Use $a-skill-pack-builder to generate or refresh the avengers plugin skill pack from the manifest."

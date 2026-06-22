@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Multi Project Reactor"
+  short_description: "Coordinate multiple active projects without losing the reacto..."
+  default_prompt: "Use $a-multi-project-reactor to coordinate multiple active projects without losing the reactor core."

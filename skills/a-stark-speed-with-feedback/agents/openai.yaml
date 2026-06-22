@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Speed With Feedback"
+  short_description: "Move quickly while installing feedback, tests, and correction..."
+  default_prompt: "Use $a-stark-speed-with-feedback to move quickly while installing feedback, tests, and correction loops."

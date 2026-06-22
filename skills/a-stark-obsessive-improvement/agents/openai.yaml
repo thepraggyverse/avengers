@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Obsessive Improvement"
+  short_description: "Treat every output as a suit version that can be upgraded."
+  default_prompt: "Use $a-stark-obsessive-improvement to treat every output as a suit version that can be upgraded."

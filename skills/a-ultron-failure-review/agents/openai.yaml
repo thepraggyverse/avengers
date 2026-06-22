@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Ultron Failure Review"
+  short_description: "Analyze how a good-intentioned system can create unintended h..."
+  default_prompt: "Use $a-ultron-failure-review to analyze how a good-intentioned system can create unintended harm."

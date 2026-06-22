@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Civil War Conflict Map"
+  short_description: "Map a conflict where both sides have legitimate values."
+  default_prompt: "Use $a-civil-war-conflict-map to map a conflict where both sides have legitimate values."

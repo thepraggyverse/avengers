@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Confidence"
+  short_description: "Build grounded confidence from competence, proof, and decisiv..."
+  default_prompt: "Use $a-stark-confidence to build grounded confidence from competence, proof, and decisive action."

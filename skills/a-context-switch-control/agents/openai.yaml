@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Context Switch Control"
+  short_description: "Reduce context switching cost between active efforts."
+  default_prompt: "Use $a-context-switch-control to reduce context switching cost between active efforts."

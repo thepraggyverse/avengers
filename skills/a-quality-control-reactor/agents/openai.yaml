@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Quality Control Reactor"
+  short_description: "Add quality checks that protect output without slowing everyt..."
+  default_prompt: "Use $a-quality-control-reactor to add quality checks that protect output without slowing everything."

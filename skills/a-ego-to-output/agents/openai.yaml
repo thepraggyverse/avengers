@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Ego To Output"
+  short_description: "Convert ego, ambition, or swagger into concrete production."
+  default_prompt: "Use $a-ego-to-output to convert ego, ambition, or swagger into concrete production."

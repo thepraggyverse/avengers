@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Values Under Pressure"
+  short_description: "Protect core values when pressure, fear, or speed rises."
+  default_prompt: "Use $a-values-under-pressure to protect core values when pressure, fear, or speed rises."

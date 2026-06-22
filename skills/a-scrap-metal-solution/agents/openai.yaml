@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Scrap Metal Solution"
+  short_description: "Design a solution from available scraps before buying or wait..."
+  default_prompt: "Use $a-scrap-metal-solution to design a solution from available scraps before buying or waiting."

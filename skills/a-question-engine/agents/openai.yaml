@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Question Engine"
+  short_description: "Generate sharper questions that unlock technical or strategic..."
+  default_prompt: "Use $a-question-engine to generate sharper questions that unlock technical or strategic progress."

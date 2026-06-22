@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Character Arc Extractor"
+  short_description: "Extract the character arc and practical lesson from a story s..."
+  default_prompt: "Use $a-character-arc-extractor to extract the character arc and practical lesson from a story segment."

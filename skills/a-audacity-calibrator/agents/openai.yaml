@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Audacity Calibrator"
+  short_description: "Separate useful boldness from reckless ego or fantasy."
+  default_prompt: "Use $a-audacity-calibrator to separate useful boldness from reckless ego or fantasy."

@@ -1,0 +1,4399 @@
+[
+  {
+    "name": "a-stark-router",
+    "slug": "stark-router",
+    "display_name": "A - Stark Router",
+    "tier": 1,
+    "category": "Tony Stark Core",
+    "summary": "Choose the right Avengers skill or skill chain for a broad problem.",
+    "triggers": [
+      "routing",
+      "skill choice",
+      "Avengers mode selection",
+      "broad Tony Stark guidance"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-operating-system",
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Request",
+      "Best Skill",
+      "Supporting Skills",
+      "Why",
+      "First Applied Move"
+    ],
+    "core_idea": "Act as the JARVIS-style routing layer for the Avengers skill system.",
+    "workflow": [
+      "Read the user's request and identify the dominant problem type.",
+      "Recommend one to three A-prefixed skills.",
+      "Explain why each skill fits in one short line.",
+      "If the first skill is obvious, apply it immediately.",
+      "If the user asks for a system, chain skills rather than choosing only one."
+    ],
+    "self_test": "If the user asks 'Which Avengers mode fits this problem?', recommend 1-3 skills and apply the strongest one."
+  },
+  {
+    "name": "a-stark-operating-system",
+    "slug": "stark-operating-system",
+    "display_name": "A - Stark Operating System",
+    "tier": 1,
+    "category": "Tony Stark Core",
+    "summary": "Run the full Tony Stark operating loop from intent to prototype to upgrade.",
+    "triggers": [
+      "Stark OS",
+      "full workflow",
+      "Tony operating system",
+      "end-to-end build loop"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-permission-trap-breaker",
+      "a-mark-one-prototype",
+      "a-mistake-to-upgrade",
+      "a-armor-around-world-check",
+      "a-legacy-through-mentees"
+    ],
+    "output_contract": [
+      "Mission",
+      "Current Block",
+      "Mark 1",
+      "Feedback Test",
+      "Upgrade Rule",
+      "Risk Check",
+      "Next Action"
+    ],
+    "core_idea": "Run the complete Stark loop: permission, prototype, feedback, upgrade, ethics, and handoff.",
+    "workflow": [
+      "Break the user's objective into mission, constraints, available resources, and risk.",
+      "Run permission-trap detection if the user is waiting.",
+      "Define the Mark 1 artifact and first test.",
+      "Convert likely failure into upgrade rules.",
+      "Check for overcontrol, delegation, and handoff needs.",
+      "Return a staged plan with the next concrete action."
+    ],
+    "self_test": "If the user asks for the full Stark OS, produce a staged build-and-upgrade plan, not a motivational essay."
+  },
+  {
+    "name": "a-stark-first-principles",
+    "slug": "stark-first-principles",
+    "display_name": "A - Stark First Principles",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Strip a challenge to constraints, physics, incentives, and actual facts.",
+    "triggers": [
+      "first principles",
+      "assumptions",
+      "what is true",
+      "fundamentals"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Strip a challenge to constraints, physics, incentives, and actual facts.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for strip a challenge to constraints, physics, incentives, and actual facts., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-speed-with-feedback",
+    "slug": "stark-speed-with-feedback",
+    "display_name": "A - Stark Speed With Feedback",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Move quickly while installing feedback, tests, and correction loops.",
+    "triggers": [
+      "fast iteration",
+      "feedback loop",
+      "move quickly",
+      "speed with safety"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Move quickly while installing feedback, tests, and correction loops.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for move quickly while installing feedback, tests, and correction loops., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-obsessive-improvement",
+    "slug": "stark-obsessive-improvement",
+    "display_name": "A - Stark Obsessive Improvement",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Treat every output as a suit version that can be upgraded.",
+    "triggers": [
+      "continuous improvement",
+      "upgrade",
+      "iteration",
+      "better version"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Treat every output as a suit version that can be upgraded.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for treat every output as a suit version that can be upgraded., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-build-before-you-believe",
+    "slug": "stark-build-before-you-believe",
+    "display_name": "A - Stark Build Before You Believe",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Create proof through action before confidence arrives.",
+    "triggers": [
+      "stuck",
+      "need proof",
+      "build first",
+      "confidence through evidence"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Create proof through action before confidence arrives.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for create proof through action before confidence arrives., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-tinker-loop",
+    "slug": "stark-tinker-loop",
+    "display_name": "A - Stark Tinker Loop",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Use tinkering as a disciplined observe-modify-test cycle.",
+    "triggers": [
+      "tinker",
+      "experiment",
+      "prototype loop",
+      "workshop"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Use tinkering as a disciplined observe-modify-test cycle.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for use tinkering as a disciplined observe-modify-test cycle., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-lab-mode",
+    "slug": "stark-lab-mode",
+    "display_name": "A - Stark Lab Mode",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Protect a focused invention session with clear inputs and outputs.",
+    "triggers": [
+      "deep work",
+      "lab day",
+      "invention session",
+      "focus"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Protect a focused invention session with clear inputs and outputs.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for protect a focused invention session with clear inputs and outputs., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-self-made-identity",
+    "slug": "stark-self-made-identity",
+    "display_name": "A - Stark Self Made Identity",
+    "tier": 2,
+    "category": "Tony Stark Core",
+    "summary": "Convert identity from waiting to being the builder who acts.",
+    "triggers": [
+      "identity",
+      "become capable",
+      "self-made",
+      "act like builder"
+    ],
+    "source_files": [
+      "How to Work Like Tony Stark.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [
+      "a-stark-router",
+      "a-stark-operating-system"
+    ],
+    "output_contract": [
+      "Situation",
+      "Stark Lens",
+      "Primary Move",
+      "Build Step",
+      "Feedback Loop",
+      "Next Upgrade"
+    ],
+    "core_idea": "Convert identity from waiting to being the builder who acts.",
+    "workflow": [
+      "Name the mission in one sentence.",
+      "Strip away theatre, ego, and inherited assumptions.",
+      "Define the smallest artifact that can prove progress.",
+      "Add feedback, test, or telemetry before scaling.",
+      "Capture the next upgrade as a concrete action."
+    ],
+    "self_test": "If the user asks for convert identity from waiting to being the builder who acts., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-work-the-problem",
+    "slug": "work-the-problem",
+    "display_name": "A - Work The Problem",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Stabilize a messy situation and work the actual problem one move at a time.",
+    "triggers": [
+      "work the problem",
+      "chaos",
+      "Apollo 13",
+      "Martian",
+      "stabilize"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Stabilize a messy situation and work the actual problem one move at a time.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for stabilize a messy situation and work the actual problem one move at a time., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-define-the-real-problem",
+    "slug": "define-the-real-problem",
+    "display_name": "A - Define The Real Problem",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Separate the true problem from symptoms, noise, and emotional framing.",
+    "triggers": [
+      "real problem",
+      "symptoms",
+      "define",
+      "diagnose"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Separate the true problem from symptoms, noise, and emotional framing.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for separate the true problem from symptoms, noise, and emotional framing., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-root-cause-reactor",
+    "slug": "root-cause-reactor",
+    "display_name": "A - Root Cause Reactor",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Find the reactor-level cause that powers repeated failures.",
+    "triggers": [
+      "root cause",
+      "why keeps happening",
+      "reactor",
+      "underlying cause"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Find the reactor-level cause that powers repeated failures.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for find the reactor-level cause that powers repeated failures., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-constraint-inventory",
+    "slug": "constraint-inventory",
+    "display_name": "A - Constraint Inventory",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "List hard constraints, movable constraints, resources, and missing parts.",
+    "triggers": [
+      "constraints",
+      "resources",
+      "limits",
+      "available parts"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "List hard constraints, movable constraints, resources, and missing parts.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for list hard constraints, movable constraints, resources, and missing parts., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-under-pressure-decisions",
+    "slug": "under-pressure-decisions",
+    "display_name": "A - Under Pressure Decisions",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Make a useful decision under time pressure and incomplete information.",
+    "triggers": [
+      "urgent decision",
+      "pressure",
+      "incomplete info",
+      "choose now"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Make a useful decision under time pressure and incomplete information.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for make a useful decision under time pressure and incomplete information., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-crisis-to-build-plan",
+    "slug": "crisis-to-build-plan",
+    "display_name": "A - Crisis To Build Plan",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Turn a crisis into a small sequence of buildable actions.",
+    "triggers": [
+      "crisis",
+      "action plan",
+      "emergency",
+      "next steps"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Turn a crisis into a small sequence of buildable actions.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for turn a crisis into a small sequence of buildable actions., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-scrap-metal-solution",
+    "slug": "scrap-metal-solution",
+    "display_name": "A - Scrap Metal Solution",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Design a solution from available scraps before buying or waiting.",
+    "triggers": [
+      "scrap metal",
+      "limited tools",
+      "available materials",
+      "workaround"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Design a solution from available scraps before buying or waiting.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for design a solution from available scraps before buying or waiting., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-cave-escape-planning",
+    "slug": "cave-escape-planning",
+    "display_name": "A - Cave Escape Planning",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Create an escape plan from a trapped or constrained situation.",
+    "triggers": [
+      "cave",
+      "trapped",
+      "escape plan",
+      "get unstuck"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Create an escape plan from a trapped or constrained situation.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for create an escape plan from a trapped or constrained situation., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-problem-stack-ranking",
+    "slug": "problem-stack-ranking",
+    "display_name": "A - Problem Stack Ranking",
+    "tier": 2,
+    "category": "Problem Solving",
+    "summary": "Rank problems by leverage, urgency, dependency, and reversibility.",
+    "triggers": [
+      "which problem first",
+      "prioritize problems",
+      "stack ranking"
+    ],
+    "source_files": [
+      "How to Work the Problem.txt",
+      "How to Work Like Tony Stark.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Situation",
+      "Actual Problem",
+      "Constraints",
+      "Available Parts",
+      "First Move",
+      "Next Check"
+    ],
+    "core_idea": "Rank problems by leverage, urgency, dependency, and reversibility.",
+    "workflow": [
+      "Stabilize the situation before optimizing.",
+      "Name the actual problem separately from symptoms.",
+      "Inventory constraints, resources, risks, and dependencies.",
+      "Pick the next reversible move.",
+      "Check whether the move changed the real problem."
+    ],
+    "self_test": "If the user asks for rank problems by leverage, urgency, dependency, and reversibility., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-mistake-to-upgrade",
+    "slug": "mistake-to-upgrade",
+    "display_name": "A - Mistake To Upgrade",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Convert a failure into a specific system upgrade and prevention rule.",
+    "triggers": [
+      "mistake",
+      "failure",
+      "upgrade",
+      "lesson learned"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-failure-memory-bank",
+      "a-anti-repeat-control",
+      "a-upgrade-chain-mapper"
+    ],
+    "output_contract": [
+      "Mistake",
+      "Exposed Assumption",
+      "Weak Mechanism",
+      "Upgrade",
+      "Proof Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Treat failure as design data and convert it into a concrete system upgrade.",
+    "workflow": [
+      "State the mistake without shame or defense.",
+      "Identify the assumption, missing sensor, or weak mechanism it exposed.",
+      "Choose the smallest upgrade that would reduce repeat risk.",
+      "Define a test that proves the upgrade works.",
+      "Write the prevention rule in reusable language."
+    ],
+    "self_test": "If the user describes a failure, return an upgrade and prevention rule, not reassurance alone."
+  },
+  {
+    "name": "a-mark-one-prototype",
+    "slug": "mark-one-prototype",
+    "display_name": "A - Mark One Prototype",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Define the crude first working version that proves motion is possible.",
+    "triggers": [
+      "Mark 1",
+      "prototype",
+      "MVP",
+      "first version"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness",
+      "a-mark-two-test-flight",
+      "a-mistake-to-upgrade"
+    ],
+    "output_contract": [
+      "Mission",
+      "Essential Function",
+      "Available Parts",
+      "Mark 1 Build",
+      "First Test",
+      "Known Weaknesses",
+      "Mark 2 Upgrade"
+    ],
+    "core_idea": "Build the crude first version that proves motion is possible before polish, scale, or certainty.",
+    "workflow": [
+      "Name the mission and the one function the first version must perform.",
+      "List available parts, skills, time, tools, and constraints.",
+      "Remove every feature that is not needed for the first proof.",
+      "Define the ugly working build the user can finish next.",
+      "Choose the first test and the weakness it is likely to reveal.",
+      "Capture what the Mark 2 should fix."
+    ],
+    "self_test": "If the user is waiting for perfect conditions, define a crude useful artifact they can build immediately."
+  },
+  {
+    "name": "a-mark-two-test-flight",
+    "slug": "mark-two-test-flight",
+    "display_name": "A - Mark Two Test Flight",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Plan the first serious test and capture what the next version must fix.",
+    "triggers": [
+      "test flight",
+      "Mark 2",
+      "first test",
+      "validate"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mark-one-prototype",
+      "a-icing-problem-review",
+      "a-upgrade-chain-mapper"
+    ],
+    "output_contract": [
+      "Prototype Claim",
+      "Test Environment",
+      "Success Signal",
+      "Failure Signal",
+      "Observed Weakness",
+      "Mark 2 Upgrade"
+    ],
+    "core_idea": "Design the first serious test of a prototype and convert the result into the next suit upgrade.",
+    "workflow": [
+      "Identify what the Mark 1 claims to prove.",
+      "Create a realistic test that stresses the claim.",
+      "Define what success, partial success, and failure mean.",
+      "Run or outline the smallest possible test.",
+      "Translate the result into a Mark 2 upgrade."
+    ],
+    "self_test": "If the user has a first draft or MVP, produce a concrete stress test and next upgrade."
+  },
+  {
+    "name": "a-icing-problem-review",
+    "slug": "icing-problem-review",
+    "display_name": "A - Icing Problem Review",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Find environmental failures that only appear under stress or altitude.",
+    "triggers": [
+      "icing problem",
+      "hidden failure",
+      "environment",
+      "stress test"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mistake-to-upgrade",
+      "a-anti-repeat-control"
+    ],
+    "output_contract": [
+      "Failure",
+      "What It Revealed",
+      "System Weakness",
+      "Upgrade",
+      "Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Find environmental failures that only appear under stress or altitude.",
+    "workflow": [
+      "Describe the failure without self-protection.",
+      "Identify the specific weakness the failure exposed.",
+      "Design one upgrade that would have prevented or reduced it.",
+      "Test the upgrade with a realistic stress case.",
+      "Save the prevention rule for future work."
+    ],
+    "self_test": "If the user asks for find environmental failures that only appear under stress or altitude., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-suit-vulnerability-audit",
+    "slug": "suit-vulnerability-audit",
+    "display_name": "A - Suit Vulnerability Audit",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Audit a system for weak points, exposed assumptions, and brittle parts.",
+    "triggers": [
+      "vulnerability",
+      "weak points",
+      "audit",
+      "fragile system"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mistake-to-upgrade",
+      "a-anti-repeat-control"
+    ],
+    "output_contract": [
+      "Failure",
+      "What It Revealed",
+      "System Weakness",
+      "Upgrade",
+      "Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Audit a system for weak points, exposed assumptions, and brittle parts.",
+    "workflow": [
+      "Describe the failure without self-protection.",
+      "Identify the specific weakness the failure exposed.",
+      "Design one upgrade that would have prevented or reduced it.",
+      "Test the upgrade with a realistic stress case.",
+      "Save the prevention rule for future work."
+    ],
+    "self_test": "If the user asks for audit a system for weak points, exposed assumptions, and brittle parts., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-upgrade-chain-mapper",
+    "slug": "upgrade-chain-mapper",
+    "display_name": "A - Upgrade Chain Mapper",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Map each version to the weakness it fixed and the next upgrade.",
+    "triggers": [
+      "version history",
+      "upgrade chain",
+      "v1 v2 v3"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mistake-to-upgrade",
+      "a-anti-repeat-control"
+    ],
+    "output_contract": [
+      "Failure",
+      "What It Revealed",
+      "System Weakness",
+      "Upgrade",
+      "Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Map each version to the weakness it fixed and the next upgrade.",
+    "workflow": [
+      "Describe the failure without self-protection.",
+      "Identify the specific weakness the failure exposed.",
+      "Design one upgrade that would have prevented or reduced it.",
+      "Test the upgrade with a realistic stress case.",
+      "Save the prevention rule for future work."
+    ],
+    "self_test": "If the user asks for map each version to the weakness it fixed and the next upgrade., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-failure-memory-bank",
+    "slug": "failure-memory-bank",
+    "display_name": "A - Failure Memory Bank",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Store mistakes as reusable memory instead of private regret.",
+    "triggers": [
+      "mistake log",
+      "lessons",
+      "memory bank",
+      "retrospective"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mistake-to-upgrade",
+      "a-anti-repeat-control"
+    ],
+    "output_contract": [
+      "Failure",
+      "What It Revealed",
+      "System Weakness",
+      "Upgrade",
+      "Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Store mistakes as reusable memory instead of private regret.",
+    "workflow": [
+      "Describe the failure without self-protection.",
+      "Identify the specific weakness the failure exposed.",
+      "Design one upgrade that would have prevented or reduced it.",
+      "Test the upgrade with a realistic stress case.",
+      "Save the prevention rule for future work."
+    ],
+    "self_test": "If the user asks for store mistakes as reusable memory instead of private regret., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-post-battle-retro",
+    "slug": "post-battle-retro",
+    "display_name": "A - Post Battle Retro",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Run an after-action review after a project, fight, launch, or miss.",
+    "triggers": [
+      "retro",
+      "after action",
+      "postmortem",
+      "debrief"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mistake-to-upgrade",
+      "a-anti-repeat-control"
+    ],
+    "output_contract": [
+      "Failure",
+      "What It Revealed",
+      "System Weakness",
+      "Upgrade",
+      "Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Run an after-action review after a project, fight, launch, or miss.",
+    "workflow": [
+      "Describe the failure without self-protection.",
+      "Identify the specific weakness the failure exposed.",
+      "Design one upgrade that would have prevented or reduced it.",
+      "Test the upgrade with a realistic stress case.",
+      "Save the prevention rule for future work."
+    ],
+    "self_test": "If the user asks for run an after-action review after a project, fight, launch, or miss., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-anti-repeat-control",
+    "slug": "anti-repeat-control",
+    "display_name": "A - Anti Repeat Control",
+    "tier": 2,
+    "category": "Mistakes And Upgrades",
+    "summary": "Add controls that prevent the same failure from recurring.",
+    "triggers": [
+      "prevent repeat",
+      "control",
+      "guardrail",
+      "recurrence"
+    ],
+    "source_files": [
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt"
+    ],
+    "pairs_with": [
+      "a-mistake-to-upgrade"
+    ],
+    "output_contract": [
+      "Failure",
+      "What It Revealed",
+      "System Weakness",
+      "Upgrade",
+      "Test",
+      "Prevention Rule"
+    ],
+    "core_idea": "Add controls that prevent the same failure from recurring.",
+    "workflow": [
+      "Describe the failure without self-protection.",
+      "Identify the specific weakness the failure exposed.",
+      "Design one upgrade that would have prevented or reduced it.",
+      "Test the upgrade with a realistic stress case.",
+      "Save the prevention rule for future work."
+    ],
+    "self_test": "If the user asks for add controls that prevent the same failure from recurring., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-cave-resourcefulness",
+    "slug": "cave-resourcefulness",
+    "display_name": "A - Cave Resourcefulness",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "Use limited resources creatively under severe constraints.",
+    "triggers": [
+      "resourceful",
+      "limited resources",
+      "cave",
+      "constraint"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-functional-attributes",
+      "a-scrap-metal-solution",
+      "a-mark-one-prototype"
+    ],
+    "output_contract": [
+      "Escape Condition",
+      "Available Parts",
+      "Functional Attributes",
+      "Crude Build",
+      "Immediate Move",
+      "Upgrade Later"
+    ],
+    "core_idea": "Turn scarce materials, pressure, and constraints into a working escape path.",
+    "workflow": [
+      "Name the escape condition or minimum win.",
+      "Inventory only what is already available.",
+      "Translate each item into functional attributes.",
+      "Combine attributes into a crude but useful build.",
+      "Choose the next move that changes the user's position."
+    ],
+    "self_test": "If the user says they lack resources, find a viable move using only what they already have."
+  },
+  {
+    "name": "a-functional-attributes",
+    "slug": "functional-attributes",
+    "display_name": "A - Functional Attributes",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "See tools by what they can do, not what they are named.",
+    "triggers": [
+      "functional attributes",
+      "repurpose",
+      "non-obvious use"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness"
+    ],
+    "output_contract": [
+      "Goal",
+      "Available Resources",
+      "Functional Attributes",
+      "Recombination",
+      "First Build",
+      "Upgrade Path"
+    ],
+    "core_idea": "See tools by what they can do, not what they are named.",
+    "workflow": [
+      "Inventory what already exists.",
+      "Translate each resource into functional attributes.",
+      "Recombine parts into a crude useful system.",
+      "Use the first version to escape waiting.",
+      "Upgrade only after the crude system teaches you."
+    ],
+    "self_test": "If the user asks for see tools by what they can do, not what they are named., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-resource-recombination",
+    "slug": "resource-recombination",
+    "display_name": "A - Resource Recombination",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "Combine weak or partial resources into a useful stronger system.",
+    "triggers": [
+      "combine resources",
+      "recombine",
+      "patch together"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness",
+      "a-functional-attributes"
+    ],
+    "output_contract": [
+      "Goal",
+      "Available Resources",
+      "Functional Attributes",
+      "Recombination",
+      "First Build",
+      "Upgrade Path"
+    ],
+    "core_idea": "Combine weak or partial resources into a useful stronger system.",
+    "workflow": [
+      "Inventory what already exists.",
+      "Translate each resource into functional attributes.",
+      "Recombine parts into a crude useful system.",
+      "Use the first version to escape waiting.",
+      "Upgrade only after the crude system teaches you."
+    ],
+    "self_test": "If the user asks for combine weak or partial resources into a useful stronger system., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-improvise-then-engineer",
+    "slug": "improvise-then-engineer",
+    "display_name": "A - Improvise Then Engineer",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "Use a temporary hack first, then harden the real system.",
+    "triggers": [
+      "improvise",
+      "hack first",
+      "engineer later"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness",
+      "a-functional-attributes"
+    ],
+    "output_contract": [
+      "Goal",
+      "Available Resources",
+      "Functional Attributes",
+      "Recombination",
+      "First Build",
+      "Upgrade Path"
+    ],
+    "core_idea": "Use a temporary hack first, then harden the real system.",
+    "workflow": [
+      "Inventory what already exists.",
+      "Translate each resource into functional attributes.",
+      "Recombine parts into a crude useful system.",
+      "Use the first version to escape waiting.",
+      "Upgrade only after the crude system teaches you."
+    ],
+    "self_test": "If the user asks for use a temporary hack first, then harden the real system., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-minimum-viable-armor",
+    "slug": "minimum-viable-armor",
+    "display_name": "A - Minimum Viable Armor",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "Define the smallest protection or tool layer needed now.",
+    "triggers": [
+      "minimum viable armor",
+      "protection",
+      "enough safety"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness",
+      "a-functional-attributes"
+    ],
+    "output_contract": [
+      "Goal",
+      "Available Resources",
+      "Functional Attributes",
+      "Recombination",
+      "First Build",
+      "Upgrade Path"
+    ],
+    "core_idea": "Define the smallest protection or tool layer needed now.",
+    "workflow": [
+      "Inventory what already exists.",
+      "Translate each resource into functional attributes.",
+      "Recombine parts into a crude useful system.",
+      "Use the first version to escape waiting.",
+      "Upgrade only after the crude system teaches you."
+    ],
+    "self_test": "If the user asks for define the smallest protection or tool layer needed now., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-salvage-tech-strategy",
+    "slug": "salvage-tech-strategy",
+    "display_name": "A - Salvage Tech Strategy",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "Recover old assets, abandoned work, or scraps into useful inputs.",
+    "triggers": [
+      "salvage",
+      "reuse old work",
+      "abandoned assets"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness",
+      "a-functional-attributes"
+    ],
+    "output_contract": [
+      "Goal",
+      "Available Resources",
+      "Functional Attributes",
+      "Recombination",
+      "First Build",
+      "Upgrade Path"
+    ],
+    "core_idea": "Recover old assets, abandoned work, or scraps into useful inputs.",
+    "workflow": [
+      "Inventory what already exists.",
+      "Translate each resource into functional attributes.",
+      "Recombine parts into a crude useful system.",
+      "Use the first version to escape waiting.",
+      "Upgrade only after the crude system teaches you."
+    ],
+    "self_test": "If the user asks for recover old assets, abandoned work, or scraps into useful inputs., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-constraints-as-design",
+    "slug": "constraints-as-design",
+    "display_name": "A - Constraints As Design",
+    "tier": 2,
+    "category": "Resourcefulness",
+    "summary": "Use constraints as design material instead of excuses.",
+    "triggers": [
+      "constraints as design",
+      "limitations",
+      "turn limits"
+    ],
+    "source_files": [
+      "How Tony Stark Practices Resourcefulness.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-cave-resourcefulness",
+      "a-functional-attributes"
+    ],
+    "output_contract": [
+      "Goal",
+      "Available Resources",
+      "Functional Attributes",
+      "Recombination",
+      "First Build",
+      "Upgrade Path"
+    ],
+    "core_idea": "Use constraints as design material instead of excuses.",
+    "workflow": [
+      "Inventory what already exists.",
+      "Translate each resource into functional attributes.",
+      "Recombine parts into a crude useful system.",
+      "Use the first version to escape waiting.",
+      "Upgrade only after the crude system teaches you."
+    ],
+    "self_test": "If the user asks for use constraints as design material instead of excuses., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-confidence",
+    "slug": "stark-confidence",
+    "display_name": "A - Stark Confidence",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Build grounded confidence from competence, proof, and decisive action.",
+    "triggers": [
+      "confidence",
+      "Tony confidence",
+      "self belief"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-permission-trap-breaker"
+    ],
+    "output_contract": [
+      "Blocked Move",
+      "Permission Trap",
+      "Proof Already Available",
+      "Bold Action",
+      "Risk Boundary",
+      "Next Signal"
+    ],
+    "core_idea": "Build grounded confidence from competence, proof, and decisive action.",
+    "workflow": [
+      "Name the move the user is avoiding.",
+      "Identify whose permission they are waiting for.",
+      "Separate real risk from social discomfort.",
+      "Choose a bounded bold action.",
+      "Use the result as evidence for the next move."
+    ],
+    "self_test": "If the user asks for build grounded confidence from competence, proof, and decisive action., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-permission-trap-breaker",
+    "slug": "permission-trap-breaker",
+    "display_name": "A - Permission Trap Breaker",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Find where the user is waiting for permission and define action without it.",
+    "triggers": [
+      "permission trap",
+      "waiting",
+      "approval",
+      "realistic"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-stark-confidence",
+      "a-fear-to-motion",
+      "a-mark-one-prototype"
+    ],
+    "output_contract": [
+      "Postponed Action",
+      "Permission Source",
+      "Real Risk",
+      "False Gate",
+      "Bounded Move",
+      "Proof Signal"
+    ],
+    "core_idea": "Find the hidden request for approval and replace it with a bounded act of agency.",
+    "workflow": [
+      "Name the action the user keeps postponing.",
+      "Identify whose approval, validation, credential, or perfect condition they are waiting for.",
+      "Separate legal, ethical, and practical risk from social discomfort.",
+      "Define one safe-to-try move that does not require permission.",
+      "Turn the result into proof for the next move."
+    ],
+    "self_test": "If the user is waiting to be chosen, return a bounded action they can take without external validation."
+  },
+  {
+    "name": "a-audacity-calibrator",
+    "slug": "audacity-calibrator",
+    "display_name": "A - Audacity Calibrator",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Separate useful boldness from reckless ego or fantasy.",
+    "triggers": [
+      "audacity",
+      "bold",
+      "reckless",
+      "calibrate"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-stark-confidence",
+      "a-permission-trap-breaker"
+    ],
+    "output_contract": [
+      "Blocked Move",
+      "Permission Trap",
+      "Proof Already Available",
+      "Bold Action",
+      "Risk Boundary",
+      "Next Signal"
+    ],
+    "core_idea": "Separate useful boldness from reckless ego or fantasy.",
+    "workflow": [
+      "Name the move the user is avoiding.",
+      "Identify whose permission they are waiting for.",
+      "Separate real risk from social discomfort.",
+      "Choose a bounded bold action.",
+      "Use the result as evidence for the next move."
+    ],
+    "self_test": "If the user asks for separate useful boldness from reckless ego or fantasy., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-ego-to-output",
+    "slug": "ego-to-output",
+    "display_name": "A - Ego To Output",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Convert ego, ambition, or swagger into concrete production.",
+    "triggers": [
+      "ego",
+      "ambition",
+      "output",
+      "arrogance"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-stark-confidence",
+      "a-permission-trap-breaker"
+    ],
+    "output_contract": [
+      "Blocked Move",
+      "Permission Trap",
+      "Proof Already Available",
+      "Bold Action",
+      "Risk Boundary",
+      "Next Signal"
+    ],
+    "core_idea": "Convert ego, ambition, or swagger into concrete production.",
+    "workflow": [
+      "Name the move the user is avoiding.",
+      "Identify whose permission they are waiting for.",
+      "Separate real risk from social discomfort.",
+      "Choose a bounded bold action.",
+      "Use the result as evidence for the next move."
+    ],
+    "self_test": "If the user asks for convert ego, ambition, or swagger into concrete production., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-fear-to-motion",
+    "slug": "fear-to-motion",
+    "display_name": "A - Fear To Motion",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Turn fear into one visible action instead of rumination.",
+    "triggers": [
+      "fear",
+      "stuck",
+      "first brave action"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-stark-confidence",
+      "a-permission-trap-breaker"
+    ],
+    "output_contract": [
+      "Blocked Move",
+      "Permission Trap",
+      "Proof Already Available",
+      "Bold Action",
+      "Risk Boundary",
+      "Next Signal"
+    ],
+    "core_idea": "Turn fear into one visible action instead of rumination.",
+    "workflow": [
+      "Name the move the user is avoiding.",
+      "Identify whose permission they are waiting for.",
+      "Separate real risk from social discomfort.",
+      "Choose a bounded bold action.",
+      "Use the result as evidence for the next move."
+    ],
+    "self_test": "If the user asks for turn fear into one visible action instead of rumination., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-self-trust-builder",
+    "slug": "self-trust-builder",
+    "display_name": "A - Self Trust Builder",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Build self-trust through small kept promises and proof.",
+    "triggers": [
+      "self trust",
+      "trust myself",
+      "proof"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-stark-confidence",
+      "a-permission-trap-breaker"
+    ],
+    "output_contract": [
+      "Blocked Move",
+      "Permission Trap",
+      "Proof Already Available",
+      "Bold Action",
+      "Risk Boundary",
+      "Next Signal"
+    ],
+    "core_idea": "Build self-trust through small kept promises and proof.",
+    "workflow": [
+      "Name the move the user is avoiding.",
+      "Identify whose permission they are waiting for.",
+      "Separate real risk from social discomfort.",
+      "Choose a bounded bold action.",
+      "Use the result as evidence for the next move."
+    ],
+    "self_test": "If the user asks for build self-trust through small kept promises and proof., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-talk-like-stark",
+    "slug": "talk-like-stark",
+    "display_name": "A - Talk Like Stark",
+    "tier": 2,
+    "category": "Confidence And Permission",
+    "summary": "Sharpen communication with confident, concise, playful authority.",
+    "triggers": [
+      "talk like Stark",
+      "sharper copy",
+      "witty confident"
+    ],
+    "source_files": [
+      "Be as Confident as Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt",
+      "How to Work Like Tony Stark.txt"
+    ],
+    "pairs_with": [
+      "a-stark-confidence",
+      "a-permission-trap-breaker"
+    ],
+    "output_contract": [
+      "Blocked Move",
+      "Permission Trap",
+      "Proof Already Available",
+      "Bold Action",
+      "Risk Boundary",
+      "Next Signal"
+    ],
+    "core_idea": "Sharpen communication with confident, concise, playful authority.",
+    "workflow": [
+      "Name the move the user is avoiding.",
+      "Identify whose permission they are waiting for.",
+      "Separate real risk from social discomfort.",
+      "Choose a bounded bold action.",
+      "Use the result as evidence for the next move."
+    ],
+    "self_test": "If the user asks for sharpen communication with confident, concise, playful authority., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-curiosity-mastery-synthesis",
+    "slug": "curiosity-mastery-synthesis",
+    "display_name": "A - Curiosity Mastery Synthesis",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Learn through curiosity, mastery, and cross-domain synthesis.",
+    "triggers": [
+      "curiosity",
+      "mastery",
+      "synthesis",
+      "learning"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark",
+      "a-build-to-understand"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Learn through curiosity, mastery, and cross-domain synthesis.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for learn through curiosity, mastery, and cross-domain synthesis., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-learn-like-stark",
+    "slug": "learn-like-stark",
+    "display_name": "A - Learn Like Stark",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Design an aggressive self-education loop around building.",
+    "triggers": [
+      "learn like Stark",
+      "study plan",
+      "master skill"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-build-to-understand"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Design an aggressive self-education loop around building.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for design an aggressive self-education loop around building., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-cross-domain-synthesis",
+    "slug": "cross-domain-synthesis",
+    "display_name": "A - Cross Domain Synthesis",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Connect lessons across engineering, design, story, leadership, and business.",
+    "triggers": [
+      "cross domain",
+      "synthesize",
+      "connect fields"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark",
+      "a-build-to-understand"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Connect lessons across engineering, design, story, leadership, and business.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for connect lessons across engineering, design, story, leadership, and business., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-question-engine",
+    "slug": "question-engine",
+    "display_name": "A - Question Engine",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Generate sharper questions that unlock technical or strategic progress.",
+    "triggers": [
+      "questions",
+      "ask better",
+      "inquiry"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark",
+      "a-build-to-understand"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Generate sharper questions that unlock technical or strategic progress.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for generate sharper questions that unlock technical or strategic progress., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-knowledge-gap-map",
+    "slug": "knowledge-gap-map",
+    "display_name": "A - Knowledge Gap Map",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Identify the exact missing knowledge blocking progress.",
+    "triggers": [
+      "knowledge gaps",
+      "what do I not know"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark",
+      "a-build-to-understand",
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Identify the exact missing knowledge blocking progress.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for identify the exact missing knowledge blocking progress., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-smart-not-genius",
+    "slug": "smart-not-genius",
+    "display_name": "A - Smart Not Genius",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Convert genius fantasy into practical learnable behaviors.",
+    "triggers": [
+      "become smarter",
+      "not genius",
+      "practical intelligence"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark",
+      "a-build-to-understand"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Convert genius fantasy into practical learnable behaviors.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for convert genius fantasy into practical learnable behaviors., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-build-to-understand",
+    "slug": "build-to-understand",
+    "display_name": "A - Build To Understand",
+    "tier": 2,
+    "category": "Learning And Intelligence",
+    "summary": "Use building as the fastest path to comprehension.",
+    "triggers": [
+      "learn by building",
+      "build to understand"
+    ],
+    "source_files": [
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark"
+    ],
+    "output_contract": [
+      "Learning Goal",
+      "Known Base",
+      "Knowledge Gap",
+      "Build-to-Learn Task",
+      "Synthesis Question",
+      "Mastery Check"
+    ],
+    "core_idea": "Use building as the fastest path to comprehension.",
+    "workflow": [
+      "Choose a target capability.",
+      "Map what the user already understands.",
+      "Identify the smallest missing concept or skill.",
+      "Build something that forces the concept to become concrete.",
+      "Synthesize the lesson into a reusable rule."
+    ],
+    "self_test": "If the user asks for use building as the fastest path to comprehension., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-lean-six-sigma-stark",
+    "slug": "lean-six-sigma-stark",
+    "display_name": "A - Lean Six Sigma Stark",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Apply define-measure-improve-control to personal or product workflows.",
+    "triggers": [
+      "lean",
+      "six sigma",
+      "DMAIC",
+      "improve workflow"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Apply define-measure-improve-control to personal or product workflows.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for apply define-measure-improve-control to personal or product workflows., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-continuous-improvement-loop",
+    "slug": "continuous-improvement-loop",
+    "display_name": "A - Continuous Improvement Loop",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Create a recurring loop for better versions of work.",
+    "triggers": [
+      "continuous improvement",
+      "weekly improvement"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Create a recurring loop for better versions of work.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for create a recurring loop for better versions of work., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-waste-hunter",
+    "slug": "waste-hunter",
+    "display_name": "A - Waste Hunter",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Find and remove wasted motion, waiting, rework, and clutter.",
+    "triggers": [
+      "waste",
+      "inefficiency",
+      "remove waste"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Find and remove wasted motion, waiting, rework, and clutter.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for find and remove wasted motion, waiting, rework, and clutter., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-process-stabilizer",
+    "slug": "process-stabilizer",
+    "display_name": "A - Process Stabilizer",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Turn chaotic repeated work into a stable process.",
+    "triggers": [
+      "process",
+      "stabilize",
+      "repeatable"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Turn chaotic repeated work into a stable process.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for turn chaotic repeated work into a stable process., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-quality-control-reactor",
+    "slug": "quality-control-reactor",
+    "display_name": "A - Quality Control Reactor",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Add quality checks that protect output without slowing everything.",
+    "triggers": [
+      "quality control",
+      "checks",
+      "review gate"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Add quality checks that protect output without slowing everything.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for add quality checks that protect output without slowing everything., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-workflow-telemetry",
+    "slug": "workflow-telemetry",
+    "display_name": "A - Workflow Telemetry",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Choose measurements that reveal whether the system works.",
+    "triggers": [
+      "metrics",
+      "telemetry",
+      "measure workflow"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Choose measurements that reveal whether the system works.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for choose measurements that reveal whether the system works., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-standardize-after-learning",
+    "slug": "standardize-after-learning",
+    "display_name": "A - Standardize After Learning",
+    "tier": 2,
+    "category": "Lean Six Sigma Workflow",
+    "summary": "Standardize a process only after the learning loop has found what works.",
+    "triggers": [
+      "standardize",
+      "SOP",
+      "repeatable pattern"
+    ],
+    "source_files": [
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How to Work Like Tony Stark.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt"
+    ],
+    "pairs_with": [
+      "a-learn-like-stark",
+      "a-build-to-understand"
+    ],
+    "output_contract": [
+      "Process",
+      "Waste or Variation",
+      "Measure",
+      "Improve",
+      "Control",
+      "Review Cadence"
+    ],
+    "core_idea": "Standardize a process only after the learning loop has found what works.",
+    "workflow": [
+      "Define the process and its intended output.",
+      "Measure where waste, variation, or rework appears.",
+      "Improve the highest-leverage step.",
+      "Add a lightweight control so the improvement survives.",
+      "Schedule the next review."
+    ],
+    "self_test": "If the user asks for standardize a process only after the learning loop has found what works., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-multi-project-reactor",
+    "slug": "multi-project-reactor",
+    "display_name": "A - Multi Project Reactor",
+    "tier": 2,
+    "category": "Multiple Projects",
+    "summary": "Coordinate multiple active projects without losing the reactor core.",
+    "triggers": [
+      "multiple projects",
+      "too many projects",
+      "portfolio"
+    ],
+    "source_files": [
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Project Set",
+      "Reactor Core",
+      "Parallel Tracks",
+      "Switching Rule",
+      "Energy Match",
+      "Radar Update"
+    ],
+    "core_idea": "Coordinate multiple active projects without losing the reactor core.",
+    "workflow": [
+      "List active projects and their next meaningful output.",
+      "Identify the reactor core that must not lose power.",
+      "Separate parallel tracks from blocked tracks.",
+      "Set context-switching rules.",
+      "Update the portfolio radar."
+    ],
+    "self_test": "If the user asks for coordinate multiple active projects without losing the reactor core., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-parallel-build-planner",
+    "slug": "parallel-build-planner",
+    "display_name": "A - Parallel Build Planner",
+    "tier": 2,
+    "category": "Multiple Projects",
+    "summary": "Split work into tracks that can progress in parallel.",
+    "triggers": [
+      "parallel work",
+      "dependencies",
+      "project tracks"
+    ],
+    "source_files": [
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Project Set",
+      "Reactor Core",
+      "Parallel Tracks",
+      "Switching Rule",
+      "Energy Match",
+      "Radar Update"
+    ],
+    "core_idea": "Split work into tracks that can progress in parallel.",
+    "workflow": [
+      "List active projects and their next meaningful output.",
+      "Identify the reactor core that must not lose power.",
+      "Separate parallel tracks from blocked tracks.",
+      "Set context-switching rules.",
+      "Update the portfolio radar."
+    ],
+    "self_test": "If the user asks for split work into tracks that can progress in parallel., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-context-switch-control",
+    "slug": "context-switch-control",
+    "display_name": "A - Context Switch Control",
+    "tier": 2,
+    "category": "Multiple Projects",
+    "summary": "Reduce context switching cost between active efforts.",
+    "triggers": [
+      "context switch",
+      "switching projects"
+    ],
+    "source_files": [
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Project Set",
+      "Reactor Core",
+      "Parallel Tracks",
+      "Switching Rule",
+      "Energy Match",
+      "Radar Update"
+    ],
+    "core_idea": "Reduce context switching cost between active efforts.",
+    "workflow": [
+      "List active projects and their next meaningful output.",
+      "Identify the reactor core that must not lose power.",
+      "Separate parallel tracks from blocked tracks.",
+      "Set context-switching rules.",
+      "Update the portfolio radar."
+    ],
+    "self_test": "If the user asks for reduce context switching cost between active efforts., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-energy-allocation",
+    "slug": "energy-allocation",
+    "display_name": "A - Energy Allocation",
+    "tier": 2,
+    "category": "Multiple Projects",
+    "summary": "Match tasks to current energy, attention, and leverage.",
+    "triggers": [
+      "energy",
+      "what today",
+      "attention"
+    ],
+    "source_files": [
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Project Set",
+      "Reactor Core",
+      "Parallel Tracks",
+      "Switching Rule",
+      "Energy Match",
+      "Radar Update"
+    ],
+    "core_idea": "Match tasks to current energy, attention, and leverage.",
+    "workflow": [
+      "List active projects and their next meaningful output.",
+      "Identify the reactor core that must not lose power.",
+      "Separate parallel tracks from blocked tracks.",
+      "Set context-switching rules.",
+      "Update the portfolio radar."
+    ],
+    "self_test": "If the user asks for match tasks to current energy, attention, and leverage., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-project-portfolio-radar",
+    "slug": "project-portfolio-radar",
+    "display_name": "A - Project Portfolio Radar",
+    "tier": 2,
+    "category": "Multiple Projects",
+    "summary": "Maintain a radar view of active bets, status, and next moves.",
+    "triggers": [
+      "portfolio radar",
+      "active projects"
+    ],
+    "source_files": [
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Project Set",
+      "Reactor Core",
+      "Parallel Tracks",
+      "Switching Rule",
+      "Energy Match",
+      "Radar Update"
+    ],
+    "core_idea": "Maintain a radar view of active bets, status, and next moves.",
+    "workflow": [
+      "List active projects and their next meaningful output.",
+      "Identify the reactor core that must not lose power.",
+      "Separate parallel tracks from blocked tracks.",
+      "Set context-switching rules.",
+      "Update the portfolio radar."
+    ],
+    "self_test": "If the user asks for maintain a radar view of active bets, status, and next moves., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-burnout-safety-check",
+    "slug": "burnout-safety-check",
+    "display_name": "A - Burnout Safety Check",
+    "tier": 2,
+    "category": "Multiple Projects",
+    "summary": "Detect overload and redesign the load before damage accumulates.",
+    "triggers": [
+      "burnout",
+      "overloaded",
+      "too much"
+    ],
+    "source_files": [
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "10 Tony Stark Habits That Make You Unstoppable.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Project Set",
+      "Reactor Core",
+      "Parallel Tracks",
+      "Switching Rule",
+      "Energy Match",
+      "Radar Update"
+    ],
+    "core_idea": "Detect overload and redesign the load before damage accumulates.",
+    "workflow": [
+      "List active projects and their next meaningful output.",
+      "Identify the reactor core that must not lose power.",
+      "Separate parallel tracks from blocked tracks.",
+      "Set context-switching rules.",
+      "Update the portfolio radar."
+    ],
+    "self_test": "If the user asks for detect overload and redesign the load before damage accumulates., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-captain-america-leadership",
+    "slug": "captain-america-leadership",
+    "display_name": "A - Captain America Leadership",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Lead through values, steadiness, courage, and service.",
+    "triggers": [
+      "Captain America leadership",
+      "lead like Cap"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers",
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Lead through values, steadiness, courage, and service.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for lead through values, steadiness, courage, and service., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-stark-cap-balance",
+    "slug": "stark-cap-balance",
+    "display_name": "A - Stark Cap Balance",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Balance Tony's invention drive with Steve's moral clarity.",
+    "triggers": [
+      "Tony vs Steve",
+      "balance",
+      "innovation and values"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers",
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Balance Tony's invention drive with Steve's moral clarity.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for balance tony's invention drive with steve's moral clarity., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-team-assembly-avengers",
+    "slug": "team-assembly-avengers",
+    "display_name": "A - Team Assembly Avengers",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Assemble roles, strengths, gaps, and team operating rules.",
+    "triggers": [
+      "assemble team",
+      "Avengers team",
+      "roles"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Assemble roles, strengths, gaps, and team operating rules.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for assemble roles, strengths, gaps, and team operating rules., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-leader-in-the-room",
+    "slug": "leader-in-the-room",
+    "display_name": "A - Leader In The Room",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Decide when to lead, defer, challenge, or support.",
+    "triggers": [
+      "should I lead",
+      "take charge",
+      "defer"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers",
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Decide when to lead, defer, challenge, or support.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for decide when to lead, defer, challenge, or support., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-values-under-pressure",
+    "slug": "values-under-pressure",
+    "display_name": "A - Values Under Pressure",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Protect core values when pressure, fear, or speed rises.",
+    "triggers": [
+      "values",
+      "pressure",
+      "principles"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers",
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Protect core values when pressure, fear, or speed rises.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for protect core values when pressure, fear, or speed rises., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-civil-war-conflict-map",
+    "slug": "civil-war-conflict-map",
+    "display_name": "A - Civil War Conflict Map",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Map a conflict where both sides have legitimate values.",
+    "triggers": [
+      "Civil War",
+      "team conflict",
+      "competing values"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Map a conflict where both sides have legitimate values.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for map a conflict where both sides have legitimate values., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-accords-governance",
+    "slug": "accords-governance",
+    "display_name": "A - Accords Governance",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Design accountability, oversight, and autonomy rules.",
+    "triggers": [
+      "governance",
+      "accords",
+      "accountability"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers",
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Design accountability, oversight, and autonomy rules.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for design accountability, oversight, and autonomy rules., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-trust-repair-after-conflict",
+    "slug": "trust-repair-after-conflict",
+    "display_name": "A - Trust Repair After Conflict",
+    "tier": 3,
+    "category": "Leadership And Team",
+    "summary": "Rebuild working trust after a rupture or ideological split.",
+    "triggers": [
+      "repair trust",
+      "after conflict",
+      "team split"
+    ],
+    "source_files": [
+      "How to Lead Like Captain America.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt"
+    ],
+    "pairs_with": [
+      "a-team-assembly-avengers",
+      "a-civil-war-conflict-map"
+    ],
+    "output_contract": [
+      "Conflict or Mission",
+      "Values at Stake",
+      "Team Roles",
+      "Decision Rule",
+      "Communication Move",
+      "Trust Follow-Up"
+    ],
+    "core_idea": "Rebuild working trust after a rupture or ideological split.",
+    "workflow": [
+      "Name the mission or conflict.",
+      "Identify the values and incentives on each side.",
+      "Clarify who should lead, advise, execute, or challenge.",
+      "Choose the communication move that protects trust.",
+      "Define the next accountable action."
+    ],
+    "self_test": "If the user asks for rebuild working trust after a rupture or ideological split., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-peter-parker-mentor",
+    "slug": "peter-parker-mentor",
+    "display_name": "A - Peter Parker Mentor",
+    "tier": 3,
+    "category": "Mentorship And Peter Parker",
+    "summary": "Mentor a younger builder without overcontrolling their growth.",
+    "triggers": [
+      "mentor",
+      "junior builder",
+      "Peter Parker"
+    ],
+    "source_files": [
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt"
+    ],
+    "pairs_with": [
+      "a-training-wheels-protocol"
+    ],
+    "output_contract": [
+      "Mentee Context",
+      "Power or Tool",
+      "Readiness Signal",
+      "Support Level",
+      "Boundary",
+      "Growth Test"
+    ],
+    "core_idea": "Mentor a younger builder without overcontrolling their growth.",
+    "workflow": [
+      "Clarify what the mentee is trying to become capable of doing.",
+      "Assess readiness with behavior, not potential alone.",
+      "Choose support level: watch, coach, unlock, or step back.",
+      "Avoid projecting the mentor's fear onto the mentee.",
+      "Create a growth test with real consequences and guardrails."
+    ],
+    "self_test": "If the user asks for mentor a younger builder without overcontrolling their growth., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-training-wheels-protocol",
+    "slug": "training-wheels-protocol",
+    "display_name": "A - Training Wheels Protocol",
+    "tier": 3,
+    "category": "Mentorship And Peter Parker",
+    "summary": "Decide how much support, monitoring, or independence to provide.",
+    "triggers": [
+      "training wheels",
+      "support",
+      "independence"
+    ],
+    "source_files": [
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt"
+    ],
+    "pairs_with": [
+      "a-peter-parker-mentor"
+    ],
+    "output_contract": [
+      "Mentee Context",
+      "Power or Tool",
+      "Readiness Signal",
+      "Support Level",
+      "Boundary",
+      "Growth Test"
+    ],
+    "core_idea": "Decide how much support, monitoring, or independence to provide.",
+    "workflow": [
+      "Clarify what the mentee is trying to become capable of doing.",
+      "Assess readiness with behavior, not potential alone.",
+      "Choose support level: watch, coach, unlock, or step back.",
+      "Avoid projecting the mentor's fear onto the mentee.",
+      "Create a growth test with real consequences and guardrails."
+    ],
+    "self_test": "If the user asks for decide how much support, monitoring, or independence to provide., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-if-youre-nothing-without-the-suit",
+    "slug": "if-youre-nothing-without-the-suit",
+    "display_name": "A - If Youre Nothing Without The Suit",
+    "tier": 3,
+    "category": "Mentorship And Peter Parker",
+    "summary": "Separate capability from dependence on tools, status, or armor.",
+    "triggers": [
+      "nothing without the suit",
+      "tool dependence"
+    ],
+    "source_files": [
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt"
+    ],
+    "pairs_with": [
+      "a-peter-parker-mentor",
+      "a-training-wheels-protocol"
+    ],
+    "output_contract": [
+      "Mentee Context",
+      "Power or Tool",
+      "Readiness Signal",
+      "Support Level",
+      "Boundary",
+      "Growth Test"
+    ],
+    "core_idea": "Separate capability from dependence on tools, status, or armor.",
+    "workflow": [
+      "Clarify what the mentee is trying to become capable of doing.",
+      "Assess readiness with behavior, not potential alone.",
+      "Choose support level: watch, coach, unlock, or step back.",
+      "Avoid projecting the mentor's fear onto the mentee.",
+      "Create a growth test with real consequences and guardrails."
+    ],
+    "self_test": "If the user asks for separate capability from dependence on tools, status, or armor., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-responsibility-before-power",
+    "slug": "responsibility-before-power",
+    "display_name": "A - Responsibility Before Power",
+    "tier": 3,
+    "category": "Mentorship And Peter Parker",
+    "summary": "Check readiness before handing over power, tools, or visibility.",
+    "triggers": [
+      "responsibility before power",
+      "readiness"
+    ],
+    "source_files": [
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt"
+    ],
+    "pairs_with": [
+      "a-peter-parker-mentor",
+      "a-training-wheels-protocol"
+    ],
+    "output_contract": [
+      "Mentee Context",
+      "Power or Tool",
+      "Readiness Signal",
+      "Support Level",
+      "Boundary",
+      "Growth Test"
+    ],
+    "core_idea": "Check readiness before handing over power, tools, or visibility.",
+    "workflow": [
+      "Clarify what the mentee is trying to become capable of doing.",
+      "Assess readiness with behavior, not potential alone.",
+      "Choose support level: watch, coach, unlock, or step back.",
+      "Avoid projecting the mentor's fear onto the mentee.",
+      "Create a growth test with real consequences and guardrails."
+    ],
+    "self_test": "If the user asks for check readiness before handing over power, tools, or visibility., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-mentor-boundary-check",
+    "slug": "mentor-boundary-check",
+    "display_name": "A - Mentor Boundary Check",
+    "tier": 3,
+    "category": "Mentorship And Peter Parker",
+    "summary": "Avoid projecting personal fear onto the person being mentored.",
+    "triggers": [
+      "mentor boundary",
+      "overprotective"
+    ],
+    "source_files": [
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt"
+    ],
+    "pairs_with": [
+      "a-peter-parker-mentor",
+      "a-training-wheels-protocol"
+    ],
+    "output_contract": [
+      "Mentee Context",
+      "Power or Tool",
+      "Readiness Signal",
+      "Support Level",
+      "Boundary",
+      "Growth Test"
+    ],
+    "core_idea": "Avoid projecting personal fear onto the person being mentored.",
+    "workflow": [
+      "Clarify what the mentee is trying to become capable of doing.",
+      "Assess readiness with behavior, not potential alone.",
+      "Choose support level: watch, coach, unlock, or step back.",
+      "Avoid projecting the mentor's fear onto the mentee.",
+      "Create a growth test with real consequences and guardrails."
+    ],
+    "self_test": "If the user asks for avoid projecting personal fear onto the person being mentored., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-legacy-through-mentees",
+    "slug": "legacy-through-mentees",
+    "display_name": "A - Legacy Through Mentees",
+    "tier": 3,
+    "category": "Mentorship And Peter Parker",
+    "summary": "Pass values, standards, and judgment through mentees.",
+    "triggers": [
+      "legacy",
+      "teach",
+      "mentee"
+    ],
+    "source_files": [
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt"
+    ],
+    "pairs_with": [
+      "a-peter-parker-mentor",
+      "a-training-wheels-protocol"
+    ],
+    "output_contract": [
+      "Mentee Context",
+      "Power or Tool",
+      "Readiness Signal",
+      "Support Level",
+      "Boundary",
+      "Growth Test"
+    ],
+    "core_idea": "Pass values, standards, and judgment through mentees.",
+    "workflow": [
+      "Clarify what the mentee is trying to become capable of doing.",
+      "Assess readiness with behavior, not potential alone.",
+      "Choose support level: watch, coach, unlock, or step back.",
+      "Avoid projecting the mentor's fear onto the mentee.",
+      "Create a growth test with real consequences and guardrails."
+    ],
+    "self_test": "If the user asks for pass values, standards, and judgment through mentees., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-threat-is-imminent",
+    "slug": "threat-is-imminent",
+    "display_name": "A - Threat Is Imminent",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Anticipate looming threats without letting fear own the solution.",
+    "triggers": [
+      "threat imminent",
+      "future risk",
+      "warning"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-armor-around-world-check"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Anticipate looming threats without letting fear own the solution.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for anticipate looming threats without letting fear own the solution., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-armor-around-world-check",
+    "slug": "armor-around-world-check",
+    "display_name": "A - Armor Around World Check",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Check whether protection has become overcontrol or overengineering.",
+    "triggers": [
+      "armor around the world",
+      "overcontrol",
+      "safety system"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-ultron-failure-review",
+      "a-ethics-of-control",
+      "a-shared-burden-protocol"
+    ],
+    "output_contract": [
+      "Threat",
+      "Protection Goal",
+      "Control Risk",
+      "Affected People",
+      "Smaller Safety Mechanism",
+      "Oversight Rule"
+    ],
+    "core_idea": "Check whether a protective idea has become overcontrol, overengineering, or fear in armor.",
+    "workflow": [
+      "Name the threat the user wants to prevent.",
+      "Identify who gains protection and who loses agency.",
+      "Separate monitoring, prevention, consent, and coercion.",
+      "Find a smaller governed safety mechanism.",
+      "Define an oversight or rollback rule."
+    ],
+    "self_test": "If the user proposes a sweeping safety system, test whether it creates an Ultron-style control failure."
+  },
+  {
+    "name": "a-ultron-failure-review",
+    "slug": "ultron-failure-review",
+    "display_name": "A - Ultron Failure Review",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Analyze how a good-intentioned system can create unintended harm.",
+    "triggers": [
+      "Ultron",
+      "unintended consequences",
+      "backfire"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-threat-is-imminent",
+      "a-armor-around-world-check"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Analyze how a good-intentioned system can create unintended harm.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for analyze how a good-intentioned system can create unintended harm., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-ethics-of-control",
+    "slug": "ethics-of-control",
+    "display_name": "A - Ethics Of Control",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Review consent, power, collateral effects, and governance.",
+    "triggers": [
+      "ethics",
+      "control",
+      "consent",
+      "automation risk"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-threat-is-imminent",
+      "a-armor-around-world-check"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Review consent, power, collateral effects, and governance.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for review consent, power, collateral effects, and governance., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-thanos-logic-detector",
+    "slug": "thanos-logic-detector",
+    "display_name": "A - Thanos Logic Detector",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Detect cold utilitarian reasoning that erases people.",
+    "triggers": [
+      "Thanos logic",
+      "ends justify means",
+      "utilitarian"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-threat-is-imminent",
+      "a-armor-around-world-check"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Detect cold utilitarian reasoning that erases people.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for detect cold utilitarian reasoning that erases people., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-curse-of-knowledge-translator",
+    "slug": "curse-of-knowledge-translator",
+    "display_name": "A - Curse Of Knowledge Translator",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Translate expert foresight so others can understand and act.",
+    "triggers": [
+      "curse of knowledge",
+      "explain risk",
+      "others do not see"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-threat-is-imminent",
+      "a-armor-around-world-check",
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Translate expert foresight so others can understand and act.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for translate expert foresight so others can understand and act., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-curse-of-being-right",
+    "slug": "curse-of-being-right",
+    "display_name": "A - Curse Of Being Right",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Handle being right early without becoming isolated or abrasive.",
+    "triggers": [
+      "curse of being right",
+      "I warned them"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-threat-is-imminent",
+      "a-armor-around-world-check"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Handle being right early without becoming isolated or abrasive.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for handle being right early without becoming isolated or abrasive., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-shared-burden-protocol",
+    "slug": "shared-burden-protocol",
+    "display_name": "A - Shared Burden Protocol",
+    "tier": 3,
+    "category": "Risk Ethics And Control",
+    "summary": "Stop carrying a threat or mission alone; distribute responsibility.",
+    "triggers": [
+      "carry alone",
+      "burden",
+      "share responsibility"
+    ],
+    "source_files": [
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt"
+    ],
+    "pairs_with": [
+      "a-threat-is-imminent",
+      "a-armor-around-world-check"
+    ],
+    "output_contract": [
+      "Threat",
+      "Fear Signal",
+      "Control Risk",
+      "Ethical Boundary",
+      "Shared Burden",
+      "Governed Action"
+    ],
+    "core_idea": "Stop carrying a threat or mission alone; distribute responsibility.",
+    "workflow": [
+      "Name the threat and the fear underneath it.",
+      "Identify where control could become harm.",
+      "Separate protection, consent, oversight, and coercion.",
+      "Distribute responsibility instead of carrying it alone.",
+      "Choose the governed action."
+    ],
+    "self_test": "If the user asks for stop carrying a threat or mission alone; distribute responsibility., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-suit-tech-catalog",
+    "slug": "suit-tech-catalog",
+    "display_name": "A - Suit Tech Catalog",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Catalog armor, tools, capabilities, weaknesses, and upgrade lessons.",
+    "triggers": [
+      "suit catalog",
+      "armor",
+      "Mark 85"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Catalog armor, tools, capabilities, weaknesses, and upgrade lessons.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for catalog armor, tools, capabilities, weaknesses, and upgrade lessons., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-armor-evolution-review",
+    "slug": "armor-evolution-review",
+    "display_name": "A - Armor Evolution Review",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Review a product or workflow as an armor evolution line.",
+    "triggers": [
+      "armor evolution",
+      "product versions"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Review a product or workflow as an armor evolution line.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for review a product or workflow as an armor evolution line., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-interface-inside-the-suit",
+    "slug": "interface-inside-the-suit",
+    "display_name": "A - Interface Inside The Suit",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Design tools around the human operator, not the spectacle.",
+    "triggers": [
+      "interface",
+      "human inside suit",
+      "tool design"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Design tools around the human operator, not the spectacle.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for design tools around the human operator, not the spectacle., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-jarvis-delegation",
+    "slug": "jarvis-delegation",
+    "display_name": "A - JARVIS Delegation",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Decide what to delegate to assistants, agents, scripts, or automations.",
+    "triggers": [
+      "JARVIS",
+      "delegate",
+      "assistant",
+      "agent"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Decide what to delegate to assistants, agents, scripts, or automations.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for decide what to delegate to assistants, agents, scripts, or automations., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-friday-fallback-system",
+    "slug": "friday-fallback-system",
+    "display_name": "A - FRIDAY Fallback System",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Design backup assistants and recovery paths when primary systems fail.",
+    "triggers": [
+      "FRIDAY",
+      "fallback",
+      "backup assistant"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Design backup assistants and recovery paths when primary systems fail.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for design backup assistants and recovery paths when primary systems fail., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-nanotech-adaptation",
+    "slug": "nanotech-adaptation",
+    "display_name": "A - Nanotech Adaptation",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Make a system modular, adaptive, and fast to reconfigure.",
+    "triggers": [
+      "nanotech",
+      "modular",
+      "adaptive"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Make a system modular, adaptive, and fast to reconfigure.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for make a system modular, adaptive, and fast to reconfigure., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-hulkbuster-contingency",
+    "slug": "hulkbuster-contingency",
+    "display_name": "A - Hulkbuster Contingency",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Build a contingency for rare high-impact failure modes.",
+    "triggers": [
+      "Hulkbuster",
+      "contingency",
+      "emergency mode"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Build a contingency for rare high-impact failure modes.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for build a contingency for rare high-impact failure modes., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-iron-legion-automation",
+    "slug": "iron-legion-automation",
+    "display_name": "A - Iron Legion Automation",
+    "tier": 3,
+    "category": "Armor Tech Product Design",
+    "summary": "Design distributed helper agents or automations with oversight.",
+    "triggers": [
+      "Iron Legion",
+      "automation",
+      "helper agents"
+    ],
+    "source_files": [
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt"
+    ],
+    "pairs_with": [],
+    "output_contract": [
+      "Operator Need",
+      "Armor Function",
+      "Weakness",
+      "Interface Decision",
+      "Fallback",
+      "Next Upgrade"
+    ],
+    "core_idea": "Design distributed helper agents or automations with oversight.",
+    "workflow": [
+      "Start with the human operator's need.",
+      "Define the armor function, not just the shiny feature.",
+      "Find the weakness in the current version.",
+      "Add interface and fallback decisions.",
+      "Specify the next Mark upgrade."
+    ],
+    "self_test": "If the user asks for design distributed helper agents or automations with oversight., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-mcu-timeline-rewatch",
+    "slug": "mcu-timeline-rewatch",
+    "display_name": "A - MCU Timeline Rewatch",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Place events, callbacks, and character moves in MCU timeline context.",
+    "triggers": [
+      "MCU timeline",
+      "rewatch",
+      "continuity",
+      "later MCU connections",
+      "Iron Man 2"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Place events, callbacks, and character moves in MCU timeline context.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for place events, callbacks, and character moves in mcu timeline context., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-mcu-easter-egg-breakdown",
+    "slug": "mcu-easter-egg-breakdown",
+    "display_name": "A - MCU Easter Egg Breakdown",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Extract callbacks, visual references, comic nods, and hidden details.",
+    "triggers": [
+      "easter eggs",
+      "breakdown",
+      "hidden details",
+      "Iron Man",
+      "Iron Man 2",
+      "MCU connections"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Extract callbacks, visual references, comic nods, and hidden details.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for extract callbacks, visual references, comic nods, and hidden details., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-character-arc-extractor",
+    "slug": "character-arc-extractor",
+    "display_name": "A - Character Arc Extractor",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Extract the character arc and practical lesson from a story segment.",
+    "triggers": [
+      "character arc",
+      "lesson",
+      "story analysis"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Extract the character arc and practical lesson from a story segment.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for extract the character arc and practical lesson from a story segment., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-theme-thread-mapper",
+    "slug": "theme-thread-mapper",
+    "display_name": "A - Theme Thread Mapper",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Track a theme across movies, scenes, and transcripts.",
+    "triggers": [
+      "theme thread",
+      "map theme",
+      "recurring idea"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Track a theme across movies, scenes, and transcripts.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for track a theme across movies, scenes, and transcripts., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-infinity-saga-patterns",
+    "slug": "infinity-saga-patterns",
+    "display_name": "A - Infinity Saga Patterns",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Analyze recurring Infinity Saga structures and payoffs.",
+    "triggers": [
+      "Infinity Saga",
+      "pattern",
+      "payoff"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Analyze recurring Infinity Saga structures and payoffs.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for analyze recurring infinity saga structures and payoffs., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-doomsday-foreshadowing",
+    "slug": "doomsday-foreshadowing",
+    "display_name": "A - Doomsday Foreshadowing",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Extract possible Avengers Doomsday setup and theory hooks.",
+    "triggers": [
+      "Doomsday",
+      "foreshadowing",
+      "setup"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Extract possible Avengers Doomsday setup and theory hooks.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for extract possible avengers doomsday setup and theory hooks., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-new-mask-same-task",
+    "slug": "new-mask-same-task",
+    "display_name": "A - New Mask Same Task",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Compare Tony Stark and Doctor Doom parallels around task, mask, and control.",
+    "triggers": [
+      "new mask same task",
+      "Doom",
+      "Tony parallel"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Compare Tony Stark and Doctor Doom parallels around task, mask, and control.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for compare tony stark and doctor doom parallels around task, mask, and control., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-villain-mirror-analysis",
+    "slug": "villain-mirror-analysis",
+    "display_name": "A - Villain Mirror Analysis",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Compare hero and villain logic to find the moral fork.",
+    "triggers": [
+      "villain mirror",
+      "Tony vs Thanos",
+      "hero villain"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Compare hero and villain logic to find the moral fork.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for compare hero and villain logic to find the moral fork., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-spider-man-legacy-analysis",
+    "slug": "spider-man-legacy-analysis",
+    "display_name": "A - Spider Man Legacy Analysis",
+    "tier": 4,
+    "category": "MCU Story Analysis",
+    "summary": "Track Tony's legacy through Peter Parker and the Spider-Man films.",
+    "triggers": [
+      "Spider-Man legacy",
+      "Peter",
+      "Tony legacy"
+    ],
+    "source_files": [
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt"
+    ],
+    "pairs_with": [
+      "a-mcu-timeline-rewatch",
+      "a-mcu-easter-egg-breakdown"
+    ],
+    "output_contract": [
+      "Source",
+      "Scene or Thread",
+      "Callback",
+      "Character Meaning",
+      "MCU Connection",
+      "Practical Lesson"
+    ],
+    "core_idea": "Track Tony's legacy through Peter Parker and the Spider-Man films.",
+    "workflow": [
+      "Identify the source, scene, or transcript segment.",
+      "Extract the visible detail or callback.",
+      "Connect it to character arc, theme, or continuity.",
+      "Separate grounded evidence from speculation.",
+      "State the practical lesson or theory hook."
+    ],
+    "self_test": "If the user asks for track tony's legacy through peter parker and the spider-man films., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-podcast-to-skill-extractor",
+    "slug": "podcast-to-skill-extractor",
+    "display_name": "A - Podcast To Skill Extractor",
+    "tier": 4,
+    "category": "Knowledge System",
+    "summary": "Turn a transcript or podcast into candidate agent skills.",
+    "triggers": [
+      "podcast to skills",
+      "transcript extraction"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Input Corpus",
+      "Extraction Goal",
+      "Index Method",
+      "Evidence Rule",
+      "Output Artifact",
+      "Maintenance Step"
+    ],
+    "core_idea": "Turn a transcript or podcast into candidate agent skills.",
+    "workflow": [
+      "Identify the input corpus and extraction goal.",
+      "Search or index before synthesizing.",
+      "Keep source file names attached to claims.",
+      "Avoid long verbatim reproduction from transcripts.",
+      "Write the reusable artifact or manifest update."
+    ],
+    "self_test": "If the user asks for turn a transcript or podcast into candidate agent skills., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-book-to-skill-extractor",
+    "slug": "book-to-skill-extractor",
+    "display_name": "A - Book To Skill Extractor",
+    "tier": 4,
+    "category": "Knowledge System",
+    "summary": "Turn book knowledge into operational skills with examples and triggers.",
+    "triggers": [
+      "book to skills",
+      "book frameworks"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Input Corpus",
+      "Extraction Goal",
+      "Index Method",
+      "Evidence Rule",
+      "Output Artifact",
+      "Maintenance Step"
+    ],
+    "core_idea": "Turn book knowledge into operational skills with examples and triggers.",
+    "workflow": [
+      "Identify the input corpus and extraction goal.",
+      "Search or index before synthesizing.",
+      "Keep source file names attached to claims.",
+      "Avoid long verbatim reproduction from transcripts.",
+      "Write the reusable artifact or manifest update."
+    ],
+    "self_test": "If the user asks for turn book knowledge into operational skills with examples and triggers., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-knowledge-index-curator",
+    "slug": "knowledge-index-curator",
+    "display_name": "A - Knowledge Index Curator",
+    "tier": 1,
+    "category": "Knowledge System",
+    "summary": "Maintain the Avengers corpus index, source map, and skill manifest.",
+    "triggers": [
+      "knowledge index",
+      "corpus",
+      "source map",
+      "transcripts",
+      "source files"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-source-grounded-synthesis",
+      "a-quote-example-finder",
+      "a-podcast-to-skill-extractor"
+    ],
+    "output_contract": [
+      "Query",
+      "Matched Sources",
+      "Extracted Ideas",
+      "Skill Links",
+      "Index Update"
+    ],
+    "core_idea": "Maintain and query the Avengers source map, manifest, and transcript-derived references.",
+    "workflow": [
+      "Search the corpus index before making source-grounded claims.",
+      "Attach source file names to extracted ideas.",
+      "Update the manifest when new transcripts or books arrive.",
+      "Deduplicate exact duplicate sources and preserve canonical names.",
+      "Keep references concise and avoid long verbatim text."
+    ],
+    "self_test": "If the user asks where an idea came from, return source files and relevant skills without dumping full transcripts."
+  },
+  {
+    "name": "a-quote-example-finder",
+    "slug": "quote-example-finder",
+    "display_name": "A - Quote Example Finder",
+    "tier": 4,
+    "category": "Knowledge System",
+    "summary": "Find source-grounded examples without dumping long copyrighted text.",
+    "triggers": [
+      "quote",
+      "example",
+      "source evidence",
+      "supporting examples",
+      "transcripts"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Input Corpus",
+      "Extraction Goal",
+      "Index Method",
+      "Evidence Rule",
+      "Output Artifact",
+      "Maintenance Step"
+    ],
+    "core_idea": "Find source-grounded examples without dumping long copyrighted text.",
+    "workflow": [
+      "Identify the input corpus and extraction goal.",
+      "Search or index before synthesizing.",
+      "Keep source file names attached to claims.",
+      "Avoid long verbatim reproduction from transcripts.",
+      "Write the reusable artifact or manifest update."
+    ],
+    "self_test": "If the user asks for find source-grounded examples without dumping long copyrighted text., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-source-grounded-synthesis",
+    "slug": "source-grounded-synthesis",
+    "display_name": "A - Source Grounded Synthesis",
+    "tier": 1,
+    "category": "Knowledge System",
+    "summary": "Answer using the local Avengers corpus and cite source file names.",
+    "triggers": [
+      "source grounded",
+      "use corpus",
+      "cite files",
+      "transcripts support",
+      "evidence",
+      "source files"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-knowledge-index-curator",
+      "a-quote-example-finder",
+      "a-theme-thread-mapper"
+    ],
+    "output_contract": [
+      "Question",
+      "Matched Sources",
+      "Synthesis",
+      "Relevant A-Skills",
+      "Source Notes"
+    ],
+    "core_idea": "Synthesize answers from the local Avengers corpus while preserving source names and avoiding transcript dumps.",
+    "workflow": [
+      "Clarify the exact idea, theme, or skill the user wants grounded.",
+      "Search the corpus index and source map before answering.",
+      "Group evidence by source file and theme.",
+      "Synthesize the answer in original words.",
+      "Name the relevant source files and related A-skills."
+    ],
+    "self_test": "If asked to prove where an idea came from, cite source file names and summarize without copying long passages."
+  },
+  {
+    "name": "a-skill-pruner",
+    "slug": "skill-pruner",
+    "display_name": "A - Skill Pruner",
+    "tier": 4,
+    "category": "Knowledge System",
+    "summary": "Review skills for keep, merge, reference-only, or remove decisions.",
+    "triggers": [
+      "prune skills",
+      "merge",
+      "keep remove"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-knowledge-index-curator",
+      "a-source-grounded-synthesis"
+    ],
+    "output_contract": [
+      "Input Corpus",
+      "Extraction Goal",
+      "Index Method",
+      "Evidence Rule",
+      "Output Artifact",
+      "Maintenance Step"
+    ],
+    "core_idea": "Review skills for keep, merge, reference-only, or remove decisions.",
+    "workflow": [
+      "Identify the input corpus and extraction goal.",
+      "Search or index before synthesizing.",
+      "Keep source file names attached to claims.",
+      "Avoid long verbatim reproduction from transcripts.",
+      "Write the reusable artifact or manifest update."
+    ],
+    "self_test": "If the user asks for review skills for keep, merge, reference-only, or remove decisions., return the output contract fields and a concrete next action."
+  },
+  {
+    "name": "a-skill-pack-builder",
+    "slug": "skill-pack-builder",
+    "display_name": "A - Skill Pack Builder",
+    "tier": 1,
+    "category": "Knowledge System",
+    "summary": "Generate or refresh the Avengers plugin skill pack from the manifest.",
+    "triggers": [
+      "build skill pack",
+      "generate skills",
+      "plugin"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-knowledge-index-curator",
+      "a-skill-pruner",
+      "a-stark-router"
+    ],
+    "output_contract": [
+      "Manifest Change",
+      "Generated Count",
+      "Validation Result",
+      "Spot Checks",
+      "Next Reload Step"
+    ],
+    "core_idea": "Refresh the Avengers plugin from the manifest and verify the generated skills.",
+    "workflow": [
+      "Review `references/skill-manifest.json` for the intended skill set.",
+      "Run `scripts/generate_avengers_pack.py` after manifest changes.",
+      "Run `scripts/validate_skill_pack.py` to confirm count, schema, and skill validation.",
+      "Spot-check the router, Stark OS, one specialized skill, and one knowledge skill.",
+      "Report counts, validations, and remaining manual install or reload steps."
+    ],
+    "self_test": "If asked to rebuild the pack, regenerate and validate rather than hand-editing individual generated files."
+  }
+]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Waste Hunter"
+  short_description: "Find and remove wasted motion, waiting, rework, and clutter."
+  default_prompt: "Use $a-waste-hunter to find and remove wasted motion, waiting, rework, and clutter."

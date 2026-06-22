@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Build To Understand"
+  short_description: "Use building as the fastest path to comprehension."
+  default_prompt: "Use $a-build-to-understand to use building as the fastest path to comprehension."

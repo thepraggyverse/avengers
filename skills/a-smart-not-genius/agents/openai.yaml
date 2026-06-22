@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Smart Not Genius"
+  short_description: "Convert genius fantasy into practical learnable behaviors."
+  default_prompt: "Use $a-smart-not-genius to convert genius fantasy into practical learnable behaviors."

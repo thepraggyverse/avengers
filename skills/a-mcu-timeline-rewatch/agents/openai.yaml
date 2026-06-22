@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - MCU Timeline Rewatch"
+  short_description: "Place events, callbacks, and character moves in MCU timeline..."
+  default_prompt: "Use $a-mcu-timeline-rewatch to place events, callbacks, and character moves in mcu timeline context."

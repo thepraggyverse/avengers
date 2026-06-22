@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Skill Pruner"
+  short_description: "Review skills for keep, merge, reference-only, or remove deci..."
+  default_prompt: "Use $a-skill-pruner to review skills for keep, merge, reference-only, or remove decisions."

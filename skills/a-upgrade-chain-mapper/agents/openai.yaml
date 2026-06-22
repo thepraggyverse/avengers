@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Upgrade Chain Mapper"
+  short_description: "Map each version to the weakness it fixed and the next upgrade."
+  default_prompt: "Use $a-upgrade-chain-mapper to map each version to the weakness it fixed and the next upgrade."

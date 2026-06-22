@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Legacy Through Mentees"
+  short_description: "Pass values, standards, and judgment through mentees."
+  default_prompt: "Use $a-legacy-through-mentees to pass values, standards, and judgment through mentees."

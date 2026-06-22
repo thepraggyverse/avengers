@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Book To Skill Extractor"
+  short_description: "Turn book knowledge into operational skills with examples and..."
+  default_prompt: "Use $a-book-to-skill-extractor to turn book knowledge into operational skills with examples and triggers."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Curse Of Knowledge Translator"
+  short_description: "Translate expert foresight so others can understand and act."
+  default_prompt: "Use $a-curse-of-knowledge-translator to translate expert foresight so others can understand and act."

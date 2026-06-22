@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Team Assembly Avengers"
+  short_description: "Assemble roles, strengths, gaps, and team operating rules."
+  default_prompt: "Use $a-team-assembly-avengers to assemble roles, strengths, gaps, and team operating rules."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Villain Mirror Analysis"
+  short_description: "Compare hero and villain logic to find the moral fork."
+  default_prompt: "Use $a-villain-mirror-analysis to compare hero and villain logic to find the moral fork."

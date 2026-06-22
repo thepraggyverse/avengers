@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Problem Stack Ranking"
+  short_description: "Rank problems by leverage, urgency, dependency, and reversibi..."
+  default_prompt: "Use $a-problem-stack-ranking to rank problems by leverage, urgency, dependency, and reversibility."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Constraints As Design"
+  short_description: "Use constraints as design material instead of excuses."
+  default_prompt: "Use $a-constraints-as-design to use constraints as design material instead of excuses."

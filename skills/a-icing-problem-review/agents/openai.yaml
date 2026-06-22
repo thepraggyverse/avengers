@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Icing Problem Review"
+  short_description: "Find environmental failures that only appear under stress or..."
+  default_prompt: "Use $a-icing-problem-review to find environmental failures that only appear under stress or altitude."

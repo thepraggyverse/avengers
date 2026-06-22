@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Trust Repair After Conflict"
+  short_description: "Rebuild working trust after a rupture or ideological split."
+  default_prompt: "Use $a-trust-repair-after-conflict to rebuild working trust after a rupture or ideological split."

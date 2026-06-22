@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Minimum Viable Armor"
+  short_description: "Define the smallest protection or tool layer needed now."
+  default_prompt: "Use $a-minimum-viable-armor to define the smallest protection or tool layer needed now."

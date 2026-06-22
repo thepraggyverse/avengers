@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Shared Burden Protocol"
+  short_description: "Stop carrying a threat or mission alone; distribute responsib..."
+  default_prompt: "Use $a-shared-burden-protocol to stop carrying a threat or mission alone; distribute responsibility."

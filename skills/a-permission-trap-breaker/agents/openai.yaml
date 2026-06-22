@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Permission Trap Breaker"
+  short_description: "Find where the user is waiting for permission and define acti..."
+  default_prompt: "Use $a-permission-trap-breaker to find where the user is waiting for permission and define action without it."

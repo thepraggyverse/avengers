@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Curse Of Being Right"
+  short_description: "Handle being right early without becoming isolated or abrasive."
+  default_prompt: "Use $a-curse-of-being-right to handle being right early without becoming isolated or abrasive."

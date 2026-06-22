@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Self Trust Builder"
+  short_description: "Build self-trust through small kept promises and proof."
+  default_prompt: "Use $a-self-trust-builder to build self-trust through small kept promises and proof."

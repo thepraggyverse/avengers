@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Armor Evolution Review"
+  short_description: "Review a product or workflow as an armor evolution line."
+  default_prompt: "Use $a-armor-evolution-review to review a product or workflow as an armor evolution line."

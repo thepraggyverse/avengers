@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Cap Balance"
+  short_description: "Balance Tony's invention drive with Steve's moral clarity."
+  default_prompt: "Use $a-stark-cap-balance to balance tony's invention drive with steve's moral clarity."

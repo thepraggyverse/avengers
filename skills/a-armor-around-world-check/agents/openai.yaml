@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Armor Around World Check"
+  short_description: "Check whether protection has become overcontrol or overengine..."
+  default_prompt: "Use $a-armor-around-world-check to check whether protection has become overcontrol or overengineering."

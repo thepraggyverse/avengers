@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - If Youre Nothing Without The Suit"
+  short_description: "Separate capability from dependence on tools, status, or armor."
+  default_prompt: "Use $a-if-youre-nothing-without-the-suit to separate capability from dependence on tools, status, or armor."

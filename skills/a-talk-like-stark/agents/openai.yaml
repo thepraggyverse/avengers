@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Talk Like Stark"
+  short_description: "Sharpen communication with confident, concise, playful author..."
+  default_prompt: "Use $a-talk-like-stark to sharpen communication with confident, concise, playful authority."

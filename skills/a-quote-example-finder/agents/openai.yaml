@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Quote Example Finder"
+  short_description: "Find source-grounded examples without dumping long copyrighte..."
+  default_prompt: "Use $a-quote-example-finder to find source-grounded examples without dumping long copyrighted text."

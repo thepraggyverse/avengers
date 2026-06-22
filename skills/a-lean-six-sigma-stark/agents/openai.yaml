@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Lean Six Sigma Stark"
+  short_description: "Apply define-measure-improve-control to personal or product w..."
+  default_prompt: "Use $a-lean-six-sigma-stark to apply define-measure-improve-control to personal or product workflows."

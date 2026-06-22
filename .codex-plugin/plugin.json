@@ -1,0 +1,22 @@
+{
+  "name": "avengers",
+  "version": "0.1.0",
+  "description": "An unofficial Avengers/Tony Stark operating-system skill pack with 107 A-prefixed skills.",
+  "author": {
+    "name": "thepraggyverse"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Avengers",
+    "shortDescription": "107 A-prefixed Avengers and Tony Stark operating skills.",
+    "longDescription": "Avengers turns Tony Stark, Iron Man, MCU story analysis, leadership, risk, prototyping, resourcefulness, mentorship, and corpus knowledge into local Codex skills.",
+    "developerName": "thepraggyverse",
+    "category": "Productivity",
+    "capabilities": [
+      "skills",
+      "knowledge",
+      "workflow"
+    ],
+    "defaultPrompt": "Use a-stark-router to choose and apply the right Avengers skill."
+  }
+}

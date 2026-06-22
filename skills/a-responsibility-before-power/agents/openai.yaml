@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Responsibility Before Power"
+  short_description: "Check readiness before handing over power, tools, or visibility."
+  default_prompt: "Use $a-responsibility-before-power to check readiness before handing over power, tools, or visibility."

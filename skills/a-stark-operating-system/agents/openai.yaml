@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Operating System"
+  short_description: "Run the full Tony Stark operating loop from intent to prototy..."
+  default_prompt: "Use $a-stark-operating-system to run the full tony stark operating loop from intent to prototype to upgrade."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Peter Parker Mentor"
+  short_description: "Mentor a younger builder without overcontrolling their growth."
+  default_prompt: "Use $a-peter-parker-mentor to mentor a younger builder without overcontrolling their growth."

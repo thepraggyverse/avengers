@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Under Pressure Decisions"
+  short_description: "Make a useful decision under time pressure and incomplete inf..."
+  default_prompt: "Use $a-under-pressure-decisions to make a useful decision under time pressure and incomplete information."

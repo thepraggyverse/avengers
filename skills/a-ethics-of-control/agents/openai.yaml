@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Ethics Of Control"
+  short_description: "Review consent, power, collateral effects, and governance."
+  default_prompt: "Use $a-ethics-of-control to review consent, power, collateral effects, and governance."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Accords Governance"
+  short_description: "Design accountability, oversight, and autonomy rules."
+  default_prompt: "Use $a-accords-governance to design accountability, oversight, and autonomy rules."

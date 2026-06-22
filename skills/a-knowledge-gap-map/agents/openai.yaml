@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Knowledge Gap Map"
+  short_description: "Identify the exact missing knowledge blocking progress."
+  default_prompt: "Use $a-knowledge-gap-map to identify the exact missing knowledge blocking progress."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - JARVIS Delegation"
+  short_description: "Decide what to delegate to assistants, agents, scripts, or au..."
+  default_prompt: "Use $a-jarvis-delegation to decide what to delegate to assistants, agents, scripts, or automations."

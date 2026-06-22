@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Stark Router"
+  short_description: "Choose the right Avengers skill or skill chain for a broad pr..."
+  default_prompt: "Use $a-stark-router to choose the right avengers skill or skill chain for a broad problem."

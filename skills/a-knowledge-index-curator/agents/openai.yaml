@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Knowledge Index Curator"
+  short_description: "Maintain the Avengers corpus index, source map, and skill man..."
+  default_prompt: "Use $a-knowledge-index-curator to maintain the avengers corpus index, source map, and skill manifest."

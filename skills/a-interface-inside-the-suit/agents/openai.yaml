@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Interface Inside The Suit"
+  short_description: "Design tools around the human operator, not the spectacle."
+  default_prompt: "Use $a-interface-inside-the-suit to design tools around the human operator, not the spectacle."

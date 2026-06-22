@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Mark Two Test Flight"
+  short_description: "Plan the first serious test and capture what the next version..."
+  default_prompt: "Use $a-mark-two-test-flight to plan the first serious test and capture what the next version must fix."

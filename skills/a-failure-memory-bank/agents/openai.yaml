@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Failure Memory Bank"
+  short_description: "Store mistakes as reusable memory instead of private regret."
+  default_prompt: "Use $a-failure-memory-bank to store mistakes as reusable memory instead of private regret."

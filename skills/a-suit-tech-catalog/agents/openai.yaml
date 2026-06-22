@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Suit Tech Catalog"
+  short_description: "Catalog armor, tools, capabilities, weaknesses, and upgrade l..."
+  default_prompt: "Use $a-suit-tech-catalog to catalog armor, tools, capabilities, weaknesses, and upgrade lessons."

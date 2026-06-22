@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Podcast To Skill Extractor"
+  short_description: "Turn a transcript or podcast into candidate agent skills."
+  default_prompt: "Use $a-podcast-to-skill-extractor to turn a transcript or podcast into candidate agent skills."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Functional Attributes"
+  short_description: "See tools by what they can do, not what they are named."
+  default_prompt: "Use $a-functional-attributes to see tools by what they can do, not what they are named."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Mentor Boundary Check"
+  short_description: "Avoid projecting personal fear onto the person being mentored."
+  default_prompt: "Use $a-mentor-boundary-check to avoid projecting personal fear onto the person being mentored."

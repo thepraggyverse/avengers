@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Cross Domain Synthesis"
+  short_description: "Connect lessons across engineering, design, story, leadership..."
+  default_prompt: "Use $a-cross-domain-synthesis to connect lessons across engineering, design, story, leadership, and business."

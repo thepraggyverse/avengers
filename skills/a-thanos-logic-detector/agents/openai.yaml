@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Thanos Logic Detector"
+  short_description: "Detect cold utilitarian reasoning that erases people."
+  default_prompt: "Use $a-thanos-logic-detector to detect cold utilitarian reasoning that erases people."
