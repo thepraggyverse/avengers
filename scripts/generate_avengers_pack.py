@@ -10,6 +10,7 @@ from pathlib import Path
 PLUGIN_ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = PLUGIN_ROOT / "skills"
 REFERENCES_DIR = PLUGIN_ROOT / "references"
+DOCS_DIR = PLUGIN_ROOT / "docs"
 CORPUS_DIR = Path(os.environ.get("AVENGERS_CORPUS_DIR", "~/Documents/Avengers Corpus")).expanduser()
 
 
@@ -264,6 +265,24 @@ CONTRACTS = {
     "Armor Tech Product Design": ["Operator Need", "Armor Function", "Weakness", "Interface Decision", "Fallback", "Next Upgrade"],
     "MCU Story Analysis": ["Source", "Scene or Thread", "Callback", "Character Meaning", "MCU Connection", "Practical Lesson"],
     "Knowledge System": ["Input Corpus", "Extraction Goal", "Index Method", "Evidence Rule", "Output Artifact", "Maintenance Step"],
+}
+
+
+EXAMPLE_BY_CATEGORY = {
+    "Tony Stark Core": "Use ${mention} to turn this vague objective into a practical Stark-style operating mode.",
+    "Problem Solving": "Use ${mention} on this messy situation and give me the next concrete move.",
+    "Mistakes And Upgrades": "Use ${mention} to convert this failure into the next upgrade.",
+    "Resourcefulness": "Use ${mention} to solve this with only the resources I already have.",
+    "Confidence And Permission": "Use ${mention} because I am waiting for approval before acting.",
+    "Learning And Intelligence": "Use ${mention} to create a build-first learning plan for this topic.",
+    "Lean Six Sigma Workflow": "Use ${mention} to improve this repeated workflow and reduce waste.",
+    "Multiple Projects": "Use ${mention} to organize these active projects without burning out.",
+    "Leadership And Team": "Use ${mention} to handle this team conflict without losing trust.",
+    "Mentorship And Peter Parker": "Use ${mention} to mentor this junior builder without overcontrolling them.",
+    "Risk Ethics And Control": "Use ${mention} to check whether this safety idea creates control risk.",
+    "Armor Tech Product Design": "Use ${mention} to review this tool as an armor system for a real operator.",
+    "MCU Story Analysis": "Use ${mention} to break down this MCU scene or transcript theme.",
+    "Knowledge System": "Use ${mention} to turn this source material into searchable skill knowledge.",
 }
 
 
@@ -737,6 +756,157 @@ def write_references(manifest: list[dict]) -> None:
     (REFERENCES_DIR / "mcu-story-map.md").write_text("\n".join(mcu_map), encoding="utf-8")
 
 
+def example_for(entry: dict) -> str:
+    template = EXAMPLE_BY_CATEGORY[entry["category"]]
+    return (
+        template
+        .replace("${mention}", f"${entry['name']}")
+        .replace("${name}", entry["name"])
+    )
+
+
+def write_product_docs(manifest: list[dict]) -> None:
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    by_category: dict[str, list[dict]] = {}
+    by_tier: dict[int, list[dict]] = {}
+    for entry in manifest:
+        by_category.setdefault(entry["category"], []).append(entry)
+        by_tier.setdefault(entry["tier"], []).append(entry)
+
+    workflow = [
+        "# Avengers OS Workflow",
+        "",
+        "Avengers OS adapts the compound-engineering idea to personal operating modes: each use should make the next use easier, clearer, and more reusable.",
+        "",
+        "## Philosophy",
+        "",
+        "| Principle | Meaning | A-skills |",
+        "|---|---|---|",
+        "| Build first proof | A rough Mark 1 beats a perfect plan that never moves. | `a-mark-one-prototype`, `a-stark-build-before-you-believe` |",
+        "| Turn mistakes into upgrades | Failure is design data when captured as a new rule. | `a-mistake-to-upgrade`, `a-anti-repeat-control` |",
+        "| Use what exists | Constraints become materials, not excuses. | `a-cave-resourcefulness`, `a-functional-attributes` |",
+        "| Share the burden | Foresight only helps if others can understand and act. | `a-curse-of-knowledge-translator`, `a-shared-burden-protocol` |",
+        "| Prevent Ultron loops | Protection must not become uncontrolled control. | `a-armor-around-world-check`, `a-ethics-of-control` |",
+        "| Compound the learning | Each run should leave behind a sharper prompt, rule, test, or source link. | `a-knowledge-index-curator`, `a-skill-pack-builder` |",
+        "",
+        "## Main Loop",
+        "",
+        "| Step | Use When | Primary Skills | Output |",
+        "|---|---|---|---|",
+        "| Route | The request is broad or ambiguous. | `a-stark-router` | 1-3 best skills and first applied move |",
+        "| Frame | The goal needs a complete Stark-style operating pass. | `a-stark-operating-system` | mission, block, Mark 1, test, upgrade, risk |",
+        "| Build | The user needs forward motion. | `a-mark-one-prototype`, `a-cave-resourcefulness` | crude working version |",
+        "| Test | The user has a draft, MVP, or plan. | `a-mark-two-test-flight`, `a-icing-problem-review` | stress test and weakness list |",
+        "| Upgrade | Something failed or underperformed. | `a-mistake-to-upgrade`, `a-upgrade-chain-mapper` | upgrade rule and prevention rule |",
+        "| Govern | Power, safety, or team consequences matter. | `a-armor-around-world-check`, `a-civil-war-conflict-map` | ethical boundary and accountability |",
+        "| Ground | The user asks where an idea came from. | `a-source-grounded-synthesis`, `a-quote-example-finder` | source-backed synthesis |",
+        "| Compound | The pack itself needs refresh or pruning. | `a-skill-pack-builder`, `a-skill-pruner` | regenerated pack and validation report |",
+        "",
+        "## Typical Chains",
+        "",
+        "| Situation | Chain | Example Prompt |",
+        "|---|---|---|",
+        "| Waiting for permission | `a-permission-trap-breaker` -> `a-mark-one-prototype` -> `a-mark-two-test-flight` | \"I keep waiting until someone says I am ready.\" |",
+        "| Launch failed | `a-post-battle-retro` -> `a-mistake-to-upgrade` -> `a-anti-repeat-control` | \"My launch failed. Turn it into the next suit upgrade.\" |",
+        "| Too many projects | `a-multi-project-reactor` -> `a-project-portfolio-radar` -> `a-burnout-safety-check` | \"I have too many active projects and no clear reactor core.\" |",
+        "| Team split | `a-civil-war-conflict-map` -> `a-stark-cap-balance` -> `a-accords-governance` | \"Both sides are right and the team is fracturing.\" |",
+        "| Safety system risk | `a-armor-around-world-check` -> `a-ultron-failure-review` -> `a-ethics-of-control` | \"This automation might become too controlling.\" |",
+        "| Source-grounded answer | `a-source-grounded-synthesis` -> `a-quote-example-finder` -> `a-knowledge-index-curator` | \"Where do the transcripts support this idea?\" |",
+        "",
+    ]
+    (DOCS_DIR / "WORKFLOW.md").write_text("\n".join(workflow), encoding="utf-8")
+
+    inventory = [
+        "# Full Skill Inventory",
+        "",
+        f"Total skills: {len(manifest)}",
+        "",
+        "## Tier Summary",
+        "",
+        "| Tier | Count | Role |",
+        "|---|---:|---|",
+        "| 1 | {count} | Orchestration, knowledge grounding, and pack operations |".format(count=len(by_tier.get(1, []))),
+        "| 2 | {count} | Core operating modes |".format(count=len(by_tier.get(2, []))),
+        "| 3 | {count} | Specialized lenses |".format(count=len(by_tier.get(3, []))),
+        "| 4 | {count} | Corpus, story, and knowledge tools |".format(count=len(by_tier.get(4, []))),
+        "",
+    ]
+    for category, entries in by_category.items():
+        inventory.append(f"## {category}")
+        inventory.append("")
+        inventory.append("| Skill | Tier | Purpose | Example |")
+        inventory.append("|---|---:|---|---|")
+        for entry in entries:
+            inventory.append(f"| `{entry['name']}` | {entry['tier']} | {entry['summary']} | `{example_for(entry)}` |")
+        inventory.append("")
+    (DOCS_DIR / "SKILL_INVENTORY.md").write_text("\n".join(inventory), encoding="utf-8")
+
+    examples = [
+        "# Examples And Recipes",
+        "",
+        "These examples show how to use the plugin as a system rather than a loose folder of skills.",
+        "",
+        "## Quick Examples",
+        "",
+        "| User Request | Start With | Why |",
+        "|---|---|---|",
+        "| \"I need the first version of this app today.\" | `a-mark-one-prototype` | Converts ambition into a crude build and first test. |",
+        "| \"I failed and want to learn from it.\" | `a-mistake-to-upgrade` | Turns the failure into a prevention rule. |",
+        "| \"I have no budget or tools.\" | `a-cave-resourcefulness` | Reframes available parts by function. |",
+        "| \"I am waiting for permission.\" | `a-permission-trap-breaker` | Separates real risk from approval-seeking. |",
+        "| \"The team is split.\" | `a-civil-war-conflict-map` | Maps competing legitimate values. |",
+        "| \"This automation might become too powerful.\" | `a-armor-around-world-check` | Checks for overcontrol and ethical boundaries. |",
+        "| \"Where did this idea come from?\" | `a-source-grounded-synthesis` | Uses local source hooks without dumping transcripts. |",
+        "",
+        "## Recipe: Mark 1 Product Sprint",
+        "",
+        "```text",
+        "Use $a-stark-operating-system on this product idea.",
+        "Then use $a-mark-one-prototype to define the first build.",
+        "Then use $a-mark-two-test-flight to design the first stress test.",
+        "Then use $a-mistake-to-upgrade after the test result.",
+        "```",
+        "",
+        "Expected artifact:",
+        "",
+        "| Field | Meaning |",
+        "|---|---|",
+        "| Mission | What the build is trying to prove |",
+        "| Mark 1 | The smallest usable artifact |",
+        "| First Test | How to expose the next weakness |",
+        "| Upgrade Rule | What Mark 2 should fix |",
+        "",
+        "## Recipe: Ultron Risk Review",
+        "",
+        "```text",
+        "Use $a-armor-around-world-check on this safety automation.",
+        "Then use $a-ultron-failure-review to find unintended consequences.",
+        "Then use $a-ethics-of-control to define consent, oversight, and rollback.",
+        "```",
+        "",
+        "Expected artifact:",
+        "",
+        "| Field | Meaning |",
+        "|---|---|",
+        "| Threat | The harm the system is meant to prevent |",
+        "| Control Risk | How protection can become coercion |",
+        "| Affected People | Who loses agency or visibility |",
+        "| Oversight Rule | How the system is governed |",
+        "",
+        "## Recipe: Source-Grounded Corpus Answer",
+        "",
+        "```text",
+        "Use $a-source-grounded-synthesis to answer this from my Avengers corpus.",
+        "Use $a-quote-example-finder only for short examples.",
+        "Use $a-knowledge-index-curator if source hooks need updating.",
+        "```",
+        "",
+        "Keep full transcripts outside the repo and point scripts at them with `AVENGERS_CORPUS_DIR`.",
+        "",
+    ]
+    (DOCS_DIR / "EXAMPLES.md").write_text("\n".join(examples), encoding="utf-8")
+
+
 def update_plugin_json() -> None:
     path = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -762,6 +932,7 @@ def main() -> None:
     for entry in manifest:
         write_skill(entry)
     write_references(manifest)
+    write_product_docs(manifest)
     update_plugin_json()
     print(f"Generated {len(manifest)} Avengers skills in {SKILLS_DIR}")
 
