@@ -1,0 +1,30 @@
+{
+  "name": "avengers-plugin",
+  "owner": {
+    "name": "thepraggyverse",
+    "url": "https://github.com/thepraggyverse"
+  },
+  "metadata": {
+    "description": "Plugin marketplace for the Avengers agent-skill pack.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "avengers",
+      "description": "107 A-prefixed skills for Stark-style operating modes, MCU story analysis, leadership, prototyping, mistakes, resourcefulness, risk, and source-grounded knowledge work.",
+      "author": {
+        "name": "thepraggyverse",
+        "url": "https://github.com/thepraggyverse"
+      },
+      "homepage": "https://github.com/thepraggyverse/avengers",
+      "tags": [
+        "agent-skills",
+        "avengers",
+        "tony-stark",
+        "workflow",
+        "knowledge-work"
+      ],
+      "source": "./"
+    }
+  ]
+}

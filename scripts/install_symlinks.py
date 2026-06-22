@@ -12,6 +12,7 @@ DEFAULT_HOMES = [
     "~/.agents/skills",
     "~/.codex/skills",
     "~/.claude/skills",
+    "~/.cursor/skills",
     "~/.openclaw/skills",
     "~/.openclaw/acpx/codex-home/skills",
 ]

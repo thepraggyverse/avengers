@@ -12,6 +12,7 @@ This is useful when a harness loads skills from a flat directory and does not un
 ~/.agents/skills
 ~/.codex/skills
 ~/.claude/skills
+~/.cursor/skills
 ~/.openclaw/skills
 ~/.openclaw/acpx/codex-home/skills
 ```
@@ -70,4 +71,3 @@ git pull --ff-only
 python3 scripts/validate_skill_pack.py
 python3 -m unittest discover -s tests -v
 ```
-

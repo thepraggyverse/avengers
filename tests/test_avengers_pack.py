@@ -10,6 +10,10 @@ PLUGIN_ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = PLUGIN_ROOT / "skills"
 MANIFEST_PATH = PLUGIN_ROOT / "references" / "skill-manifest.json"
 PLUGIN_JSON_PATH = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
+CLAUDE_PLUGIN_JSON_PATH = PLUGIN_ROOT / ".claude-plugin" / "plugin.json"
+CURSOR_PLUGIN_JSON_PATH = PLUGIN_ROOT / ".cursor-plugin" / "plugin.json"
+AGENTS_MARKETPLACE_PATH = PLUGIN_ROOT / ".agents" / "plugins" / "marketplace.json"
+GEMINI_EXTENSION_PATH = PLUGIN_ROOT / "gemini-extension.json"
 
 
 def parse_openai_yaml(text: str) -> dict[str, str]:
@@ -96,6 +100,28 @@ class AvengersPackTests(unittest.TestCase):
         self.assertEqual("avengers", plugin["name"])
         self.assertEqual("./skills/", plugin["skills"])
         self.assertIn("107", plugin["interface"]["shortDescription"])
+
+    def test_cross_harness_metadata_is_present(self) -> None:
+        for path in [
+            CLAUDE_PLUGIN_JSON_PATH,
+            CURSOR_PLUGIN_JSON_PATH,
+            AGENTS_MARKETPLACE_PATH,
+            GEMINI_EXTENSION_PATH,
+        ]:
+            with self.subTest(path=path):
+                self.assertTrue(path.exists(), f"missing {path}")
+                json.loads(path.read_text(encoding="utf-8"))
+
+        claude_plugin = json.loads(CLAUDE_PLUGIN_JSON_PATH.read_text(encoding="utf-8"))
+        cursor_plugin = json.loads(CURSOR_PLUGIN_JSON_PATH.read_text(encoding="utf-8"))
+        gemini_extension = json.loads(GEMINI_EXTENSION_PATH.read_text(encoding="utf-8"))
+        marketplace = json.loads(AGENTS_MARKETPLACE_PATH.read_text(encoding="utf-8"))
+
+        self.assertEqual("avengers", claude_plugin["name"])
+        self.assertEqual("avengers", cursor_plugin["name"])
+        self.assertEqual("GEMINI.md", gemini_extension["contextFileName"])
+        self.assertEqual("avengers-plugin", marketplace["name"])
+        self.assertEqual("avengers", marketplace["plugins"][0]["name"])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Stark Operating System",
+      "description": "Core router, operating loop, prototyping, confidence, and mistake-to-upgrade skills.",
+      "skills": [
+        "a-stark-router",
+        "a-stark-operating-system",
+        "a-mark-one-prototype",
+        "a-mark-two-test-flight",
+        "a-mistake-to-upgrade",
+        "a-permission-trap-breaker",
+        "a-stark-confidence"
+      ]
+    },
+    {
+      "title": "Problem Solving And Resourcefulness",
+      "description": "Skills for constraints, root cause, pressure decisions, cave-style resourcefulness, and available-parts solutions.",
+      "skills": [
+        "a-work-the-problem",
+        "a-define-the-real-problem",
+        "a-root-cause-reactor",
+        "a-constraint-inventory",
+        "a-cave-resourcefulness",
+        "a-functional-attributes",
+        "a-scrap-metal-solution"
+      ]
+    },
+    {
+      "title": "Leadership, Mentorship, And Risk",
+      "description": "Skills for team conflict, Captain America balance, Peter Parker mentorship, Ultron-style control risk, and ethics.",
+      "skills": [
+        "a-civil-war-conflict-map",
+        "a-captain-america-leadership",
+        "a-stark-cap-balance",
+        "a-peter-parker-mentor",
+        "a-training-wheels-protocol",
+        "a-armor-around-world-check",
+        "a-ethics-of-control",
+        "a-ultron-failure-review"
+      ]
+    },
+    {
+      "title": "Story And Knowledge",
+      "description": "Skills for MCU analysis, source-grounded synthesis, source examples, and pack maintenance.",
+      "skills": [
+        "a-mcu-easter-egg-breakdown",
+        "a-mcu-timeline-rewatch",
+        "a-character-arc-extractor",
+        "a-theme-thread-mapper",
+        "a-source-grounded-synthesis",
+        "a-quote-example-finder",
+        "a-knowledge-index-curator",
+        "a-skill-pack-builder"
+      ]
+    }
+  ]
+}

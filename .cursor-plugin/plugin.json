@@ -1,0 +1,22 @@
+{
+  "name": "avengers",
+  "displayName": "Avengers",
+  "version": "0.1.0",
+  "description": "107 A-prefixed agent skills for Stark-style operating loops, prototyping, mistakes, resourcefulness, leadership, risk, and MCU story analysis.",
+  "author": {
+    "name": "thepraggyverse",
+    "url": "https://github.com/thepraggyverse"
+  },
+  "homepage": "https://github.com/thepraggyverse/avengers",
+  "repository": "https://github.com/thepraggyverse/avengers",
+  "license": "MIT",
+  "keywords": [
+    "cursor",
+    "plugin",
+    "agent-skills",
+    "avengers",
+    "tony-stark",
+    "workflow",
+    "knowledge-work"
+  ]
+}

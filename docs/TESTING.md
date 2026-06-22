@@ -29,6 +29,7 @@ python3 -m unittest discover -s tests -v
 - Tier 1 orchestration set.
 - Stark OS chain.
 - Plugin manifest basics.
+- Cross-harness metadata for Claude-compatible, Cursor, shared marketplace, and Gemini surfaces.
 
 `tests/test_skill_simulations.py` checks realistic routing prompts:
 
@@ -53,3 +54,16 @@ python3 scripts/simulate_routes.py "This safety automation might become Ultron."
 
 The simulator is deterministic and lightweight. It is not a replacement for real harness testing, but it catches weak triggers and broken routing assumptions.
 
+## Harness Metadata Checks
+
+After editing install surfaces, run:
+
+```bash
+python3 -m json.tool .codex-plugin/plugin.json >/dev/null
+python3 -m json.tool .claude-plugin/plugin.json >/dev/null
+python3 -m json.tool .claude-plugin/marketplace.json >/dev/null
+python3 -m json.tool .cursor-plugin/plugin.json >/dev/null
+python3 -m json.tool .cursor-plugin/marketplace.json >/dev/null
+python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
+python3 -m json.tool gemini-extension.json >/dev/null
+```

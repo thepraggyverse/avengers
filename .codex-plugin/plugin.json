@@ -1,22 +1,43 @@
 {
   "name": "avengers",
   "version": "0.1.0",
-  "description": "An unofficial Avengers/Tony Stark operating-system skill pack with 107 A-prefixed skills.",
+  "description": "107 A-prefixed agent skills for Stark-style operating loops, prototyping, mistakes, resourcefulness, leadership, risk, and MCU story analysis.",
   "author": {
     "name": "thepraggyverse"
   },
+  "homepage": "https://github.com/thepraggyverse/avengers",
+  "repository": "https://github.com/thepraggyverse/avengers",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "avengers",
+    "tony-stark",
+    "iron-man",
+    "workflow",
+    "knowledge-work",
+    "prototyping",
+    "leadership"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Avengers",
-    "shortDescription": "107 A-prefixed Avengers and Tony Stark operating skills.",
-    "longDescription": "Avengers turns Tony Stark, Iron Man, MCU story analysis, leadership, risk, prototyping, resourcefulness, mentorship, and corpus knowledge into local Codex skills.",
+    "shortDescription": "107 A-prefixed skills for Stark-style operating modes.",
+    "longDescription": "Avengers is a searchable pack of A-prefixed skills for routing broad requests into concrete operating modes: Mark 1 prototypes, failure-to-upgrade retros, cave resourcefulness, permission-trap breaking, Civil War conflict maps, Ultron risk checks, MCU story analysis, and source-grounded synthesis.",
     "developerName": "thepraggyverse",
     "category": "Productivity",
     "capabilities": [
-      "skills",
-      "knowledge",
-      "workflow"
+      "Interactive",
+      "Read",
+      "Write",
+      "Skills",
+      "Knowledge"
     ],
-    "defaultPrompt": "Use a-stark-router to choose and apply the right Avengers skill."
+    "websiteURL": "https://github.com/thepraggyverse/avengers",
+    "defaultPrompt": [
+      "Use $a-stark-router to choose the right Avengers skill.",
+      "Use $a-stark-operating-system for the full Stark loop.",
+      "Use $a-mark-one-prototype to define the first working version."
+    ],
+    "screenshots": []
   }
 }

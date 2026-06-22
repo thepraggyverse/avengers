@@ -1,116 +1,64 @@
-# Avengers Skill Pack
+# Avengers Skills
 
-An unofficial, fan-made operating-system skill pack for Codex-compatible agents.
+Avengers is a pack of **107 A-prefixed agent skills** for turning Tony Stark, Iron Man, Avengers, MCU story analysis, leadership, prototyping, mistakes, resourcefulness, mentorship, risk, and source-grounded knowledge work into reusable operating modes.
 
-Avengers turns Tony Stark, Iron Man, Avengers, MCU story analysis, leadership, risk, prototyping, resourcefulness, mentorship, and source-grounded knowledge work into **107 A-prefixed skills**.
-
-Every skill starts with `a-` so it is easy to search in Codex or any flat skill harness:
+The skills are small, searchable, and composable. Use one skill directly when you know what you need, or start with the router when the request is broad.
 
 ```text
-a-stark-router
-a-stark-operating-system
-a-mark-one-prototype
-a-cave-resourcefulness
-a-mistake-to-upgrade
-a-armor-around-world-check
+$a-stark-router
+$a-stark-operating-system
+$a-mark-one-prototype
+$a-cave-resourcefulness
+$a-mistake-to-upgrade
+$a-armor-around-world-check
 ```
 
-This repository ships distilled skills and metadata only. It does **not** include full movie scripts, YouTube transcripts, books, or other copyrighted source material.
+Every exposed skill starts with `a-` so searching for `A`, `a-`, `Avengers`, `Tony Stark`, or `Iron Man` surfaces the pack in Codex and other skill harnesses.
 
-## Philosophy
+## What These Skills Do
 
-Avengers OS borrows the compound-engineering idea that each unit of work should make future work easier. Here, the "work" is not only code. It can be deciding, building, recovering, mentoring, communicating, or learning.
+| Area | Skills | What They Help With |
+|---|---:|---|
+| Tony Stark Core | 9 | First principles, speed with feedback, lab mode, self-made identity, operating loops |
+| Problem Solving | 9 | Constraints, root cause, pressure decisions, crisis plans, trapped/cave-style problem work |
+| Mistakes And Upgrades | 9 | Retros, failure memory, Mark 1/Mark 2 iteration, prevention rules |
+| Resourcefulness | 7 | Solving with available parts, recombination, salvage, constraints as design |
+| Confidence And Permission | 7 | Approval-seeking, fear-to-motion, self-trust, audacity calibration |
+| Learning And Intelligence | 7 | Build-first learning, knowledge gaps, cross-domain synthesis |
+| Lean / Six Sigma Workflow | 7 | Waste removal, process stability, measurement, quality loops |
+| Multiple Projects | 6 | Portfolio radar, context switching, energy allocation, overload checks |
+| Leadership And Team | 8 | Captain America leadership, Civil War conflict mapping, governance, trust repair |
+| Mentorship And Peter Parker | 6 | Training wheels, responsibility before power, mentor boundaries, legacy |
+| Risk Ethics And Control | 8 | Ultron-style risk, overcontrol, consent, shared burden, Thanos logic |
+| Armor Tech Product Design | 8 | Product-as-armor reviews, delegation, fallbacks, automation oversight |
+| MCU Story Analysis | 9 | Easter eggs, timeline continuity, character arcs, themes, legacy, foreshadowing |
+| Knowledge System | 7 | Source-grounded synthesis, corpus search, book/podcast-to-skill extraction, pack maintenance |
 
-The pack is built around a simple idea:
-
-```text
-Experience -> operating lens -> concrete output -> reusable learning
-```
-
-| Principle | Meaning | Example Skills |
-|---|---|---|
-| Build the Mark 1 | Create the crude first version before waiting for certainty. | `a-mark-one-prototype`, `a-stark-build-before-you-believe` |
-| Upgrade from mistakes | Treat failures as design data. | `a-mistake-to-upgrade`, `a-anti-repeat-control` |
-| Use what exists | Constraints are materials. | `a-cave-resourcefulness`, `a-functional-attributes` |
-| Translate foresight | Seeing the risk early is not enough; others need a bridge. | `a-curse-of-knowledge-translator`, `a-shared-burden-protocol` |
-| Prevent Ultron loops | Safety systems need consent, oversight, and rollback. | `a-armor-around-world-check`, `a-ethics-of-control` |
-| Compound the knowledge | Each run should leave behind a sharper rule, prompt, source hook, or test. | `a-knowledge-index-curator`, `a-skill-pack-builder` |
+Full inventory: [docs/SKILL_INVENTORY.md](docs/SKILL_INVENTORY.md)
 
 ## Main Loop
-
-Use whichever steps fit the task. Start with the router when the next move is unclear.
 
 ```text
 route -> frame -> build -> test -> upgrade -> govern -> ground -> compound
 ```
 
-| Step | Use When | Primary Skills | Output |
+| Step | Use When | Start With | Output |
 |---|---|---|---|
-| Route | The request is broad or ambiguous. | `a-stark-router` | Best skill plus supporting skills |
-| Frame | The user wants a complete Stark-style operating pass. | `a-stark-operating-system` | Mission, block, Mark 1, test, upgrade, risk |
-| Build | The user needs forward motion. | `a-mark-one-prototype`, `a-cave-resourcefulness` | Crude working version |
-| Test | The user has a draft, MVP, or plan. | `a-mark-two-test-flight`, `a-icing-problem-review` | Stress test and weakness list |
-| Upgrade | Something failed or underperformed. | `a-mistake-to-upgrade`, `a-upgrade-chain-mapper` | Upgrade rule and prevention rule |
-| Govern | Power, safety, or team consequences matter. | `a-armor-around-world-check`, `a-civil-war-conflict-map` | Ethical boundary and accountability |
-| Ground | The user asks where an idea came from. | `a-source-grounded-synthesis`, `a-quote-example-finder` | Source-backed synthesis |
-| Compound | The pack itself needs refresh or pruning. | `a-skill-pack-builder`, `a-skill-pruner` | Regenerated pack and validation report |
+| Route | You are not sure which lens fits. | `$a-stark-router` | 1-3 best skills and first move |
+| Frame | You want a complete Stark-style pass. | `$a-stark-operating-system` | Mission, block, Mark 1, test, upgrade, risk |
+| Build | You need forward motion now. | `$a-mark-one-prototype` | Crude working version |
+| Test | You have a draft or MVP. | `$a-mark-two-test-flight` | Stress test and weakness list |
+| Upgrade | Something failed. | `$a-mistake-to-upgrade` | Upgrade rule and prevention rule |
+| Govern | Power, safety, or team consequences matter. | `$a-armor-around-world-check` | Ethical boundary and accountability |
+| Ground | You want source-backed answers. | `$a-source-grounded-synthesis` | Synthesis with source file names |
+| Compound | The pack or knowledge base needs refreshing. | `$a-skill-pack-builder` | Regenerated pack and validation report |
 
-Read the full workflow guide: [docs/WORKFLOW.md](docs/WORKFLOW.md).
-
-## What's In The Box
-
-| Area | Count | What It Does |
-|---|---:|---|
-| Skills | 107 | A-prefixed operating modes under `skills/` |
-| Tier 1 orchestration skills | 5 | Router, full Stark OS, source grounding, pack builder |
-| References | 6 | Manifest, source map, corpus index, story map, principles |
-| Scripts | 6 | Generate, validate, install, symlink, search, simulate |
-| Tests | 10 checks | Unit tests and routing simulations |
-| Docs | 7+ pages | Install, symlinks, corpus, testing, workflow, examples, inventory |
-
-## Skill Tiers
-
-| Tier | Count | Role |
-|---|---:|---|
-| 1 | 5 | Orchestration, source grounding, and pack operations |
-| 2 | 59 | Core operating modes |
-| 3 | 30 | Specialized lenses |
-| 4 | 13 | Corpus, story, and knowledge tools |
-
-## Core Skill Inventory
-
-| Skill | Purpose | Example |
-|---|---|---|
-| `a-stark-router` | Choose the right Avengers skill or skill chain. | `Use $a-stark-router. I keep waiting for approval before starting.` |
-| `a-stark-operating-system` | Run the complete Stark loop. | `Use $a-stark-operating-system on this product idea.` |
-| `a-mark-one-prototype` | Define the crude first working version. | `Use $a-mark-one-prototype to define the first app version.` |
-| `a-mistake-to-upgrade` | Turn failure into a system upgrade. | `Use $a-mistake-to-upgrade on this failed launch.` |
-| `a-cave-resourcefulness` | Solve with limited resources. | `Use $a-cave-resourcefulness with only what I have now.` |
-| `a-permission-trap-breaker` | Replace approval-seeking with bounded action. | `Use $a-permission-trap-breaker; I am waiting to be chosen.` |
-| `a-armor-around-world-check` | Catch overcontrol and Ultron-style risk. | `Use $a-armor-around-world-check on this automation.` |
-| `a-civil-war-conflict-map` | Map conflicts where both sides have real values. | `Use $a-civil-war-conflict-map on this team split.` |
-| `a-source-grounded-synthesis` | Answer from local source hooks and cite file names. | `Use $a-source-grounded-synthesis with my Avengers corpus.` |
-| `a-skill-pack-builder` | Regenerate and validate the pack. | `Use $a-skill-pack-builder after changing triggers.` |
-
-Full 107-skill table with tiers, purposes, and examples: [docs/SKILL_INVENTORY.md](docs/SKILL_INVENTORY.md).
-
-## Quick Examples
-
-| User Request | Start With | Follow With |
-|---|---|---|
-| "I need the first version of this app today." | `a-mark-one-prototype` | `a-mark-two-test-flight` |
-| "My launch failed." | `a-mistake-to-upgrade` | `a-anti-repeat-control` |
-| "I have no money or tools." | `a-cave-resourcefulness` | `a-functional-attributes` |
-| "I am waiting for permission." | `a-permission-trap-breaker` | `a-stark-confidence` |
-| "The team is split." | `a-civil-war-conflict-map` | `a-accords-governance` |
-| "This automation might become too powerful." | `a-armor-around-world-check` | `a-ethics-of-control` |
-| "Where does this idea come from?" | `a-source-grounded-synthesis` | `a-quote-example-finder` |
-
-More recipes: [docs/EXAMPLES.md](docs/EXAMPLES.md).
+Workflow guide: [docs/WORKFLOW.md](docs/WORKFLOW.md)
+Example recipes: [docs/EXAMPLES.md](docs/EXAMPLES.md)
 
 ## Install
 
-Clone the repo:
+Clone:
 
 ```bash
 git clone https://github.com/thepraggyverse/avengers.git ~/plugins/avengers
@@ -126,34 +74,69 @@ python3 -m unittest discover -s tests -v
 
 ### Install Matrix
 
-| Target | Recommended Install |
+| Harness | Recommended Path |
 |---|---|
 | Codex App | `python3 scripts/install_codex_plugin.py --apply` |
-| Codex CLI / flat skill home | `python3 scripts/install_symlinks.py --apply --home ~/.codex/skills` |
-| Claude-style skill home | `python3 scripts/install_symlinks.py --apply --home ~/.claude/skills` |
-| Shared agent home | `python3 scripts/install_symlinks.py --apply --home ~/.agents/skills` |
-| OpenClaw | `python3 scripts/install_symlinks.py --apply --home ~/.openclaw/skills` |
-| OpenClaw Codex home | `python3 scripts/install_symlinks.py --apply --home ~/.openclaw/acpx/codex-home/skills` |
-| Custom harness | Symlink `skills/a-*` into the harness skill directory |
+| Codex CLI | Add marketplace with `codex plugin marketplace add "$PWD"`, then install through `/plugins`, or symlink into `~/.codex/skills` |
+| Claude Code | `/plugin marketplace add thepraggyverse/avengers` then `/plugin install avengers`, or run `claude --plugin-dir "$PWD"` for local dev |
+| Cursor | Install from source if plugin support is available, or symlink into `~/.cursor/skills` |
+| GitHub Copilot plugin hosts | Use the Claude-compatible plugin manifest where supported, or symlink/copy `skills/a-*` |
+| Qwen Code / Claude-compatible installers | Install from GitHub as a Claude-compatible plugin when supported |
+| OpenCode | Use `.opencode/INSTALL.md` or symlink/copy the skills directory |
+| Pi | Use the `.pi/extensions/avengers.ts` extension from this checkout |
+| Gemini CLI | `gemini extensions install "$PWD"` |
+| OpenClaw / custom harnesses | `python3 scripts/install_symlinks.py --apply --home <skill-home>` |
 
-Detailed install guide: [docs/INSTALL.md](docs/INSTALL.md).
-Symlink guide: [docs/SYMLINKS.md](docs/SYMLINKS.md).
+Detailed install and update guide: [docs/INSTALL.md](docs/INSTALL.md)
+Harness compatibility notes: [docs/HARNESSES.md](docs/HARNESSES.md)
+Symlink guide: [docs/SYMLINKS.md](docs/SYMLINKS.md)
 
-## Where Things Live
+## Update
+
+For a checkout-based install:
+
+```bash
+cd ~/plugins/avengers
+python3 scripts/update_avengers.py --apply
+```
+
+That pulls the latest changes, regenerates derived skill/docs files, validates the pack, and optionally refreshes symlinks or the Codex personal marketplace entry.
+
+Manual update:
+
+```bash
+git pull --ff-only
+python3 scripts/generate_avengers_pack.py
+python3 scripts/validate_skill_pack.py
+python3 -m unittest discover -s tests -v
+```
+
+For marketplace-managed installs, update through the harness plugin UI or command first, then restart or reload the harness so cached skills refresh.
+
+Update details: [docs/UPDATE.md](docs/UPDATE.md)
+
+## Repo Layout
 
 ```text
 avengers/
-├── .codex-plugin/              # Codex plugin manifest
+├── .codex-plugin/              # Codex native plugin manifest
+├── .claude-plugin/             # Claude-compatible plugin and marketplace metadata
+├── .cursor-plugin/             # Cursor plugin metadata
+├── .agents/plugins/            # Local marketplace metadata
+├── .opencode/                  # OpenCode install helper
+├── .pi/                        # Pi extension helper
 ├── skills/                     # 107 generated A-prefixed skills
 ├── references/                 # manifest, source map, principles, corpus index
-├── scripts/                    # generate, validate, install, simulate, search
+├── scripts/                    # generate, validate, install, update, simulate, search
 ├── tests/                      # unit and routing-simulation tests
-└── docs/                       # install, workflow, examples, inventory, testing
+└── docs/                       # install, workflow, examples, inventory, testing, audit
 ```
 
 ## Local Corpus Support
 
-The public repo does not include full transcripts. If you have your own local notes or transcripts, point scripts at them:
+The public repo contains distilled skill instructions and source-file hooks only. It does not include full transcripts, captions, books, movie scripts, or private notes.
+
+If you have your own local notes or transcripts, point the search script at them:
 
 ```bash
 export AVENGERS_CORPUS_DIR="$HOME/Documents/Avengers Corpus"
@@ -178,10 +161,10 @@ Simulate routing:
 python3 scripts/simulate_routes.py "Break down Iron Man 2 Easter eggs and later MCU connections."
 ```
 
-Testing details: [docs/TESTING.md](docs/TESTING.md).
+Testing details: [docs/TESTING.md](docs/TESTING.md)
 
-## Legal / Attribution
+## Independence And Rights
 
-This is an unofficial fan-made tool. It is not affiliated with, endorsed by, sponsored by, or connected to Marvel, Disney, New Rockstars, ScreenCrush, Every, or any other rightsholder mentioned in source-file hooks.
+This is an independent educational and productivity tool. It is not affiliated with or endorsed by Marvel, Disney, New Rockstars, ScreenCrush, Every, or any other rightsholder mentioned in source-file hooks.
 
-The MIT license applies to this repository's original code, generated skill text, tests, and documentation. It does not grant rights to any third-party characters, trademarks, films, videos, transcripts, books, or commentary.
+The MIT license applies to this repository's original code, generated skill text, tests, and documentation. It does not grant rights to third-party characters, trademarks, films, videos, transcripts, books, or commentary.
