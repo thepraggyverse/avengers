@@ -927,3 +927,68 @@
   - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt`
   - `Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt`
   - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt`
+
+### `a-avengers-setup`
+- Category: Avengers Memory
+- Tier: 1
+- Sources:
+  - `10 Tony Stark Habits That Make You Unstoppable.txt`
+  - `24 Mistakes that made Iron Man Stronger.txt`
+  - `AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt`
+  - `AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt`
+  - `Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt`
+  - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt`
+  - `Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt`
+  - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt`
+
+### `a-avengers-compound`
+- Category: Avengers Memory
+- Tier: 1
+- Sources:
+  - `10 Tony Stark Habits That Make You Unstoppable.txt`
+  - `24 Mistakes that made Iron Man Stronger.txt`
+  - `AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt`
+  - `AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt`
+  - `Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt`
+  - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt`
+  - `Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt`
+  - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt`
+
+### `a-avengers-refresh`
+- Category: Avengers Memory
+- Tier: 1
+- Sources:
+  - `10 Tony Stark Habits That Make You Unstoppable.txt`
+  - `24 Mistakes that made Iron Man Stronger.txt`
+  - `AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt`
+  - `AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt`
+  - `Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt`
+  - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt`
+  - `Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt`
+  - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt`
+
+### `a-avengers-handoff`
+- Category: Avengers Memory
+- Tier: 1
+- Sources:
+  - `10 Tony Stark Habits That Make You Unstoppable.txt`
+  - `24 Mistakes that made Iron Man Stronger.txt`
+  - `AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt`
+  - `AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt`
+  - `Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt`
+  - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt`
+  - `Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt`
+  - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt`
+
+### `a-avengers-context`
+- Category: Avengers Memory
+- Tier: 1
+- Sources:
+  - `10 Tony Stark Habits That Make You Unstoppable.txt`
+  - `24 Mistakes that made Iron Man Stronger.txt`
+  - `AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt`
+  - `AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt`
+  - `Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt`
+  - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt`
+  - `Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt`
+  - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt`

@@ -2,12 +2,12 @@
 from __future__ import annotations
 
 import argparse
-import os
 import re
-from pathlib import Path
+
+from avengers_config import corpus_dir
 
 
-CORPUS_DIR = Path(os.environ.get("AVENGERS_CORPUS_DIR", "~/Documents/Avengers Corpus")).expanduser()
+CORPUS_DIR = corpus_dir()
 
 
 def normalize(text: str) -> str:

@@ -1,12 +1,12 @@
 # Full Skill Inventory
 
-Total skills: 107
+Total skills: 112
 
 ## Tier Summary
 
 | Tier | Count | Role |
 |---|---:|---|
-| 1 | 5 | Orchestration, knowledge grounding, and pack operations |
+| 1 | 10 | Orchestration, knowledge grounding, and pack operations |
 | 2 | 59 | Core operating modes |
 | 3 | 30 | Specialized lenses |
 | 4 | 13 | Corpus, story, and knowledge tools |
@@ -187,3 +187,13 @@ Total skills: 107
 | `a-source-grounded-synthesis` | 1 | Answer using the local Avengers corpus and cite source file names. | `Use $a-source-grounded-synthesis to turn this source material into searchable skill knowledge.` |
 | `a-skill-pruner` | 4 | Review skills for keep, merge, reference-only, or remove decisions. | `Use $a-skill-pruner to turn this source material into searchable skill knowledge.` |
 | `a-skill-pack-builder` | 1 | Generate or refresh the Avengers plugin skill pack from the manifest. | `Use $a-skill-pack-builder to turn this source material into searchable skill knowledge.` |
+
+## Avengers Memory
+
+| Skill | Tier | Purpose | Example |
+|---|---:|---|---|
+| `a-avengers-setup` | 1 | Configure local Avengers paths, harness homes, corpus search, and memory policy. | `Use $a-avengers-setup to configure this repo for Codex with a private corpus path, memory folder, and symlink policy.` |
+| `a-avengers-compound` | 1 | Capture a reusable lesson after an Avengers run so the next run is easier. | `Use $a-avengers-compound to save the reusable lesson from this run with related skills and refresh status.` |
+| `a-avengers-refresh` | 1 | Audit Avengers skills, docs, and memory notes for stale, overlapping, or confusing guidance. | `Use $a-avengers-refresh to audit stale memory notes, overlapping skills, and old generated wording.` |
+| `a-avengers-handoff` | 1 | Write a concise continuation handoff for future agents or future sessions. | `Use $a-avengers-handoff to write a continuation note with repo state, tests, decisions, risks, and next action.` |
+| `a-avengers-context` | 1 | Maintain Avengers concepts, vocabulary, operating principles, and terms to clarify. | `Use $a-avengers-context to add this recurring operating principle to the Avengers glossary.` |

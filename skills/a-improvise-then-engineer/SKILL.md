@@ -15,6 +15,12 @@ Tier 2 Resourcefulness skill. Use a temporary hack first, then harden the real s
 - The request matches these triggers: improvise, hack first, engineer later.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The user asks for a simple factual answer that does not need an Avengers operating lens.
@@ -39,6 +45,12 @@ Return these fields unless the user asks for another format:
 - `First Build`
 - `Upgrade Path`
 
+## Example
+
+```text
+Use $a-improvise-then-engineer to solve this with only the resources I already have.
+```
+
 ## Skill Chaining
 
 - Pair with `a-cave-resourcefulness` when useful.
@@ -51,6 +63,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `How Tony Stark Practices Resourcefulness.txt` (812 words)
 - `IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt` (7732 words)
 - `What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt` (1159 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 

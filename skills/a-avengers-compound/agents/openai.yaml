@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Avengers Compound"
+  short_description: "Capture a reusable lesson after an Avengers run so the next r..."
+  default_prompt: "Use $a-avengers-compound to capture a reusable lesson after an avengers run so the next run is easier."

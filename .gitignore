@@ -14,3 +14,7 @@ local-corpus/
 corpus/
 transcripts/
 *.log
+.avengers/config.local.yaml
+.avengers/*.local.yaml
+docs/avengers-memory/runs/*.local.md
+docs/avengers-memory/handoffs/*.local.md

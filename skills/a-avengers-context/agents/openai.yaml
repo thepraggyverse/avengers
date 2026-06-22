@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Avengers Context"
+  short_description: "Maintain Avengers concepts, vocabulary, operating principles,..."
+  default_prompt: "Use $a-avengers-context to maintain avengers concepts, vocabulary, operating principles, and terms to clarify."

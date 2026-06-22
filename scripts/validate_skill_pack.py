@@ -13,6 +13,7 @@ SKILLS_DIR = PLUGIN_ROOT / "skills"
 MANIFEST_PATH = PLUGIN_ROOT / "references" / "skill-manifest.json"
 PLUGIN_VALIDATOR = Path(os.environ.get("CODEX_PLUGIN_VALIDATOR", "~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py")).expanduser()
 SKILL_VALIDATOR = Path(os.environ.get("CODEX_SKILL_VALIDATOR", "~/.codex/skills/.system/skill-creator/scripts/quick_validate.py")).expanduser()
+EXPECTED_SKILL_COUNT = 112
 
 
 def run(cmd: list[str]) -> tuple[int, str, str]:
@@ -25,10 +26,10 @@ def main() -> int:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     skill_dirs = sorted(p for p in SKILLS_DIR.iterdir() if p.is_dir())
 
-    if len(manifest) != 107:
-        failures.append(f"Expected 107 manifest entries, found {len(manifest)}")
-    if len(skill_dirs) != 107:
-        failures.append(f"Expected 107 skill directories, found {len(skill_dirs)}")
+    if len(manifest) != EXPECTED_SKILL_COUNT:
+        failures.append(f"Expected {EXPECTED_SKILL_COUNT} manifest entries, found {len(manifest)}")
+    if len(skill_dirs) != EXPECTED_SKILL_COUNT:
+        failures.append(f"Expected {EXPECTED_SKILL_COUNT} skill directories, found {len(skill_dirs)}")
 
     manifest_names = {entry["name"] for entry in manifest}
     dir_names = {p.name for p in skill_dirs}

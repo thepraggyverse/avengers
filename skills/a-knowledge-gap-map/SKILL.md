@@ -15,6 +15,12 @@ Tier 2 Learning And Intelligence skill. Identify the exact missing knowledge blo
 - The request matches these triggers: knowledge gaps, what do I not know.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The user asks for a simple factual answer that does not need an Avengers operating lens.
@@ -39,6 +45,12 @@ Return these fields unless the user asks for another format:
 - `Synthesis Question`
 - `Mastery Check`
 
+## Example
+
+```text
+Use $a-knowledge-gap-map to create a build-first learning plan for this topic.
+```
+
 ## Skill Chaining
 
 - Pair with `a-learn-like-stark` when useful.
@@ -53,6 +65,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `Become Smart like Tony Stark  In-Depth Analysis.txt` (1693 words)
 - `How to Work Like Tony Stark.txt` (1290 words)
 - `How Tony Stark Works on Multiple Projects at Once.txt` (1915 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 

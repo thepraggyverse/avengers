@@ -1,12 +1,20 @@
 from __future__ import annotations
 
 import json
+import os
 import re
+import subprocess
+import sys
+import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 
 PLUGIN_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PLUGIN_ROOT / "scripts"))
+import avengers_config  # noqa: E402
+
 SKILLS_DIR = PLUGIN_ROOT / "skills"
 MANIFEST_PATH = PLUGIN_ROOT / "references" / "skill-manifest.json"
 PLUGIN_JSON_PATH = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
@@ -14,6 +22,20 @@ CLAUDE_PLUGIN_JSON_PATH = PLUGIN_ROOT / ".claude-plugin" / "plugin.json"
 CURSOR_PLUGIN_JSON_PATH = PLUGIN_ROOT / ".cursor-plugin" / "plugin.json"
 AGENTS_MARKETPLACE_PATH = PLUGIN_ROOT / ".agents" / "plugins" / "marketplace.json"
 GEMINI_EXTENSION_PATH = PLUGIN_ROOT / "gemini-extension.json"
+EXPECTED_SKILLS = 112
+MEMORY_PATHS = [
+    PLUGIN_ROOT / ".avengers" / "config.local.example.yaml",
+    PLUGIN_ROOT / "docs" / "AVENGERS_MEMORY.md",
+    PLUGIN_ROOT / "docs" / "AVENGERS_CONTEXT.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "schemas" / "learning-note.schema.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "schemas" / "run-log.schema.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "schemas" / "handoff.schema.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "schemas" / "refresh-report.schema.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "templates" / "learning-note.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "templates" / "run-log.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "templates" / "handoff.md",
+    PLUGIN_ROOT / "docs" / "avengers-memory" / "templates" / "refresh-report.md",
+]
 
 
 def parse_openai_yaml(text: str) -> dict[str, str]:
@@ -34,8 +56,8 @@ class AvengersPackTests(unittest.TestCase):
         cls.skill_dirs = sorted(path for path in SKILLS_DIR.iterdir() if path.is_dir())
 
     def test_manifest_and_directory_counts_match(self) -> None:
-        self.assertEqual(107, len(self.manifest))
-        self.assertEqual(107, len(self.skill_dirs))
+        self.assertEqual(EXPECTED_SKILLS, len(self.manifest))
+        self.assertEqual(EXPECTED_SKILLS, len(self.skill_dirs))
         self.assertEqual(set(self.by_name), {path.name for path in self.skill_dirs})
 
     def test_skill_names_are_a_prefixed_hyphen_case(self) -> None:
@@ -49,10 +71,14 @@ class AvengersPackTests(unittest.TestCase):
             skill_text = (skill_dir / "SKILL.md").read_text(encoding="utf-8")
             self.assertIn(f"name: {entry['name']}", skill_text)
             self.assertIn("## Use When", skill_text)
+            self.assertIn("## Inputs", skill_text)
             self.assertIn("## Do Not Use When", skill_text)
             self.assertIn("## Output Contract", skill_text)
+            self.assertIn("## Example", skill_text)
             self.assertIn("## Skill Chaining", skill_text)
             self.assertIn("## Source Hooks", skill_text)
+            self.assertIn("## Safety And Grounding", skill_text)
+            self.assertIn("## Cross-Harness Notes", skill_text)
             self.assertIn("## Self-Test", skill_text)
 
             openai_yaml_text = (skill_dir / "agents" / "openai.yaml").read_text(encoding="utf-8")
@@ -78,6 +104,11 @@ class AvengersPackTests(unittest.TestCase):
                 "a-knowledge-index-curator",
                 "a-source-grounded-synthesis",
                 "a-skill-pack-builder",
+                "a-avengers-setup",
+                "a-avengers-compound",
+                "a-avengers-refresh",
+                "a-avengers-handoff",
+                "a-avengers-context",
             },
             tier_one,
         )
@@ -99,7 +130,66 @@ class AvengersPackTests(unittest.TestCase):
         plugin = json.loads(PLUGIN_JSON_PATH.read_text(encoding="utf-8"))
         self.assertEqual("avengers", plugin["name"])
         self.assertEqual("./skills/", plugin["skills"])
-        self.assertIn("107", plugin["interface"]["shortDescription"])
+        self.assertIn(str(EXPECTED_SKILLS), plugin["interface"]["shortDescription"])
+        self.assertIn("Avengers-inspired skill pack", plugin["description"])
+        self.assertNotIn("un" + "official", json.dumps(plugin).lower())
+        self.assertNotIn("operating-system", json.dumps(plugin).lower())
+
+    def test_memory_layer_artifacts_are_present(self) -> None:
+        for path in MEMORY_PATHS:
+            with self.subTest(path=path):
+                self.assertTrue(path.exists(), f"missing {path}")
+
+        memory_doc = (PLUGIN_ROOT / "docs" / "AVENGERS_MEMORY.md").read_text(encoding="utf-8")
+        self.assertIn("request -> skill used -> sources consulted", memory_doc)
+        context_doc = (PLUGIN_ROOT / "docs" / "AVENGERS_CONTEXT.md").read_text(encoding="utf-8")
+        self.assertIn("Terms To Avoid Or Clarify", context_doc)
+
+    def test_local_config_can_supply_corpus_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            config_dir = root / ".avengers"
+            config_dir.mkdir()
+            (config_dir / "config.local.yaml").write_text(
+                'corpus:\n  path: "~/Configured Avengers Corpus"\n',
+                encoding="utf-8",
+            )
+            with mock.patch.object(avengers_config, "PLUGIN_ROOT", root):
+                with mock.patch.dict(os.environ, {}, clear=True):
+                    self.assertEqual(
+                        Path("~/Configured Avengers Corpus").expanduser(),
+                        avengers_config.corpus_dir(),
+                    )
+
+    def test_env_corpus_path_overrides_local_config(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            config_dir = root / ".avengers"
+            config_dir.mkdir()
+            (config_dir / "config.local.yaml").write_text(
+                'corpus:\n  path: "~/Configured Avengers Corpus"\n',
+                encoding="utf-8",
+            )
+            with mock.patch.object(avengers_config, "PLUGIN_ROOT", root):
+                with mock.patch.dict(os.environ, {"AVENGERS_CORPUS_DIR": "~/Env Avengers Corpus"}, clear=True):
+                    self.assertEqual(
+                        Path("~/Env Avengers Corpus").expanduser(),
+                        avengers_config.corpus_dir(),
+                    )
+
+    def test_required_avengers_memory_skills_are_present(self) -> None:
+        for name in [
+            "a-avengers-setup",
+            "a-avengers-compound",
+            "a-avengers-refresh",
+            "a-avengers-handoff",
+            "a-avengers-context",
+        ]:
+            with self.subTest(skill=name):
+                self.assertIn(name, self.by_name)
+                skill_text = (SKILLS_DIR / name / "SKILL.md").read_text(encoding="utf-8")
+                self.assertIn("## Cross-Harness Notes", skill_text)
+                self.assertIn("## Safety And Grounding", skill_text)
 
     def test_cross_harness_metadata_is_present(self) -> None:
         for path in [
@@ -122,6 +212,54 @@ class AvengersPackTests(unittest.TestCase):
         self.assertEqual("GEMINI.md", gemini_extension["contextFileName"])
         self.assertEqual("avengers-plugin", marketplace["name"])
         self.assertEqual("avengers", marketplace["plugins"][0]["name"])
+
+    def test_symlink_uninstall_leaves_foreign_a_prefixed_links(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            home = root / "skills-home"
+            home.mkdir()
+            foreign_source = root / "foreign-source"
+            foreign_source.mkdir()
+            foreign_link = home / "a-foreign-skill"
+            foreign_link.symlink_to(foreign_source, target_is_directory=True)
+
+            skill_name = "a-avengers-setup"
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(PLUGIN_ROOT / "scripts" / "install_symlinks.py"),
+                    "--apply",
+                    "--home",
+                    str(home),
+                    "--skill",
+                    skill_name,
+                ],
+                check=True,
+                stdout=subprocess.PIPE,
+                text=True,
+            )
+
+            avengers_link = home / skill_name
+            self.assertTrue(avengers_link.is_symlink())
+            self.assertTrue(foreign_link.is_symlink())
+
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(PLUGIN_ROOT / "scripts" / "install_symlinks.py"),
+                    "--uninstall",
+                    "--apply",
+                    "--home",
+                    str(home),
+                ],
+                check=True,
+                stdout=subprocess.PIPE,
+                text=True,
+            )
+
+            self.assertFalse(avengers_link.exists())
+            self.assertTrue(foreign_link.is_symlink())
+            self.assertEqual(foreign_source.resolve(), foreign_link.resolve())
 
 
 if __name__ == "__main__":

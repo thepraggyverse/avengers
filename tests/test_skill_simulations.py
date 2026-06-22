@@ -72,6 +72,31 @@ SIMULATIONS = [
         "expected": ["a-skill-pack-builder", "a-knowledge-index-curator"],
         "must_not": ["a-fear-to-motion"],
     },
+    {
+        "prompt": "Set up Avengers for this repo in Codex with a local corpus path and symlink policy.",
+        "expected": ["a-avengers-setup"],
+        "must_not": ["a-mcu-easter-egg-breakdown"],
+    },
+    {
+        "prompt": "Save what we learned from this Avengers run as a reusable memory note.",
+        "expected": ["a-avengers-compound"],
+        "must_not": ["a-talk-like-stark"],
+    },
+    {
+        "prompt": "Audit stale Avengers memory notes and overlapping skills, then write a refresh report.",
+        "expected": ["a-avengers-refresh", "a-skill-pruner"],
+        "must_not": ["a-mark-one-prototype"],
+    },
+    {
+        "prompt": "Write a handoff so the next agent can continue this Avengers plugin work.",
+        "expected": ["a-avengers-handoff"],
+        "must_not": ["a-thanos-logic-detector"],
+    },
+    {
+        "prompt": "Update the Avengers context glossary with this recurring operating principle.",
+        "expected": ["a-avengers-context"],
+        "must_not": ["a-hulkbuster-contingency"],
+    },
 ]
 
 

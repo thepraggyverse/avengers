@@ -55,6 +55,17 @@
         "a-knowledge-index-curator",
         "a-skill-pack-builder"
       ]
+    },
+    {
+      "title": "Avengers Memory",
+      "description": "Skills for setup, compound learning, refresh reports, context, and handoff.",
+      "skills": [
+        "a-avengers-setup",
+        "a-avengers-compound",
+        "a-avengers-refresh",
+        "a-avengers-handoff",
+        "a-avengers-context"
+      ]
     }
   ]
 }

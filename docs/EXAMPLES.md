@@ -13,6 +13,9 @@ These examples show how to use the plugin as a system rather than a loose folder
 | "The team is split." | `a-civil-war-conflict-map` | Maps competing legitimate values. |
 | "This automation might become too powerful." | `a-armor-around-world-check` | Checks for overcontrol and ethical boundaries. |
 | "Where did this idea come from?" | `a-source-grounded-synthesis` | Uses local source hooks without dumping transcripts. |
+| "Save what we learned from this run." | `a-avengers-compound` | Writes a reusable learning note when the lesson should survive the chat. |
+| "Set Avengers up for this repo and Codex." | `a-avengers-setup` | Chooses local config, corpus, memory, and install paths safely. |
+| "Make a handoff for the next agent." | `a-avengers-handoff` | Captures repo state, tests, decisions, risks, and next action. |
 
 ## Recipe: Mark 1 Product Sprint
 
@@ -58,3 +61,21 @@ Use $a-knowledge-index-curator if source hooks need updating.
 ```
 
 Keep full transcripts outside the repo and point scripts at them with `AVENGERS_CORPUS_DIR`.
+
+## Recipe: Compound A Run
+
+```text
+Use $a-avengers-compound after this run.
+Save the request, skills used, source files, decision, reusable lesson, and refresh status.
+Then use $a-avengers-context if a durable concept changed.
+```
+
+Expected artifact:
+
+| Field | Meaning |
+|---|---|
+| Request | What the user asked for |
+| Skills Used | The A-skills that shaped the answer |
+| Sources Consulted | Corpus files, docs, or repo files used |
+| Reusable Lesson | The part future agents should remember |
+| Refresh Status | Fresh, stale, merged, or needs review |

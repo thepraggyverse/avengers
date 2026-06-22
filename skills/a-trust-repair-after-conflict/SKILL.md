@@ -15,6 +15,12 @@ Tier 3 Leadership And Team skill. Rebuild working trust after a rupture or ideol
 - The request matches these triggers: repair trust, after conflict, team split.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The problem is a solo build decision with no team or stakeholder issue.
@@ -38,6 +44,12 @@ Return these fields unless the user asks for another format:
 - `Communication Move`
 - `Trust Follow-Up`
 
+## Example
+
+```text
+Use $a-trust-repair-after-conflict to handle this team conflict without losing trust.
+```
+
 ## Skill Chaining
 
 - Pair with `a-team-assembly-avengers` when useful.
@@ -50,6 +62,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `How to Lead Like Captain America.txt` (1241 words)
 - `Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt` (3755 words)
 - `Captain America Civil War 🤝 Avengers Doomsday  Road to Doomsday @ IGN Live.txt` (10732 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 

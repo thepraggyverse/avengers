@@ -1,26 +1,26 @@
 # Avengers Skills
 
-Avengers is a pack of **107 A-prefixed agent skills** for turning Tony Stark, Iron Man, Avengers, MCU story analysis, leadership, prototyping, mistakes, resourcefulness, mentorship, risk, and source-grounded knowledge work into reusable operating modes.
+Avengers is an Avengers-inspired skill pack for problem solving, invention, leadership, pressure handling, strategy, iteration, and source-grounded reasoning.
 
-The skills are small, searchable, and composable. Use one skill directly when you know what you need, or start with the router when the request is broad.
+It ships **112 A-prefixed skills**. The `a-` prefix is intentional: searching for `A`, `a-`, `Avengers`, `Tony Stark`, `Iron Man`, `Mark 1`, or `Ultron` should surface the pack in Codex and other skill harnesses.
+
+Use one skill directly when you know what you need, or start with the router:
 
 ```text
 $a-stark-router
-$a-stark-operating-system
+$a-avengers-setup
+$a-avengers-compound
 $a-mark-one-prototype
-$a-cave-resourcefulness
 $a-mistake-to-upgrade
 $a-armor-around-world-check
 ```
 
-Every exposed skill starts with `a-` so searching for `A`, `a-`, `Avengers`, `Tony Stark`, or `Iron Man` surfaces the pack in Codex and other skill harnesses.
-
-## What These Skills Do
+## What The Skills Do
 
 | Area | Skills | What They Help With |
 |---|---:|---|
-| Tony Stark Core | 9 | First principles, speed with feedback, lab mode, self-made identity, operating loops |
-| Problem Solving | 9 | Constraints, root cause, pressure decisions, crisis plans, trapped/cave-style problem work |
+| Tony Stark Core | 9 | First principles, fast feedback, lab mode, self-made identity, full operating loops |
+| Problem Solving | 9 | Constraints, root cause, pressure decisions, crisis plans, trapped/cave-style work |
 | Mistakes And Upgrades | 9 | Retros, failure memory, Mark 1/Mark 2 iteration, prevention rules |
 | Resourcefulness | 7 | Solving with available parts, recombination, salvage, constraints as design |
 | Confidence And Permission | 7 | Approval-seeking, fear-to-motion, self-trust, audacity calibration |
@@ -32,104 +32,138 @@ Every exposed skill starts with `a-` so searching for `A`, `a-`, `Avengers`, `To
 | Risk Ethics And Control | 8 | Ultron-style risk, overcontrol, consent, shared burden, Thanos logic |
 | Armor Tech Product Design | 8 | Product-as-armor reviews, delegation, fallbacks, automation oversight |
 | MCU Story Analysis | 9 | Easter eggs, timeline continuity, character arcs, themes, legacy, foreshadowing |
-| Knowledge System | 7 | Source-grounded synthesis, corpus search, book/podcast-to-skill extraction, pack maintenance |
+| Knowledge System | 7 | Source-grounded synthesis, corpus search, book/podcast extraction, pack maintenance |
+| Avengers Memory | 5 | Local setup, reusable learning notes, refresh reports, context, handoffs |
 
 Full inventory: [docs/SKILL_INVENTORY.md](docs/SKILL_INVENTORY.md)
+
+Release notes: [CHANGELOG.md](CHANGELOG.md)
+
+Reference audit: [docs/DOCUMENTATION_AUDIT.md](docs/DOCUMENTATION_AUDIT.md)
 
 ## Main Loop
 
 ```text
-route -> frame -> build -> test -> upgrade -> govern -> ground -> compound
+route -> frame -> build -> test -> upgrade -> govern -> ground -> compound -> refresh -> handoff
 ```
 
 | Step | Use When | Start With | Output |
 |---|---|---|---|
 | Route | You are not sure which lens fits. | `$a-stark-router` | 1-3 best skills and first move |
+| Setup | You are installing or configuring a repo/harness. | `$a-avengers-setup` | Local config, corpus path, install route |
 | Frame | You want a complete Stark-style pass. | `$a-stark-operating-system` | Mission, block, Mark 1, test, upgrade, risk |
 | Build | You need forward motion now. | `$a-mark-one-prototype` | Crude working version |
 | Test | You have a draft or MVP. | `$a-mark-two-test-flight` | Stress test and weakness list |
 | Upgrade | Something failed. | `$a-mistake-to-upgrade` | Upgrade rule and prevention rule |
 | Govern | Power, safety, or team consequences matter. | `$a-armor-around-world-check` | Ethical boundary and accountability |
 | Ground | You want source-backed answers. | `$a-source-grounded-synthesis` | Synthesis with source file names |
-| Compound | The pack or knowledge base needs refreshing. | `$a-skill-pack-builder` | Regenerated pack and validation report |
+| Compound | A run produced a reusable lesson. | `$a-avengers-compound` | Learning note or context update |
+| Refresh | Memory, docs, or skills may be stale. | `$a-avengers-refresh` | Refresh report |
+| Handoff | Another session needs to continue. | `$a-avengers-handoff` | Continuation note |
 
-Workflow guide: [docs/WORKFLOW.md](docs/WORKFLOW.md)
-Example recipes: [docs/EXAMPLES.md](docs/EXAMPLES.md)
+## Memory Layer
+
+The memory layer keeps useful learning without bloating the pack.
+
+```text
+request -> skill used -> sources consulted -> decision/result -> reusable lesson -> related skills -> stale/refresh status
+```
+
+Important paths:
+
+| Path | Purpose |
+|---|---|
+| `.avengers/config.local.example.yaml` | Safe example for local config |
+| `.avengers/config.local.yaml` | Real local config, ignored by git |
+| `docs/AVENGERS_MEMORY.md` | Memory rules and folder guide |
+| `docs/AVENGERS_CONTEXT.md` | Shared terms and operating principles |
+| `docs/avengers-memory/learnings/` | Reusable lessons |
+| `docs/avengers-memory/runs/` | Public-safe run logs |
+| `docs/avengers-memory/handoffs/` | Continuation notes |
+| `docs/avengers-memory/refresh-reports/` | Staleness and overlap reports |
+| `docs/avengers-memory/templates/` | Copyable note templates |
+| `docs/avengers-memory/schemas/` | Frontmatter contracts |
+
+See [docs/AVENGERS_MEMORY.md](docs/AVENGERS_MEMORY.md).
 
 ## Install
 
-Clone:
+Clone and validate:
 
 ```bash
 git clone https://github.com/thepraggyverse/avengers.git ~/plugins/avengers
 cd ~/plugins/avengers
-```
-
-Validate:
-
-```bash
 python3 scripts/validate_skill_pack.py
 python3 -m unittest discover -s tests -v
 ```
 
-### Install Matrix
+Install options:
 
 | Harness | Recommended Path |
 |---|---|
 | Codex App | `python3 scripts/install_codex_plugin.py --apply` |
-| Codex CLI | Add marketplace with `codex plugin marketplace add "$PWD"`, then install through `/plugins`, or symlink into `~/.codex/skills` |
-| Claude Code | `/plugin marketplace add thepraggyverse/avengers` then `/plugin install avengers`, or run `claude --plugin-dir "$PWD"` for local dev |
-| Cursor | Install from source if plugin support is available, or symlink into `~/.cursor/skills` |
-| GitHub Copilot plugin hosts | Use the Claude-compatible plugin manifest where supported, or symlink/copy `skills/a-*` |
-| Qwen Code / Claude-compatible installers | Install from GitHub as a Claude-compatible plugin when supported |
-| OpenCode | Use `.opencode/INSTALL.md` or symlink/copy the skills directory |
-| Pi | Use the `.pi/extensions/avengers.ts` extension from this checkout |
+| Codex CLI | `codex plugin marketplace add "$PWD"`, then install through `/plugins` |
+| Claude Code | `/plugin marketplace add thepraggyverse/avengers`, then `/plugin install avengers` |
+| Cursor | Source plugin if supported, or symlink into `~/.cursor/skills` |
+| OpenCode | Use `.opencode/INSTALL.md` |
+| Pi | Use `.pi/extensions/avengers.ts` |
 | Gemini CLI | `gemini extensions install "$PWD"` |
-| OpenClaw / custom harnesses | `python3 scripts/install_symlinks.py --apply --home <skill-home>` |
+| Generic skill harness | `python3 scripts/install_symlinks.py --apply --home <skill-home>` |
 
-Detailed install and update guide: [docs/INSTALL.md](docs/INSTALL.md)
-Harness compatibility notes: [docs/HARNESSES.md](docs/HARNESSES.md)
-Symlink guide: [docs/SYMLINKS.md](docs/SYMLINKS.md)
+Detailed install guide: [docs/INSTALL.md](docs/INSTALL.md)
 
 ## Update
 
-For a checkout-based install:
+Checkout update:
 
 ```bash
 cd ~/plugins/avengers
 python3 scripts/update_avengers.py --apply
 ```
 
-That pulls the latest changes, regenerates derived skill/docs files, validates the pack, and optionally refreshes symlinks or the Codex personal marketplace entry.
-
-Manual update:
+Manual development update:
 
 ```bash
-git pull --ff-only
-python3 scripts/generate_avengers_pack.py
+AVENGERS_CORPUS_DIR="/path/to/private/corpus" python3 scripts/generate_avengers_pack.py
 python3 scripts/validate_skill_pack.py
 python3 -m unittest discover -s tests -v
 ```
 
-For marketplace-managed installs, update through the harness plugin UI or command first, then restart or reload the harness so cached skills refresh.
-
 Update details: [docs/UPDATE.md](docs/UPDATE.md)
+
+## Testing
+
+```bash
+python3 scripts/validate_skill_pack.py
+python3 -m unittest discover -s tests -v
+python3 scripts/simulate_routes.py "Save what we learned from this Avengers run."
+```
+
+Testing guide: [docs/TESTING.md](docs/TESTING.md)
+
+## Uninstall
+
+Native plugin installs should be removed through the harness plugin UI or command.
+
+Flat symlink installs can be removed by deleting `a-*` symlinks from the skill home you installed into. The repo never needs your private corpus to be deleted.
 
 ## Repo Layout
 
 ```text
 avengers/
 ├── .codex-plugin/              # Codex native plugin manifest
-├── .claude-plugin/             # Claude-compatible plugin and marketplace metadata
+├── .claude-plugin/             # Claude-compatible plugin metadata
 ├── .cursor-plugin/             # Cursor plugin metadata
 ├── .agents/plugins/            # Local marketplace metadata
-├── .opencode/                  # OpenCode install helper
+├── .avengers/                  # Example local config
+├── .opencode/                  # OpenCode helper
 ├── .pi/                        # Pi extension helper
-├── skills/                     # 107 generated A-prefixed skills
+├── skills/                     # 112 generated A-prefixed skills
 ├── references/                 # manifest, source map, principles, corpus index
 ├── scripts/                    # generate, validate, install, update, simulate, search
 ├── tests/                      # unit and routing-simulation tests
-└── docs/                       # install, workflow, examples, inventory, testing, audit
+├── CHANGELOG.md                # release notes and verification history
+└── docs/                       # install, workflow, examples, memory, inventory, testing
 ```
 
 ## Local Corpus Support
@@ -143,28 +177,12 @@ export AVENGERS_CORPUS_DIR="$HOME/Documents/Avengers Corpus"
 python3 scripts/search_corpus.py "permission trap"
 ```
 
+You can also set `corpus.path` in `.avengers/config.local.yaml`.
+
 See [docs/CORPUS.md](docs/CORPUS.md).
-
-## Development
-
-Regenerate and test:
-
-```bash
-python3 scripts/generate_avengers_pack.py
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
-```
-
-Simulate routing:
-
-```bash
-python3 scripts/simulate_routes.py "Break down Iron Man 2 Easter eggs and later MCU connections."
-```
-
-Testing details: [docs/TESTING.md](docs/TESTING.md)
 
 ## Independence And Rights
 
-This is an independent educational and productivity tool. It is not affiliated with or endorsed by Marvel, Disney, New Rockstars, ScreenCrush, Every, or any other rightsholder mentioned in source-file hooks.
+This is an independent educational and productivity tool. It is not affiliated with or endorsed by Marvel, Disney, New Rockstars, ScreenCrush, Every, Matt Pocock, or any other rightsholder mentioned in source-file hooks.
 
 The MIT license applies to this repository's original code, generated skill text, tests, and documentation. It does not grant rights to third-party characters, trademarks, films, videos, transcripts, books, or commentary.

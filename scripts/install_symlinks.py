@@ -38,6 +38,18 @@ def link_skill(source: Path, target: Path, apply: bool, force: bool) -> str:
     return f"{'link' if apply else 'would link'} {target} -> {source}"
 
 
+def unlink_skill(source: Path, target: Path, apply: bool) -> str:
+    if not target.exists() and not target.is_symlink():
+        return f"skip missing {target}"
+    if not target.is_symlink():
+        return f"skip non-symlink {target}"
+    if target.resolve() != source.resolve():
+        return f"skip foreign link {target} -> {target.resolve()}"
+    if apply:
+        target.unlink()
+    return f"{'unlink' if apply else 'would unlink'} {target}"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Symlink Avengers skills into agent skill homes.")
     parser.add_argument(
@@ -47,6 +59,7 @@ def main() -> int:
     )
     parser.add_argument("--apply", action="store_true", help="Actually create symlinks. Default is dry-run.")
     parser.add_argument("--force", action="store_true", help="Replace existing symlinks/files. Real directories are never removed.")
+    parser.add_argument("--uninstall", action="store_true", help="Remove only symlinks that point back to this Avengers checkout.")
     parser.add_argument("--skill", action="append", help="Install only this skill name. Can be passed multiple times.")
     args = parser.parse_args()
 
@@ -63,10 +76,15 @@ def main() -> int:
 
     for home in homes:
         for skill in skills:
-            print(link_skill(skill, home / skill.name, args.apply, args.force))
+            target = home / skill.name
+            if args.uninstall:
+                print(unlink_skill(skill, target, args.apply))
+            else:
+                print(link_skill(skill, target, args.apply, args.force))
 
     if not args.apply:
-        print("\nDry run only. Re-run with --apply to create symlinks.")
+        action = "remove symlinks" if args.uninstall else "create symlinks"
+        print(f"\nDry run only. Re-run with --apply to {action}.")
     return 0
 
 

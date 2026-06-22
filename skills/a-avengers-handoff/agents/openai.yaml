@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Avengers Handoff"
+  short_description: "Write a concise continuation handoff for future agents or fut..."
+  default_prompt: "Use $a-avengers-handoff to write a concise continuation handoff for future agents or future sessions."

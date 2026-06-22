@@ -12,6 +12,14 @@ If you have your own local transcripts or notes, keep them outside the repo and 
 export AVENGERS_CORPUS_DIR="$HOME/Documents/Avengers Corpus"
 ```
 
+Or copy `.avengers/config.local.example.yaml` to `.avengers/config.local.yaml` and set `corpus.path`.
+
+Corpus path resolution order:
+
+1. `AVENGERS_CORPUS_DIR`
+2. `.avengers/config.local.yaml`
+3. `~/Documents/Avengers Corpus`
+
 Then run:
 
 ```bash
@@ -34,4 +42,3 @@ Do not commit private transcript files or private notes. Keep them in your local
 ## Copyright And Fair Use
 
 Use source material responsibly. The MIT license in this repository covers only this repo's original code, skill text, tests, and documentation. It does not license third-party characters, trademarks, films, commentary, transcripts, books, or videos.
-

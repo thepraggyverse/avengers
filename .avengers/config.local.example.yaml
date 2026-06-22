@@ -1,0 +1,29 @@
+# Copy this file to `.avengers/config.local.yaml` for machine-local Avengers settings.
+# Keep the real local config out of git.
+
+corpus:
+  path: "~/Documents/Avengers Corpus"
+  citation_style: "source-file-names"
+  allow_short_quotes: true
+
+memory:
+  root: "docs/avengers-memory"
+  learning_notes: "docs/avengers-memory/learnings"
+  run_logs: "docs/avengers-memory/runs"
+  handoffs: "docs/avengers-memory/handoffs"
+  refresh_reports: "docs/avengers-memory/refresh-reports"
+  persist_by_default: false
+
+harnesses:
+  codex_home: "~/.codex"
+  claude_home: "~/.claude"
+  cursor_home: "~/.cursor"
+  agents_home: "~/.agents"
+  opencode_home: "~/.config/opencode"
+  openclaw_home: "~/.openclaw"
+  symlink_policy: "preview-first"
+
+public_safety:
+  commit_private_corpus: false
+  commit_local_config: false
+  commit_temp_logs: false

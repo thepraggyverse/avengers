@@ -1,10 +1,6 @@
 # Install
 
-Avengers can be installed in three ways:
-
-1. **Native plugin install** for harnesses that understand plugin manifests.
-2. **Direct skill symlinks** for harnesses that load `SKILL.md` folders from a skill home.
-3. **Local development checkout** for testing changes before publishing.
+Avengers can be installed as a native plugin where supported, or as plain `SKILL.md` folders through symlinks.
 
 The skill content is the same in every route: `skills/a-*/SKILL.md`.
 
@@ -29,9 +25,11 @@ Expected validation:
 
 ```text
 Avengers skill pack validation passed.
-Skills: 107
-Manifest entries: 107
+Skills: 112
+Manifest entries: 112
 ```
+
+After install-related changes, check [../CHANGELOG.md](../CHANGELOG.md) and [DOCUMENTATION_AUDIT.md](DOCUMENTATION_AUDIT.md) so the public repo explains what changed and why.
 
 ## Codex App
 
@@ -104,26 +102,12 @@ Direct skill fallback:
 python3 scripts/install_symlinks.py --apply --home ~/.cursor/skills
 ```
 
-Cursor project-scoped fallback:
+Project-scoped fallback:
 
 ```bash
 mkdir -p .cursor/skills
 python3 /path/to/avengers/scripts/install_symlinks.py --apply --home "$PWD/.cursor/skills"
 ```
-
-## GitHub Copilot Plugin Hosts
-
-Use the Claude-compatible plugin manifest when the host supports plugins from source. If not, copy or symlink `skills/a-*` into the host's supported skill directory.
-
-## Qwen Code And Claude-Compatible Installers
-
-Use the host's GitHub/plugin install command against:
-
-```text
-thepraggyverse/avengers
-```
-
-The `.claude-plugin/plugin.json` manifest and root `skills/` directory are the compatibility surface.
 
 ## OpenCode
 
@@ -161,7 +145,7 @@ Update later:
 gemini extensions update avengers
 ```
 
-## OpenClaw And Flat Skill Homes
+## .agents And Generic Skill Homes
 
 Default symlink install:
 
@@ -189,8 +173,34 @@ python3 scripts/install_symlinks.py --apply --home /path/to/skills
 One skill:
 
 ```bash
-python3 scripts/install_symlinks.py --apply --skill a-stark-router
+python3 scripts/install_symlinks.py --apply --skill a-avengers-setup
 ```
+
+## Local Config
+
+Copy the example only when you want repo-local settings:
+
+```bash
+mkdir -p .avengers
+cp .avengers/config.local.example.yaml .avengers/config.local.yaml
+```
+
+Edit `.avengers/config.local.yaml` for your machine. Do not commit it.
+
+Scripts resolve the corpus path in this order:
+
+1. `AVENGERS_CORPUS_DIR`
+2. `.avengers/config.local.yaml`
+3. `~/Documents/Avengers Corpus`
+
+Use `a-avengers-setup` when an agent should help choose:
+
+- corpus path
+- memory path
+- harness homes
+- symlink policy
+- source citation preference
+- what should remain local-only
 
 ## Local Corpus Search
 
@@ -223,6 +233,14 @@ With symlink refresh:
 python3 scripts/update_avengers.py --apply --install-symlinks
 ```
 
-Marketplace-managed installs should be updated through the harness plugin UI/command, then restarted so cached skills refresh.
+## Uninstall
 
-More detail: [UPDATE.md](UPDATE.md).
+Native plugin installs should be removed through the harness plugin UI or command.
+
+For symlink installs, use the installer in uninstall mode. It removes only symlinks whose resolved target points back to this Avengers checkout, so unrelated `a-*` skills in the same home are left alone.
+
+```bash
+python3 scripts/install_symlinks.py --uninstall --apply --home ~/.codex/skills
+```
+
+Preview first by omitting `--apply`. Do not remove your private corpus unless you intentionally want to.

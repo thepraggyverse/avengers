@@ -2,33 +2,24 @@
 
 Avengers is authored as plain `SKILL.md` directories first. Everything else is packaging around that core.
 
-## Compatibility Table
+## Compatibility Matrix
 
-| Harness | Native Surface | Fallback Surface | Notes |
-|---|---|---|---|
-| Codex App | `.codex-plugin/plugin.json` and personal marketplace | `~/.codex/skills` symlinks | Native plugin is preferred. |
-| Codex CLI | `codex plugin marketplace add "$PWD"` then `/plugins` | `~/.codex/skills` symlinks | Use one `CODEX_HOME` consistently per profile. |
-| Claude Code | `.claude-plugin/plugin.json` | `~/.claude/skills` symlinks | Root `skills/` is the plugin skill directory. |
-| Cursor | `.cursor-plugin/plugin.json` | `~/.cursor/skills` or `.cursor/skills` symlinks | Exact plugin UI support depends on Cursor version. |
-| GitHub Copilot plugin hosts | Claude-compatible plugin metadata where supported | Host-specific skill copy/symlink | Keep `skills/a-*` as the source of truth. |
-| Qwen Code | Claude-compatible plugin metadata where supported | Host-specific skill copy/symlink | Install from `thepraggyverse/avengers` when the host supports GitHub plugin source. |
-| OpenCode | `.opencode/plugins/avengers.js` | Direct skill path in config | See `.opencode/INSTALL.md`. |
-| Pi | `.pi/extensions/avengers.ts` | Direct skill path if supported | Extension exposes `skills/` as skill paths. |
-| Gemini CLI | `gemini-extension.json` with `GEMINI.md` | Direct skill path if supported | Install from local checkout with `gemini extensions install "$PWD"`. |
-| OpenClaw | flat skill home | `~/.openclaw/skills` symlinks | Direct symlink route is preferred. |
-| Generic SKILL.md harness | none | symlink or copy `skills/a-*` | Use `scripts/install_symlinks.py --home <dir>`. |
+| Harness | Native Surface | Skill Path / Fallback | Manifest Path | Notes |
+|---|---|---|---|---|
+| Codex App | Native plugin | `~/.codex/skills` symlinks | `.codex-plugin/plugin.json` | Native plugin preferred. Restart after install/update. |
+| Codex CLI | Marketplace plus `/plugins` | `~/.codex/skills` symlinks | `.codex-plugin/plugin.json` | Use one `CODEX_HOME` per profile. |
+| Claude Code | Claude-compatible plugin | `~/.claude/skills` symlinks | `.claude-plugin/plugin.json` | Root `skills/` is the plugin skill directory. |
+| Cursor | Cursor metadata where supported | `~/.cursor/skills` or `.cursor/skills` | `.cursor-plugin/plugin.json` | Exact plugin UI support depends on Cursor version. |
+| OpenCode | Plugin helper | Direct skill path in config | `.opencode/plugins/avengers.js` | See `.opencode/INSTALL.md`. |
+| Pi | Extension helper | Direct skill path if supported | `.pi/extensions/avengers.ts` | Extension exposes `skills/`. |
+| Gemini CLI | Extension metadata | Direct skill path if supported | `gemini-extension.json` | Uses `GEMINI.md` as context file. |
+| .agents | Local marketplace | `~/.agents/skills` symlinks | `.agents/plugins/marketplace.json` | Useful for shared local agent homes. |
+| OpenClaw | Flat skill home | `~/.openclaw/skills` symlinks | none | Symlink route is preferred. |
+| Generic SKILL.md harness | none | symlink or copy `skills/a-*` | none | Use `scripts/install_symlinks.py --home <dir>`. |
 
-## Invocation
+## Discovery
 
-Most harnesses support explicit skill invocation with one of these forms:
-
-```text
-$a-stark-router
-/a-stark-router
-Use a-stark-router
-```
-
-If the harness only searches skill names/descriptions, search for:
+All exposed skills are A-prefixed. Search for:
 
 ```text
 A
@@ -38,16 +29,40 @@ Tony Stark
 Iron Man
 Mark 1
 Ultron
+memory
+handoff
 ```
 
-## Why Skills, Not Agents
+Most harnesses support one of these invocation styles:
 
-The pack currently ships skills only. Specialist behavior lives inside each skill through output contracts, workflows, source hooks, and chaining hints. That keeps the package portable because every target can read `SKILL.md` folders, while agent/subagent formats vary more between harnesses.
+```text
+$a-stark-router
+/a-stark-router
+Use a-stark-router
+```
+
+Memory skills:
+
+```text
+$a-avengers-setup
+$a-avengers-compound
+$a-avengers-refresh
+$a-avengers-handoff
+$a-avengers-context
+```
+
+## Known Limitations
+
+- The pack ships skills, not custom subagents or MCP servers.
+- Some harnesses cache skill metadata at session start; restart after updates.
+- Plugin UI support varies by harness version. Symlinks remain the portable fallback.
+- The public repo does not include private transcript or book text.
 
 ## What To Test In A New Harness
 
 1. Confirm `a-stark-router` appears in skill search.
-2. Invoke `a-stark-router` on a broad request.
+2. Confirm `a-avengers-setup` appears in skill search.
 3. Invoke `a-mark-one-prototype` directly.
-4. Confirm skill chaining names existing skills.
-5. Run `python3 scripts/simulate_routes.py "<prompt>"` from the checkout when routing feels weak.
+4. Invoke `a-avengers-compound` on a memory-capture prompt.
+5. Confirm skill chaining names existing skills.
+6. Run `python3 scripts/simulate_routes.py "<prompt>"` from the checkout when routing feels weak.

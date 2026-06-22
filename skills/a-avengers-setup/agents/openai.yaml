@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Avengers Setup"
+  short_description: "Configure local Avengers paths, harness homes, corpus search,..."
+  default_prompt: "Use $a-avengers-setup to configure local avengers paths, harness homes, corpus search, and memory policy."

@@ -1,10 +1,10 @@
 # Avengers Skill Manifest
 
-Total skills: 107
+Total skills: 112
 
 ## Tiers
 
-- Tier 1: 5 skills
+- Tier 1: 10 skills
 - Tier 2: 59 skills
 - Tier 3: 30 skills
 - Tier 4: 13 skills
@@ -145,3 +145,10 @@ Total skills: 107
 - `a-source-grounded-synthesis` - Answer using the local Avengers corpus and cite source file names.
 - `a-skill-pruner` - Review skills for keep, merge, reference-only, or remove decisions.
 - `a-skill-pack-builder` - Generate or refresh the Avengers plugin skill pack from the manifest.
+
+### Avengers Memory (5)
+- `a-avengers-setup` - Configure local Avengers paths, harness homes, corpus search, and memory policy.
+- `a-avengers-compound` - Capture a reusable lesson after an Avengers run so the next run is easier.
+- `a-avengers-refresh` - Audit Avengers skills, docs, and memory notes for stale, overlapping, or confusing guidance.
+- `a-avengers-handoff` - Write a concise continuation handoff for future agents or future sessions.
+- `a-avengers-context` - Maintain Avengers concepts, vocabulary, operating principles, and terms to clarify.

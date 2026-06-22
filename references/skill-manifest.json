@@ -37,7 +37,8 @@
       "If the first skill is obvious, apply it immediately.",
       "If the user asks for a system, chain skills rather than choosing only one."
     ],
-    "self_test": "If the user asks 'Which Avengers mode fits this problem?', recommend 1-3 skills and apply the strongest one."
+    "self_test": "If the user asks 'Which Avengers mode fits this problem?', recommend 1-3 skills and apply the strongest one.",
+    "example": null
   },
   {
     "name": "a-stark-operating-system",
@@ -82,7 +83,8 @@
       "Check for overcontrol, delegation, and handoff needs.",
       "Return a staged plan with the next concrete action."
     ],
-    "self_test": "If the user asks for the full Stark OS, produce a staged build-and-upgrade plan, not a motivational essay."
+    "self_test": "If the user asks for the full Stark OS, produce a staged build-and-upgrade plan, not a motivational essay.",
+    "example": null
   },
   {
     "name": "a-stark-first-principles",
@@ -122,7 +124,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for strip a challenge to constraints, physics, incentives, and actual facts., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for strip a challenge to constraints, physics, incentives, and actual facts., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-speed-with-feedback",
@@ -162,7 +165,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for move quickly while installing feedback, tests, and correction loops., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for move quickly while installing feedback, tests, and correction loops., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-obsessive-improvement",
@@ -202,7 +206,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for treat every output as a suit version that can be upgraded., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for treat every output as a suit version that can be upgraded., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-build-before-you-believe",
@@ -242,7 +247,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for create proof through action before confidence arrives., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for create proof through action before confidence arrives., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-tinker-loop",
@@ -282,7 +288,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for use tinkering as a disciplined observe-modify-test cycle., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for use tinkering as a disciplined observe-modify-test cycle., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-lab-mode",
@@ -322,7 +329,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for protect a focused invention session with clear inputs and outputs., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for protect a focused invention session with clear inputs and outputs., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-self-made-identity",
@@ -362,7 +370,8 @@
       "Add feedback, test, or telemetry before scaling.",
       "Capture the next upgrade as a concrete action."
     ],
-    "self_test": "If the user asks for convert identity from waiting to being the builder who acts., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for convert identity from waiting to being the builder who acts., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-work-the-problem",
@@ -400,7 +409,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for stabilize a messy situation and work the actual problem one move at a time., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for stabilize a messy situation and work the actual problem one move at a time., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-define-the-real-problem",
@@ -437,7 +447,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for separate the true problem from symptoms, noise, and emotional framing., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for separate the true problem from symptoms, noise, and emotional framing., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-root-cause-reactor",
@@ -474,7 +485,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for find the reactor-level cause that powers repeated failures., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for find the reactor-level cause that powers repeated failures., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-constraint-inventory",
@@ -511,7 +523,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for list hard constraints, movable constraints, resources, and missing parts., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for list hard constraints, movable constraints, resources, and missing parts., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-under-pressure-decisions",
@@ -548,7 +561,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for make a useful decision under time pressure and incomplete information., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for make a useful decision under time pressure and incomplete information., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-crisis-to-build-plan",
@@ -585,7 +599,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for turn a crisis into a small sequence of buildable actions., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for turn a crisis into a small sequence of buildable actions., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-scrap-metal-solution",
@@ -622,7 +637,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for design a solution from available scraps before buying or waiting., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for design a solution from available scraps before buying or waiting., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-cave-escape-planning",
@@ -659,7 +675,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for create an escape plan from a trapped or constrained situation., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for create an escape plan from a trapped or constrained situation., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-problem-stack-ranking",
@@ -695,7 +712,8 @@
       "Pick the next reversible move.",
       "Check whether the move changed the real problem."
     ],
-    "self_test": "If the user asks for rank problems by leverage, urgency, dependency, and reversibility., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for rank problems by leverage, urgency, dependency, and reversibility., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-mistake-to-upgrade",
@@ -736,7 +754,8 @@
       "Define a test that proves the upgrade works.",
       "Write the prevention rule in reusable language."
     ],
-    "self_test": "If the user describes a failure, return an upgrade and prevention rule, not reassurance alone."
+    "self_test": "If the user describes a failure, return an upgrade and prevention rule, not reassurance alone.",
+    "example": null
   },
   {
     "name": "a-mark-one-prototype",
@@ -779,7 +798,8 @@
       "Choose the first test and the weakness it is likely to reveal.",
       "Capture what the Mark 2 should fix."
     ],
-    "self_test": "If the user is waiting for perfect conditions, define a crude useful artifact they can build immediately."
+    "self_test": "If the user is waiting for perfect conditions, define a crude useful artifact they can build immediately.",
+    "example": null
   },
   {
     "name": "a-mark-two-test-flight",
@@ -820,7 +840,8 @@
       "Run or outline the smallest possible test.",
       "Translate the result into a Mark 2 upgrade."
     ],
-    "self_test": "If the user has a first draft or MVP, produce a concrete stress test and next upgrade."
+    "self_test": "If the user has a first draft or MVP, produce a concrete stress test and next upgrade.",
+    "example": null
   },
   {
     "name": "a-icing-problem-review",
@@ -860,7 +881,8 @@
       "Test the upgrade with a realistic stress case.",
       "Save the prevention rule for future work."
     ],
-    "self_test": "If the user asks for find environmental failures that only appear under stress or altitude., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for find environmental failures that only appear under stress or altitude., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-suit-vulnerability-audit",
@@ -900,7 +922,8 @@
       "Test the upgrade with a realistic stress case.",
       "Save the prevention rule for future work."
     ],
-    "self_test": "If the user asks for audit a system for weak points, exposed assumptions, and brittle parts., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for audit a system for weak points, exposed assumptions, and brittle parts., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-upgrade-chain-mapper",
@@ -939,7 +962,8 @@
       "Test the upgrade with a realistic stress case.",
       "Save the prevention rule for future work."
     ],
-    "self_test": "If the user asks for map each version to the weakness it fixed and the next upgrade., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for map each version to the weakness it fixed and the next upgrade., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-failure-memory-bank",
@@ -961,7 +985,9 @@
     ],
     "pairs_with": [
       "a-mistake-to-upgrade",
-      "a-anti-repeat-control"
+      "a-anti-repeat-control",
+      "a-avengers-compound",
+      "a-avengers-refresh"
     ],
     "output_contract": [
       "Failure",
@@ -979,7 +1005,8 @@
       "Test the upgrade with a realistic stress case.",
       "Save the prevention rule for future work."
     ],
-    "self_test": "If the user asks for store mistakes as reusable memory instead of private regret., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for store mistakes as reusable memory instead of private regret., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-post-battle-retro",
@@ -1019,7 +1046,8 @@
       "Test the upgrade with a realistic stress case.",
       "Save the prevention rule for future work."
     ],
-    "self_test": "If the user asks for run an after-action review after a project, fight, launch, or miss., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for run an after-action review after a project, fight, launch, or miss., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-anti-repeat-control",
@@ -1058,7 +1086,8 @@
       "Test the upgrade with a realistic stress case.",
       "Save the prevention rule for future work."
     ],
-    "self_test": "If the user asks for add controls that prevent the same failure from recurring., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for add controls that prevent the same failure from recurring., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-cave-resourcefulness",
@@ -1099,7 +1128,8 @@
       "Combine attributes into a crude but useful build.",
       "Choose the next move that changes the user's position."
     ],
-    "self_test": "If the user says they lack resources, find a viable move using only what they already have."
+    "self_test": "If the user says they lack resources, find a viable move using only what they already have.",
+    "example": null
   },
   {
     "name": "a-functional-attributes",
@@ -1137,7 +1167,8 @@
       "Use the first version to escape waiting.",
       "Upgrade only after the crude system teaches you."
     ],
-    "self_test": "If the user asks for see tools by what they can do, not what they are named., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for see tools by what they can do, not what they are named., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-resource-recombination",
@@ -1176,7 +1207,8 @@
       "Use the first version to escape waiting.",
       "Upgrade only after the crude system teaches you."
     ],
-    "self_test": "If the user asks for combine weak or partial resources into a useful stronger system., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for combine weak or partial resources into a useful stronger system., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-improvise-then-engineer",
@@ -1215,7 +1247,8 @@
       "Use the first version to escape waiting.",
       "Upgrade only after the crude system teaches you."
     ],
-    "self_test": "If the user asks for use a temporary hack first, then harden the real system., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for use a temporary hack first, then harden the real system., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-minimum-viable-armor",
@@ -1254,7 +1287,8 @@
       "Use the first version to escape waiting.",
       "Upgrade only after the crude system teaches you."
     ],
-    "self_test": "If the user asks for define the smallest protection or tool layer needed now., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for define the smallest protection or tool layer needed now., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-salvage-tech-strategy",
@@ -1293,7 +1327,8 @@
       "Use the first version to escape waiting.",
       "Upgrade only after the crude system teaches you."
     ],
-    "self_test": "If the user asks for recover old assets, abandoned work, or scraps into useful inputs., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for recover old assets, abandoned work, or scraps into useful inputs., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-constraints-as-design",
@@ -1332,7 +1367,8 @@
       "Use the first version to escape waiting.",
       "Upgrade only after the crude system teaches you."
     ],
-    "self_test": "If the user asks for use constraints as design material instead of excuses., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for use constraints as design material instead of excuses., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-confidence",
@@ -1370,7 +1406,8 @@
       "Choose a bounded bold action.",
       "Use the result as evidence for the next move."
     ],
-    "self_test": "If the user asks for build grounded confidence from competence, proof, and decisive action., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for build grounded confidence from competence, proof, and decisive action., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-permission-trap-breaker",
@@ -1411,7 +1448,8 @@
       "Define one safe-to-try move that does not require permission.",
       "Turn the result into proof for the next move."
     ],
-    "self_test": "If the user is waiting to be chosen, return a bounded action they can take without external validation."
+    "self_test": "If the user is waiting to be chosen, return a bounded action they can take without external validation.",
+    "example": null
   },
   {
     "name": "a-audacity-calibrator",
@@ -1451,7 +1489,8 @@
       "Choose a bounded bold action.",
       "Use the result as evidence for the next move."
     ],
-    "self_test": "If the user asks for separate useful boldness from reckless ego or fantasy., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for separate useful boldness from reckless ego or fantasy., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-ego-to-output",
@@ -1491,7 +1530,8 @@
       "Choose a bounded bold action.",
       "Use the result as evidence for the next move."
     ],
-    "self_test": "If the user asks for convert ego, ambition, or swagger into concrete production., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for convert ego, ambition, or swagger into concrete production., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-fear-to-motion",
@@ -1530,7 +1570,8 @@
       "Choose a bounded bold action.",
       "Use the result as evidence for the next move."
     ],
-    "self_test": "If the user asks for turn fear into one visible action instead of rumination., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for turn fear into one visible action instead of rumination., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-self-trust-builder",
@@ -1569,7 +1610,8 @@
       "Choose a bounded bold action.",
       "Use the result as evidence for the next move."
     ],
-    "self_test": "If the user asks for build self-trust through small kept promises and proof., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for build self-trust through small kept promises and proof., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-talk-like-stark",
@@ -1608,7 +1650,8 @@
       "Choose a bounded bold action.",
       "Use the result as evidence for the next move."
     ],
-    "self_test": "If the user asks for sharpen communication with confident, concise, playful authority., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for sharpen communication with confident, concise, playful authority., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-curiosity-mastery-synthesis",
@@ -1648,7 +1691,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for learn through curiosity, mastery, and cross-domain synthesis., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for learn through curiosity, mastery, and cross-domain synthesis., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-learn-like-stark",
@@ -1686,7 +1730,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for design an aggressive self-education loop around building., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for design an aggressive self-education loop around building., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-cross-domain-synthesis",
@@ -1725,7 +1770,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for connect lessons across engineering, design, story, leadership, and business., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for connect lessons across engineering, design, story, leadership, and business., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-question-engine",
@@ -1764,7 +1810,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for generate sharper questions that unlock technical or strategic progress., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for generate sharper questions that unlock technical or strategic progress., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-knowledge-gap-map",
@@ -1804,7 +1851,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for identify the exact missing knowledge blocking progress., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for identify the exact missing knowledge blocking progress., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-smart-not-genius",
@@ -1843,7 +1891,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for convert genius fantasy into practical learnable behaviors., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for convert genius fantasy into practical learnable behaviors., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-build-to-understand",
@@ -1880,7 +1929,8 @@
       "Build something that forces the concept to become concrete.",
       "Synthesize the lesson into a reusable rule."
     ],
-    "self_test": "If the user asks for use building as the fastest path to comprehension., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for use building as the fastest path to comprehension., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-lean-six-sigma-stark",
@@ -1917,7 +1967,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for apply define-measure-improve-control to personal or product workflows., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for apply define-measure-improve-control to personal or product workflows., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-continuous-improvement-loop",
@@ -1952,7 +2003,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for create a recurring loop for better versions of work., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for create a recurring loop for better versions of work., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-waste-hunter",
@@ -1988,7 +2040,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for find and remove wasted motion, waiting, rework, and clutter., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for find and remove wasted motion, waiting, rework, and clutter., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-process-stabilizer",
@@ -2024,7 +2077,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for turn chaotic repeated work into a stable process., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for turn chaotic repeated work into a stable process., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-quality-control-reactor",
@@ -2060,7 +2114,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for add quality checks that protect output without slowing everything., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for add quality checks that protect output without slowing everything., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-workflow-telemetry",
@@ -2096,7 +2151,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for choose measurements that reveal whether the system works., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for choose measurements that reveal whether the system works., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-standardize-after-learning",
@@ -2135,7 +2191,8 @@
       "Add a lightweight control so the improvement survives.",
       "Schedule the next review."
     ],
-    "self_test": "If the user asks for standardize a process only after the learning loop has found what works., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for standardize a process only after the learning loop has found what works., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-multi-project-reactor",
@@ -2171,7 +2228,8 @@
       "Set context-switching rules.",
       "Update the portfolio radar."
     ],
-    "self_test": "If the user asks for coordinate multiple active projects without losing the reactor core., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for coordinate multiple active projects without losing the reactor core., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-parallel-build-planner",
@@ -2207,7 +2265,8 @@
       "Set context-switching rules.",
       "Update the portfolio radar."
     ],
-    "self_test": "If the user asks for split work into tracks that can progress in parallel., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for split work into tracks that can progress in parallel., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-context-switch-control",
@@ -2242,7 +2301,8 @@
       "Set context-switching rules.",
       "Update the portfolio radar."
     ],
-    "self_test": "If the user asks for reduce context switching cost between active efforts., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for reduce context switching cost between active efforts., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-energy-allocation",
@@ -2278,7 +2338,8 @@
       "Set context-switching rules.",
       "Update the portfolio radar."
     ],
-    "self_test": "If the user asks for match tasks to current energy, attention, and leverage., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for match tasks to current energy, attention, and leverage., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-project-portfolio-radar",
@@ -2313,7 +2374,8 @@
       "Set context-switching rules.",
       "Update the portfolio radar."
     ],
-    "self_test": "If the user asks for maintain a radar view of active bets, status, and next moves., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for maintain a radar view of active bets, status, and next moves., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-burnout-safety-check",
@@ -2349,7 +2411,8 @@
       "Set context-switching rules.",
       "Update the portfolio radar."
     ],
-    "self_test": "If the user asks for detect overload and redesign the load before damage accumulates., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for detect overload and redesign the load before damage accumulates., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-captain-america-leadership",
@@ -2387,7 +2450,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for lead through values, steadiness, courage, and service., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for lead through values, steadiness, courage, and service., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-stark-cap-balance",
@@ -2426,7 +2490,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for balance tony's invention drive with steve's moral clarity., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for balance tony's invention drive with steve's moral clarity., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-team-assembly-avengers",
@@ -2464,7 +2529,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for assemble roles, strengths, gaps, and team operating rules., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for assemble roles, strengths, gaps, and team operating rules., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-leader-in-the-room",
@@ -2503,7 +2569,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for decide when to lead, defer, challenge, or support., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for decide when to lead, defer, challenge, or support., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-values-under-pressure",
@@ -2542,7 +2609,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for protect core values when pressure, fear, or speed rises., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for protect core values when pressure, fear, or speed rises., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-civil-war-conflict-map",
@@ -2580,7 +2648,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for map a conflict where both sides have legitimate values., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for map a conflict where both sides have legitimate values., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-accords-governance",
@@ -2619,7 +2688,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for design accountability, oversight, and autonomy rules., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for design accountability, oversight, and autonomy rules., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-trust-repair-after-conflict",
@@ -2658,7 +2728,8 @@
       "Choose the communication move that protects trust.",
       "Define the next accountable action."
     ],
-    "self_test": "If the user asks for rebuild working trust after a rupture or ideological split., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for rebuild working trust after a rupture or ideological split., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-peter-parker-mentor",
@@ -2696,7 +2767,8 @@
       "Avoid projecting the mentor's fear onto the mentee.",
       "Create a growth test with real consequences and guardrails."
     ],
-    "self_test": "If the user asks for mentor a younger builder without overcontrolling their growth., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for mentor a younger builder without overcontrolling their growth., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-training-wheels-protocol",
@@ -2734,7 +2806,8 @@
       "Avoid projecting the mentor's fear onto the mentee.",
       "Create a growth test with real consequences and guardrails."
     ],
-    "self_test": "If the user asks for decide how much support, monitoring, or independence to provide., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for decide how much support, monitoring, or independence to provide., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-if-youre-nothing-without-the-suit",
@@ -2772,7 +2845,8 @@
       "Avoid projecting the mentor's fear onto the mentee.",
       "Create a growth test with real consequences and guardrails."
     ],
-    "self_test": "If the user asks for separate capability from dependence on tools, status, or armor., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for separate capability from dependence on tools, status, or armor., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-responsibility-before-power",
@@ -2810,7 +2884,8 @@
       "Avoid projecting the mentor's fear onto the mentee.",
       "Create a growth test with real consequences and guardrails."
     ],
-    "self_test": "If the user asks for check readiness before handing over power, tools, or visibility., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for check readiness before handing over power, tools, or visibility., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-mentor-boundary-check",
@@ -2848,7 +2923,8 @@
       "Avoid projecting the mentor's fear onto the mentee.",
       "Create a growth test with real consequences and guardrails."
     ],
-    "self_test": "If the user asks for avoid projecting personal fear onto the person being mentored., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for avoid projecting personal fear onto the person being mentored., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-legacy-through-mentees",
@@ -2887,7 +2963,8 @@
       "Avoid projecting the mentor's fear onto the mentee.",
       "Create a growth test with real consequences and guardrails."
     ],
-    "self_test": "If the user asks for pass values, standards, and judgment through mentees., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for pass values, standards, and judgment through mentees., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-threat-is-imminent",
@@ -2926,7 +3003,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for anticipate looming threats without letting fear own the solution., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for anticipate looming threats without letting fear own the solution., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-armor-around-world-check",
@@ -2967,7 +3045,8 @@
       "Find a smaller governed safety mechanism.",
       "Define an oversight or rollback rule."
     ],
-    "self_test": "If the user proposes a sweeping safety system, test whether it creates an Ultron-style control failure."
+    "self_test": "If the user proposes a sweeping safety system, test whether it creates an Ultron-style control failure.",
+    "example": null
   },
   {
     "name": "a-ultron-failure-review",
@@ -3007,7 +3086,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for analyze how a good-intentioned system can create unintended harm., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for analyze how a good-intentioned system can create unintended harm., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-ethics-of-control",
@@ -3048,7 +3128,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for review consent, power, collateral effects, and governance., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for review consent, power, collateral effects, and governance., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-thanos-logic-detector",
@@ -3088,7 +3169,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for detect cold utilitarian reasoning that erases people., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for detect cold utilitarian reasoning that erases people., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-curse-of-knowledge-translator",
@@ -3130,7 +3212,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for translate expert foresight so others can understand and act., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for translate expert foresight so others can understand and act., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-curse-of-being-right",
@@ -3169,7 +3252,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for handle being right early without becoming isolated or abrasive., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for handle being right early without becoming isolated or abrasive., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-shared-burden-protocol",
@@ -3209,7 +3293,8 @@
       "Distribute responsibility instead of carrying it alone.",
       "Choose the governed action."
     ],
-    "self_test": "If the user asks for stop carrying a threat or mission alone; distribute responsibility., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for stop carrying a threat or mission alone; distribute responsibility., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-suit-tech-catalog",
@@ -3245,7 +3330,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for catalog armor, tools, capabilities, weaknesses, and upgrade lessons., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for catalog armor, tools, capabilities, weaknesses, and upgrade lessons., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-armor-evolution-review",
@@ -3280,7 +3366,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for review a product or workflow as an armor evolution line., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for review a product or workflow as an armor evolution line., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-interface-inside-the-suit",
@@ -3316,7 +3403,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for design tools around the human operator, not the spectacle., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for design tools around the human operator, not the spectacle., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-jarvis-delegation",
@@ -3353,7 +3441,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for decide what to delegate to assistants, agents, scripts, or automations., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for decide what to delegate to assistants, agents, scripts, or automations., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-friday-fallback-system",
@@ -3389,7 +3478,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for design backup assistants and recovery paths when primary systems fail., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for design backup assistants and recovery paths when primary systems fail., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-nanotech-adaptation",
@@ -3425,7 +3515,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for make a system modular, adaptive, and fast to reconfigure., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for make a system modular, adaptive, and fast to reconfigure., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-hulkbuster-contingency",
@@ -3461,7 +3552,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for build a contingency for rare high-impact failure modes., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for build a contingency for rare high-impact failure modes., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-iron-legion-automation",
@@ -3497,7 +3589,8 @@
       "Add interface and fallback decisions.",
       "Specify the next Mark upgrade."
     ],
-    "self_test": "If the user asks for design distributed helper agents or automations with oversight., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for design distributed helper agents or automations with oversight., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-mcu-timeline-rewatch",
@@ -3540,7 +3633,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for place events, callbacks, and character moves in mcu timeline context., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for place events, callbacks, and character moves in mcu timeline context., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-mcu-easter-egg-breakdown",
@@ -3584,7 +3678,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for extract callbacks, visual references, comic nods, and hidden details., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for extract callbacks, visual references, comic nods, and hidden details., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-character-arc-extractor",
@@ -3626,7 +3721,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for extract the character arc and practical lesson from a story segment., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for extract the character arc and practical lesson from a story segment., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-theme-thread-mapper",
@@ -3668,7 +3764,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for track a theme across movies, scenes, and transcripts., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for track a theme across movies, scenes, and transcripts., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-infinity-saga-patterns",
@@ -3710,7 +3807,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for analyze recurring infinity saga structures and payoffs., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for analyze recurring infinity saga structures and payoffs., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-doomsday-foreshadowing",
@@ -3752,7 +3850,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for extract possible avengers doomsday setup and theory hooks., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for extract possible avengers doomsday setup and theory hooks., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-new-mask-same-task",
@@ -3794,7 +3893,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for compare tony stark and doctor doom parallels around task, mask, and control., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for compare tony stark and doctor doom parallels around task, mask, and control., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-villain-mirror-analysis",
@@ -3836,7 +3936,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for compare hero and villain logic to find the moral fork., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for compare hero and villain logic to find the moral fork., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-spider-man-legacy-analysis",
@@ -3878,7 +3979,8 @@
       "Separate grounded evidence from speculation.",
       "State the practical lesson or theory hook."
     ],
-    "self_test": "If the user asks for track tony's legacy through peter parker and the spider-man films., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for track tony's legacy through peter parker and the spider-man films., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-podcast-to-skill-extractor",
@@ -3950,7 +4052,8 @@
       "Avoid long verbatim reproduction from transcripts.",
       "Write the reusable artifact or manifest update."
     ],
-    "self_test": "If the user asks for turn a transcript or podcast into candidate agent skills., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for turn a transcript or podcast into candidate agent skills., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-book-to-skill-extractor",
@@ -4022,7 +4125,8 @@
       "Avoid long verbatim reproduction from transcripts.",
       "Write the reusable artifact or manifest update."
     ],
-    "self_test": "If the user asks for turn book knowledge into operational skills with examples and triggers., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for turn book knowledge into operational skills with examples and triggers., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-knowledge-index-curator",
@@ -4097,7 +4201,8 @@
       "Deduplicate exact duplicate sources and preserve canonical names.",
       "Keep references concise and avoid long verbatim text."
     ],
-    "self_test": "If the user asks where an idea came from, return source files and relevant skills without dumping full transcripts."
+    "self_test": "If the user asks where an idea came from, return source files and relevant skills without dumping full transcripts.",
+    "example": null
   },
   {
     "name": "a-quote-example-finder",
@@ -4172,7 +4277,8 @@
       "Avoid long verbatim reproduction from transcripts.",
       "Write the reusable artifact or manifest update."
     ],
-    "self_test": "If the user asks for find source-grounded examples without dumping long copyrighted text., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for find source-grounded examples without dumping long copyrighted text., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-source-grounded-synthesis",
@@ -4248,7 +4354,8 @@
       "Synthesize the answer in original words.",
       "Name the relevant source files and related A-skills."
     ],
-    "self_test": "If asked to prove where an idea came from, cite source file names and summarize without copying long passages."
+    "self_test": "If asked to prove where an idea came from, cite source file names and summarize without copying long passages.",
+    "example": null
   },
   {
     "name": "a-skill-pruner",
@@ -4321,7 +4428,8 @@
       "Avoid long verbatim reproduction from transcripts.",
       "Write the reusable artifact or manifest update."
     ],
-    "self_test": "If the user asks for review skills for keep, merge, reference-only, or remove decisions., return the output contract fields and a concrete next action."
+    "self_test": "If the user asks for review skills for keep, merge, reference-only, or remove decisions., return the output contract fields and a concrete next action.",
+    "example": null
   },
   {
     "name": "a-skill-pack-builder",
@@ -4394,6 +4502,397 @@
       "Spot-check the router, Stark OS, one specialized skill, and one knowledge skill.",
       "Report counts, validations, and remaining manual install or reload steps."
     ],
-    "self_test": "If asked to rebuild the pack, regenerate and validate rather than hand-editing individual generated files."
+    "self_test": "If asked to rebuild the pack, regenerate and validate rather than hand-editing individual generated files.",
+    "example": null
+  },
+  {
+    "name": "a-avengers-setup",
+    "slug": "avengers-setup",
+    "display_name": "A - Avengers Setup",
+    "tier": 1,
+    "category": "Avengers Memory",
+    "summary": "Configure local Avengers paths, harness homes, corpus search, and memory policy.",
+    "triggers": [
+      "setup Avengers",
+      "configure Avengers",
+      "local config",
+      "harness homes",
+      "corpus path",
+      "symlink policy"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-avengers-context",
+      "a-avengers-compound",
+      "a-skill-pack-builder"
+    ],
+    "output_contract": [
+      "Target Repo",
+      "Harness",
+      "Corpus Path",
+      "Memory Path",
+      "Install Method",
+      "Do Not Commit",
+      "Next Command"
+    ],
+    "core_idea": "Configure local Avengers usage for a repository or harness without committing private paths or corpus data.",
+    "workflow": [
+      "Identify the target repo, harness, skill home, and whether this is a plugin or symlink install.",
+      "Choose local corpus and memory paths, preferring `.avengers/config.local.yaml` for private settings.",
+      "Record source citation preferences and what may be committed.",
+      "Check the relevant install docs before writing commands.",
+      "Return the exact setup commands and any files that should remain local-only."
+    ],
+    "self_test": "If asked to configure Avengers for Codex, Claude, Cursor, OpenCode, Gemini, Pi, or a flat skill home, return safe local paths and install commands.",
+    "example": "Use $a-avengers-setup to configure this repo for Codex with a private corpus path, memory folder, and symlink policy."
+  },
+  {
+    "name": "a-avengers-compound",
+    "slug": "avengers-compound",
+    "display_name": "A - Avengers Compound",
+    "tier": 1,
+    "category": "Avengers Memory",
+    "summary": "Capture a reusable lesson after an Avengers run so the next run is easier.",
+    "triggers": [
+      "compound learning",
+      "reusable lesson",
+      "save learning",
+      "after run",
+      "memory note"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-avengers-refresh",
+      "a-avengers-context",
+      "a-failure-memory-bank"
+    ],
+    "output_contract": [
+      "Request",
+      "Selected Skills",
+      "Sources Consulted",
+      "Decision or Result",
+      "Reusable Lesson",
+      "Related Skills",
+      "Refresh Status"
+    ],
+    "core_idea": "Capture a solved Avengers run as reusable memory with source hooks, related skills, and refresh status.",
+    "workflow": [
+      "Decide whether the run produced a reusable lesson worth saving.",
+      "Capture the request, selected skills, source files, decision or result, and reusable lesson.",
+      "Write the note with the learning-note schema under `docs/avengers-memory/learnings/` when repository memory is allowed.",
+      "Link related A-skills and mark confidence and refresh status.",
+      "Update context or handoff docs only when the lesson changes future behavior."
+    ],
+    "self_test": "If a run teaches a reusable pattern, produce a concise learning note instead of letting the lesson disappear in chat.",
+    "example": "Use $a-avengers-compound to save the reusable lesson from this run with related skills and refresh status."
+  },
+  {
+    "name": "a-avengers-refresh",
+    "slug": "avengers-refresh",
+    "display_name": "A - Avengers Refresh",
+    "tier": 1,
+    "category": "Avengers Memory",
+    "summary": "Audit Avengers skills, docs, and memory notes for stale, overlapping, or confusing guidance.",
+    "triggers": [
+      "refresh memory",
+      "stale skills",
+      "overlap audit",
+      "contradictory docs",
+      "weak notes"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-skill-pruner",
+      "a-skill-pack-builder",
+      "a-avengers-compound"
+    ],
+    "output_contract": [
+      "Scope",
+      "Findings",
+      "Action",
+      "Affected Files",
+      "Staleness Risk",
+      "Recommended Fix",
+      "Next Validation"
+    ],
+    "core_idea": "Review Avengers skills, generated docs, and memory notes for stale, duplicated, contradictory, or confusing guidance.",
+    "workflow": [
+      "Search skills, docs, templates, schemas, and memory notes for the target topic.",
+      "Classify each issue as keep, update, merge, replace, delete, or follow-up.",
+      "Check for stale generated text, unclear headers, old branding, broken source hooks, and overlapping skills.",
+      "Write a refresh report under `docs/avengers-memory/refresh-reports/` when persistent output is allowed.",
+      "Recommend the smallest regeneration, docs, or memory edit that makes the pack clearer."
+    ],
+    "self_test": "If asked whether Avengers memory or skills are stale, produce a refresh report with concrete keep/update/merge decisions.",
+    "example": "Use $a-avengers-refresh to audit stale memory notes, overlapping skills, and old generated wording."
+  },
+  {
+    "name": "a-avengers-handoff",
+    "slug": "avengers-handoff",
+    "display_name": "A - Avengers Handoff",
+    "tier": 1,
+    "category": "Avengers Memory",
+    "summary": "Write a concise continuation handoff for future agents or future sessions.",
+    "triggers": [
+      "handoff",
+      "continuation note",
+      "resume work",
+      "future agent",
+      "next session"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-avengers-compound",
+      "a-avengers-refresh",
+      "a-stark-router"
+    ],
+    "output_contract": [
+      "Current Task",
+      "Repo State",
+      "Files Changed",
+      "Tests Run",
+      "Decisions",
+      "Open Risks",
+      "Next Action"
+    ],
+    "core_idea": "Create a concise continuation handoff so another agent or future session can resume without rediscovering the work.",
+    "workflow": [
+      "Summarize the current task, repo state, branch, and key files changed.",
+      "List commands run, tests passed or failed, and autoreview status.",
+      "Record decisions, unresolved risks, and the exact next action.",
+      "Write to `docs/avengers-memory/handoffs/` only when repo-persistent handoff is appropriate; otherwise use a temp path.",
+      "Keep secrets, private corpus text, and unrelated local paths out of the handoff."
+    ],
+    "self_test": "If asked to hand off Avengers work, create a compact continuation note with enough evidence to resume safely.",
+    "example": "Use $a-avengers-handoff to write a continuation note with repo state, tests, decisions, risks, and next action."
+  },
+  {
+    "name": "a-avengers-context",
+    "slug": "avengers-context",
+    "display_name": "A - Avengers Context",
+    "tier": 1,
+    "category": "Avengers Memory",
+    "summary": "Maintain Avengers concepts, vocabulary, operating principles, and terms to clarify.",
+    "triggers": [
+      "context glossary",
+      "concepts",
+      "vocabulary",
+      "operating principles",
+      "terms to avoid"
+    ],
+    "source_files": [
+      "10 Tony Stark Habits That Make You Unstoppable.txt",
+      "24 Mistakes that made Iron Man Stronger.txt",
+      "AVENGERS Breakdown! Endgame Easter Eggs & New Details You Missed!  Infinity Saga Rewatch.txt",
+      "AVENGERS INFINITY WAR Review & Analysis #NewRockstarsNews.txt",
+      "Avengers Age of Ultron Breakdown! NEW Hidden Visual Details & Endgame Clues!.txt",
+      "Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt",
+      "Avengers Endgame REACTION - What Happens Now #NewRockstarsLive.txt",
+      "Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt",
+      "Be as Confident as Tony Stark.txt",
+      "Become Smart like Tony Stark  In-Depth Analysis.txt",
+      "Captain America Civil War Breakdown! New Easter Eggs & Details You Missed!.txt",
+      "Captain America Civil War \ud83e\udd1d Avengers Doomsday  Road to Doomsday @ IGN Live.txt",
+      "Every Time Iron Man Learned from his Mistakes.txt",
+      "How Avengers Age of Ultron Sets Up Avengers Doomsday  Road to Doomsday #24.txt",
+      "How Tony Stark Practices Resourcefulness.txt",
+      "How Tony Stark Uses Lean and Six-Sigma.txt",
+      "How Tony Stark Works on Multiple Projects at Once.txt",
+      "How to Lead Like Captain America.txt",
+      "How to Work Like Tony Stark.txt",
+      "How to Work the Problem.txt",
+      "IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt",
+      "IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt",
+      "IRON MAN 2 REVISITED  Road to Doomsday Episode 12.txt",
+      "IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt",
+      "IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt",
+      "IRON MAN Breakdown! New Details & Endgame Connections!  Infinity Saga Rewatch.txt",
+      "Iron Man (2008) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt",
+      "Marvel's The Avengers (2012) Pre-Infinity War Rewatch! Comic Book Easter Eggs!.txt",
+      "SPIDER-MAN NO WAY HOME Breakdown! 170+ MORE Easter Eggs Found!.txt",
+      "SPIDERMAN HOMECOMING Breakdown! New Hidden Easter Eggs Revealed!.txt",
+      "SPIDERMAN NO WAY HOME BREAKDOWN! Easter Eggs & Details You Missed!.txt",
+      "Spider-Man Far From Home Breakdown! NEW Easter Eggs You Missed!  Infinity Saga Rewatch.txt",
+      "The Curse of Knowledge Explained Why Iron Man & Thanos are CONNECTED.txt",
+      "Tony Stark The Curse of Being Right.txt",
+      "What IRON MAN Teaches About SUCCESS 5 Life Lessons from Tony Stark.txt",
+      "What Tony Stark Knows That You Don't (The Permission Trap).txt"
+    ],
+    "pairs_with": [
+      "a-avengers-compound",
+      "a-source-grounded-synthesis",
+      "a-knowledge-index-curator"
+    ],
+    "output_contract": [
+      "Concept",
+      "Definition",
+      "Operating Principle",
+      "Related Skills",
+      "Terms To Avoid",
+      "Source Grounding"
+    ],
+    "core_idea": "Maintain the Avengers concepts glossary and operating principles that future agents should share.",
+    "workflow": [
+      "Inspect `docs/AVENGERS_CONTEXT.md` before changing vocabulary.",
+      "Add only durable concepts, terms to clarify, or operating principles that improve future use.",
+      "Prefer short definitions tied to source-grounded behavior, not fandom trivia.",
+      "Record terms to avoid when wording causes confusion.",
+      "Cross-link related A-skills and memory notes when useful."
+    ],
+    "self_test": "If a repeated Avengers term is unclear or important, update the glossary rather than burying the meaning in one chat.",
+    "example": "Use $a-avengers-context to add this recurring operating principle to the Avengers glossary."
   }
 ]

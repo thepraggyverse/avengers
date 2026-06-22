@@ -15,6 +15,12 @@ Tier 3 Armor Tech Product Design skill. Design backup assistants and recovery pa
 - The request matches these triggers: FRIDAY, fallback, backup assistant.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The user asks for a simple factual answer that does not need an Avengers operating lens.
@@ -39,6 +45,12 @@ Return these fields unless the user asks for another format:
 - `Fallback`
 - `Next Upgrade`
 
+## Example
+
+```text
+Use $a-friday-fallback-system to review this tool as an armor system for a real operator.
+```
+
 ## Skill Chaining
 
 - Use `a-stark-router` if another Avengers skill may fit better.
@@ -50,6 +62,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `Iron Man Armor Evolution! Suit Upgrade Breakdown! (Mark 1 - Mark 85).txt` (1798 words)
 - `IRON MAN 2 Breakdown! Easter Eggs & MCU Phase 4 Connections!  Infinity Saga Rewatch.txt` (3109 words)
 - `IRON MAN 3 (2013) REVISITED  Road to Doomsday #18.txt` (12530 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 

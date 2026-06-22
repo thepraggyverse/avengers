@@ -15,6 +15,12 @@ Tier 4 MCU Story Analysis skill. Extract possible Avengers Doomsday setup and th
 - The request matches these triggers: Doomsday, foreshadowing, setup.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The user needs personal productivity coaching rather than story analysis.
@@ -39,6 +45,12 @@ Return these fields unless the user asks for another format:
 - `MCU Connection`
 - `Practical Lesson`
 
+## Example
+
+```text
+Use $a-doomsday-foreshadowing to break down this MCU scene or transcript theme.
+```
+
 ## Skill Chaining
 
 - Pair with `a-mcu-timeline-rewatch` when useful.
@@ -54,6 +66,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `Avengers Infinity War Breakdown! NEW EASTER EGGS FOUND!  Infinity Saga Rewatch.txt` (3768 words)
 - `Avengers Endgame Breakdown! Details You Missed & New VFX Easter Eggs!  Infinity Saga Rewatch.txt` (5610 words)
 - `IRON MAN (2008) REVISITED  Road to Doomsday Episode 7.txt` (16847 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 

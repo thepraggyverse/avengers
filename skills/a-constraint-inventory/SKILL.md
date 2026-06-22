@@ -15,6 +15,12 @@ Tier 2 Problem Solving skill. List hard constraints, movable constraints, resour
 - The request matches these triggers: constraints, resources, limits, available parts.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The user asks for a simple factual answer that does not need an Avengers operating lens.
@@ -39,6 +45,12 @@ Return these fields unless the user asks for another format:
 - `First Move`
 - `Next Check`
 
+## Example
+
+```text
+Use $a-constraint-inventory on this messy situation and give me the next concrete move.
+```
+
 ## Skill Chaining
 
 - Use `a-stark-router` if another Avengers skill may fit better.
@@ -50,6 +62,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `How to Work the Problem.txt`
 - `How to Work Like Tony Stark.txt` (1290 words)
 - `IRON MAN BREAKDOWN! Tony Stark Armor Details We Missed!  The Deep Dive.txt` (7732 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 

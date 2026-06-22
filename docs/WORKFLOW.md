@@ -1,6 +1,8 @@
 # Avengers OS Workflow
 
-Avengers OS adapts the compound-engineering idea to personal operating modes: each use should make the next use easier, clearer, and more reusable.
+An Avengers-inspired skill pack for problem solving, invention, leadership, pressure handling, strategy, iteration, and source-grounded reasoning.
+
+The workflow adapts the compound-engineering idea to Avengers-style operating modes: each meaningful use should make the next use easier, clearer, and more reusable.
 
 ## Philosophy
 
@@ -11,7 +13,7 @@ Avengers OS adapts the compound-engineering idea to personal operating modes: ea
 | Use what exists | Constraints become materials, not excuses. | `a-cave-resourcefulness`, `a-functional-attributes` |
 | Share the burden | Foresight only helps if others can understand and act. | `a-curse-of-knowledge-translator`, `a-shared-burden-protocol` |
 | Prevent Ultron loops | Protection must not become uncontrolled control. | `a-armor-around-world-check`, `a-ethics-of-control` |
-| Compound the learning | Each run should leave behind a sharper prompt, rule, test, or source link. | `a-knowledge-index-curator`, `a-skill-pack-builder` |
+| Compound the learning | Each run should leave behind a sharper prompt, rule, test, source link, or reusable memory note. | `a-avengers-compound`, `a-avengers-refresh` |
 
 ## Main Loop
 
@@ -24,7 +26,9 @@ Avengers OS adapts the compound-engineering idea to personal operating modes: ea
 | Upgrade | Something failed or underperformed. | `a-mistake-to-upgrade`, `a-upgrade-chain-mapper` | upgrade rule and prevention rule |
 | Govern | Power, safety, or team consequences matter. | `a-armor-around-world-check`, `a-civil-war-conflict-map` | ethical boundary and accountability |
 | Ground | The user asks where an idea came from. | `a-source-grounded-synthesis`, `a-quote-example-finder` | source-backed synthesis |
-| Compound | The pack itself needs refresh or pruning. | `a-skill-pack-builder`, `a-skill-pruner` | regenerated pack and validation report |
+| Compound | A run produced a reusable lesson. | `a-avengers-compound`, `a-avengers-context` | learning note, run log, or context update |
+| Refresh | Existing memory, docs, or skills may be stale. | `a-avengers-refresh`, `a-skill-pruner` | refresh report and smallest safe update |
+| Handoff | Another session needs to continue. | `a-avengers-handoff` | concise continuation note |
 
 ## Typical Chains
 
@@ -36,3 +40,12 @@ Avengers OS adapts the compound-engineering idea to personal operating modes: ea
 | Team split | `a-civil-war-conflict-map` -> `a-stark-cap-balance` -> `a-accords-governance` | "Both sides are right and the team is fracturing." |
 | Safety system risk | `a-armor-around-world-check` -> `a-ultron-failure-review` -> `a-ethics-of-control` | "This automation might become too controlling." |
 | Source-grounded answer | `a-source-grounded-synthesis` -> `a-quote-example-finder` -> `a-knowledge-index-curator` | "Where do the transcripts support this idea?" |
+| Reusable lesson | `a-avengers-compound` -> `a-avengers-context` -> `a-avengers-refresh` | "Save what this run taught us for next time." |
+
+## Memory Loop
+
+Use the memory layer when a run creates a reusable lesson, setup decision, context term, refresh report, or handoff.
+
+```text
+request -> skill used -> sources consulted -> decision/result -> reusable lesson -> related skills -> stale/refresh status
+```

@@ -1,0 +1,4 @@
+interface:
+  display_name: "A - Avengers Refresh"
+  short_description: "Audit Avengers skills, docs, and memory notes for stale, over..."
+  default_prompt: "Use $a-avengers-refresh to audit avengers skills, docs, and memory notes for stale, overlapping, or confusing guidance."

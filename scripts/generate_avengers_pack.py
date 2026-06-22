@@ -2,16 +2,24 @@
 from __future__ import annotations
 
 import json
-import os
 import re
 from pathlib import Path
+
+from avengers_config import corpus_dir
 
 
 PLUGIN_ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = PLUGIN_ROOT / "skills"
 REFERENCES_DIR = PLUGIN_ROOT / "references"
 DOCS_DIR = PLUGIN_ROOT / "docs"
-CORPUS_DIR = Path(os.environ.get("AVENGERS_CORPUS_DIR", "~/Documents/Avengers Corpus")).expanduser()
+CORPUS_DIR = corpus_dir()
+
+
+PACK_DESCRIPTION = (
+    "An Avengers-inspired skill pack for problem solving, invention, leadership, "
+    "pressure handling, strategy, iteration, and source-grounded reasoning."
+)
+EXPECTED_SKILL_COUNT = 112
 
 
 SOURCE_FILES = [
@@ -247,6 +255,17 @@ GROUPS = {
             ("skill-pack-builder", "Generate or refresh the Avengers plugin skill pack from the manifest.", "build skill pack, generate skills, plugin"),
         ],
     },
+    "Avengers Memory": {
+        "tier": 1,
+        "sources": SOURCE_FILES,
+        "skills": [
+            ("avengers-setup", "Configure local Avengers paths, harness homes, corpus search, and memory policy.", "setup Avengers, configure Avengers, local config, harness homes, corpus path, symlink policy"),
+            ("avengers-compound", "Capture a reusable lesson after an Avengers run so the next run is easier.", "compound learning, reusable lesson, save learning, after run, memory note"),
+            ("avengers-refresh", "Audit Avengers skills, docs, and memory notes for stale, overlapping, or confusing guidance.", "refresh memory, stale skills, overlap audit, contradictory docs, weak notes"),
+            ("avengers-handoff", "Write a concise continuation handoff for future agents or future sessions.", "handoff, continuation note, resume work, future agent, next session"),
+            ("avengers-context", "Maintain Avengers concepts, vocabulary, operating principles, and terms to clarify.", "context glossary, concepts, vocabulary, operating principles, terms to avoid"),
+        ],
+    },
 }
 
 
@@ -265,6 +284,7 @@ CONTRACTS = {
     "Armor Tech Product Design": ["Operator Need", "Armor Function", "Weakness", "Interface Decision", "Fallback", "Next Upgrade"],
     "MCU Story Analysis": ["Source", "Scene or Thread", "Callback", "Character Meaning", "MCU Connection", "Practical Lesson"],
     "Knowledge System": ["Input Corpus", "Extraction Goal", "Index Method", "Evidence Rule", "Output Artifact", "Maintenance Step"],
+    "Avengers Memory": ["Request", "Selected Skills", "Sources Consulted", "Decision or Result", "Reusable Lesson", "Refresh Status"],
 }
 
 
@@ -283,6 +303,7 @@ EXAMPLE_BY_CATEGORY = {
     "Armor Tech Product Design": "Use ${mention} to review this tool as an armor system for a real operator.",
     "MCU Story Analysis": "Use ${mention} to break down this MCU scene or transcript theme.",
     "Knowledge System": "Use ${mention} to turn this source material into searchable skill knowledge.",
+    "Avengers Memory": "Use ${mention} to configure, capture, refresh, or hand off Avengers memory.",
 }
 
 
@@ -301,12 +322,14 @@ BASE_WORKFLOWS = {
     "Armor Tech Product Design": ["Start with the human operator's need.", "Define the armor function, not just the shiny feature.", "Find the weakness in the current version.", "Add interface and fallback decisions.", "Specify the next Mark upgrade."],
     "MCU Story Analysis": ["Identify the source, scene, or transcript segment.", "Extract the visible detail or callback.", "Connect it to character arc, theme, or continuity.", "Separate grounded evidence from speculation.", "State the practical lesson or theory hook."],
     "Knowledge System": ["Identify the input corpus and extraction goal.", "Search or index before synthesizing.", "Keep source file names attached to claims.", "Avoid long verbatim reproduction from transcripts.", "Write the reusable artifact or manifest update."],
+    "Avengers Memory": ["Identify the request, repo, harness, and memory location.", "Check existing memory docs before adding new notes.", "Capture only reusable decisions, not noisy transcript dumps.", "Link related skills and source files.", "Mark whether the note is fresh, stale, merged, or needs refresh."],
 }
 
 
 DO_NOT_USE = {
     "MCU Story Analysis": ["The user needs personal productivity coaching rather than story analysis.", "The answer would rely on unsourced speculation presented as fact."],
     "Knowledge System": ["The user only needs a quick direct answer.", "The requested action would copy large transcript passages instead of synthesizing."],
+    "Avengers Memory": ["The task is a one-off answer with no reusable lesson, setup, refresh, context, or handoff value.", "The user explicitly asks not to write memory, logs, or handoff artifacts."],
     "Leadership And Team": ["The problem is a solo build decision with no team or stakeholder issue."],
     "Mentorship And Peter Parker": ["The user is not guiding another person or their own apprentice-like learning loop."],
 }
@@ -463,6 +486,81 @@ SKILL_OVERRIDES = {
         "pairs": ["a-knowledge-index-curator", "a-skill-pruner", "a-stark-router"],
         "self_test": "If asked to rebuild the pack, regenerate and validate rather than hand-editing individual generated files.",
     },
+    "avengers-setup": {
+        "tier": 1,
+        "core": "Configure local Avengers usage for a repository or harness without committing private paths or corpus data.",
+        "workflow": [
+            "Identify the target repo, harness, skill home, and whether this is a plugin or symlink install.",
+            "Choose local corpus and memory paths, preferring `.avengers/config.local.yaml` for private settings.",
+            "Record source citation preferences and what may be committed.",
+            "Check the relevant install docs before writing commands.",
+            "Return the exact setup commands and any files that should remain local-only.",
+        ],
+        "contract": ["Target Repo", "Harness", "Corpus Path", "Memory Path", "Install Method", "Do Not Commit", "Next Command"],
+        "pairs": ["a-avengers-context", "a-avengers-compound", "a-skill-pack-builder"],
+        "example": "Use $a-avengers-setup to configure this repo for Codex with a private corpus path, memory folder, and symlink policy.",
+        "self_test": "If asked to configure Avengers for Codex, Claude, Cursor, OpenCode, Gemini, Pi, or a flat skill home, return safe local paths and install commands.",
+    },
+    "avengers-compound": {
+        "tier": 1,
+        "core": "Capture a solved Avengers run as reusable memory with source hooks, related skills, and refresh status.",
+        "workflow": [
+            "Decide whether the run produced a reusable lesson worth saving.",
+            "Capture the request, selected skills, source files, decision or result, and reusable lesson.",
+            "Write the note with the learning-note schema under `docs/avengers-memory/learnings/` when repository memory is allowed.",
+            "Link related A-skills and mark confidence and refresh status.",
+            "Update context or handoff docs only when the lesson changes future behavior.",
+        ],
+        "contract": ["Request", "Selected Skills", "Sources Consulted", "Decision or Result", "Reusable Lesson", "Related Skills", "Refresh Status"],
+        "pairs": ["a-avengers-refresh", "a-avengers-context", "a-failure-memory-bank"],
+        "example": "Use $a-avengers-compound to save the reusable lesson from this run with related skills and refresh status.",
+        "self_test": "If a run teaches a reusable pattern, produce a concise learning note instead of letting the lesson disappear in chat.",
+    },
+    "avengers-refresh": {
+        "tier": 1,
+        "core": "Review Avengers skills, generated docs, and memory notes for stale, duplicated, contradictory, or confusing guidance.",
+        "workflow": [
+            "Search skills, docs, templates, schemas, and memory notes for the target topic.",
+            "Classify each issue as keep, update, merge, replace, delete, or follow-up.",
+            "Check for stale generated text, unclear headers, old branding, broken source hooks, and overlapping skills.",
+            "Write a refresh report under `docs/avengers-memory/refresh-reports/` when persistent output is allowed.",
+            "Recommend the smallest regeneration, docs, or memory edit that makes the pack clearer.",
+        ],
+        "contract": ["Scope", "Findings", "Action", "Affected Files", "Staleness Risk", "Recommended Fix", "Next Validation"],
+        "pairs": ["a-skill-pruner", "a-skill-pack-builder", "a-avengers-compound"],
+        "example": "Use $a-avengers-refresh to audit stale memory notes, overlapping skills, and old generated wording.",
+        "self_test": "If asked whether Avengers memory or skills are stale, produce a refresh report with concrete keep/update/merge decisions.",
+    },
+    "avengers-handoff": {
+        "tier": 1,
+        "core": "Create a concise continuation handoff so another agent or future session can resume without rediscovering the work.",
+        "workflow": [
+            "Summarize the current task, repo state, branch, and key files changed.",
+            "List commands run, tests passed or failed, and autoreview status.",
+            "Record decisions, unresolved risks, and the exact next action.",
+            "Write to `docs/avengers-memory/handoffs/` only when repo-persistent handoff is appropriate; otherwise use a temp path.",
+            "Keep secrets, private corpus text, and unrelated local paths out of the handoff.",
+        ],
+        "contract": ["Current Task", "Repo State", "Files Changed", "Tests Run", "Decisions", "Open Risks", "Next Action"],
+        "pairs": ["a-avengers-compound", "a-avengers-refresh", "a-stark-router"],
+        "example": "Use $a-avengers-handoff to write a continuation note with repo state, tests, decisions, risks, and next action.",
+        "self_test": "If asked to hand off Avengers work, create a compact continuation note with enough evidence to resume safely.",
+    },
+    "avengers-context": {
+        "tier": 1,
+        "core": "Maintain the Avengers concepts glossary and operating principles that future agents should share.",
+        "workflow": [
+            "Inspect `docs/AVENGERS_CONTEXT.md` before changing vocabulary.",
+            "Add only durable concepts, terms to clarify, or operating principles that improve future use.",
+            "Prefer short definitions tied to source-grounded behavior, not fandom trivia.",
+            "Record terms to avoid when wording causes confusion.",
+            "Cross-link related A-skills and memory notes when useful.",
+        ],
+        "contract": ["Concept", "Definition", "Operating Principle", "Related Skills", "Terms To Avoid", "Source Grounding"],
+        "pairs": ["a-avengers-compound", "a-source-grounded-synthesis", "a-knowledge-index-curator"],
+        "example": "Use $a-avengers-context to add this recurring operating principle to the Avengers glossary.",
+        "self_test": "If a repeated Avengers term is unclear or important, update the glossary rather than burying the meaning in one chat.",
+    },
 }
 
 
@@ -477,6 +575,9 @@ PAIR_RULES = [
     ("team", ["a-team-assembly-avengers", "a-civil-war-conflict-map"]),
     ("mcu", ["a-mcu-timeline-rewatch", "a-mcu-easter-egg-breakdown"]),
     ("knowledge", ["a-knowledge-index-curator", "a-source-grounded-synthesis"]),
+    ("memory", ["a-avengers-compound", "a-avengers-refresh"]),
+    ("handoff", ["a-avengers-handoff", "a-avengers-compound"]),
+    ("setup", ["a-avengers-setup", "a-skill-pack-builder"]),
 ]
 
 
@@ -516,6 +617,8 @@ def likely_pairs(slug: str, category: str) -> list[str]:
         pairs.extend(["a-stark-router", "a-stark-operating-system"])
     if category == "Knowledge System":
         pairs.extend(["a-knowledge-index-curator", "a-source-grounded-synthesis"])
+    if category == "Avengers Memory":
+        pairs.extend(["a-avengers-setup", "a-avengers-compound", "a-avengers-refresh", "a-avengers-context"])
     own = skill_name(slug)
     deduped = []
     for pair in pairs:
@@ -569,6 +672,7 @@ def build_manifest() -> list[dict]:
                 "core_idea": override.get("core", summary),
                 "workflow": override.get("workflow", BASE_WORKFLOWS[category]),
                 "self_test": override.get("self_test", f"If the user asks for {summary.lower()}, return the output contract fields and a concrete next action."),
+                "example": override.get("example"),
             })
     names = {entry["name"] for entry in manifest}
     for entry in manifest:
@@ -614,6 +718,12 @@ def write_skill(entry: dict) -> None:
         "",
         *[f"- {item}" for item in use_when],
         "",
+        "## Inputs",
+        "",
+        "- The user's request, goal, or artifact.",
+        "- Any explicit harness, repository, corpus, or source-file constraints.",
+        "- Any related A-skills already selected by the user or router.",
+        "",
         "## Do Not Use When",
         "",
         *[f"- {item}" for item in do_not],
@@ -627,6 +737,10 @@ def write_skill(entry: dict) -> None:
         "Return these fields unless the user asks for another format:",
         "",
         *[f"- `{field}`" for field in entry["output_contract"]],
+        "",
+        "## Example",
+        "",
+        f"```text\n{example_for(entry)}\n```",
         "",
         "## Skill Chaining",
         "",
@@ -642,6 +756,18 @@ def write_skill(entry: dict) -> None:
         "Use these sources for grounding when source evidence is needed. Keep answers synthesized; do not reproduce long transcript passages.",
         "",
         *source_summary_for(entry["source_files"]),
+        "",
+        "## Safety And Grounding",
+        "",
+        "- Keep answers synthesized and practical.",
+        "- Do not reproduce long copyrighted source passages.",
+        "- Keep private corpus paths, secrets, and local machine details out of committed artifacts.",
+        "- Mark speculation clearly when source grounding is thin.",
+        "",
+        "## Cross-Harness Notes",
+        "",
+        "- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.",
+        "- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.",
         "",
         "## Self-Test",
         "",
@@ -757,6 +883,8 @@ def write_references(manifest: list[dict]) -> None:
 
 
 def example_for(entry: dict) -> str:
+    if entry.get("example"):
+        return entry["example"]
     template = EXAMPLE_BY_CATEGORY[entry["category"]]
     return (
         template
@@ -776,7 +904,9 @@ def write_product_docs(manifest: list[dict]) -> None:
     workflow = [
         "# Avengers OS Workflow",
         "",
-        "Avengers OS adapts the compound-engineering idea to personal operating modes: each use should make the next use easier, clearer, and more reusable.",
+        PACK_DESCRIPTION,
+        "",
+        "The workflow adapts the compound-engineering idea to Avengers-style operating modes: each meaningful use should make the next use easier, clearer, and more reusable.",
         "",
         "## Philosophy",
         "",
@@ -787,7 +917,7 @@ def write_product_docs(manifest: list[dict]) -> None:
         "| Use what exists | Constraints become materials, not excuses. | `a-cave-resourcefulness`, `a-functional-attributes` |",
         "| Share the burden | Foresight only helps if others can understand and act. | `a-curse-of-knowledge-translator`, `a-shared-burden-protocol` |",
         "| Prevent Ultron loops | Protection must not become uncontrolled control. | `a-armor-around-world-check`, `a-ethics-of-control` |",
-        "| Compound the learning | Each run should leave behind a sharper prompt, rule, test, or source link. | `a-knowledge-index-curator`, `a-skill-pack-builder` |",
+        "| Compound the learning | Each run should leave behind a sharper prompt, rule, test, source link, or reusable memory note. | `a-avengers-compound`, `a-avengers-refresh` |",
         "",
         "## Main Loop",
         "",
@@ -800,7 +930,9 @@ def write_product_docs(manifest: list[dict]) -> None:
         "| Upgrade | Something failed or underperformed. | `a-mistake-to-upgrade`, `a-upgrade-chain-mapper` | upgrade rule and prevention rule |",
         "| Govern | Power, safety, or team consequences matter. | `a-armor-around-world-check`, `a-civil-war-conflict-map` | ethical boundary and accountability |",
         "| Ground | The user asks where an idea came from. | `a-source-grounded-synthesis`, `a-quote-example-finder` | source-backed synthesis |",
-        "| Compound | The pack itself needs refresh or pruning. | `a-skill-pack-builder`, `a-skill-pruner` | regenerated pack and validation report |",
+        "| Compound | A run produced a reusable lesson. | `a-avengers-compound`, `a-avengers-context` | learning note, run log, or context update |",
+        "| Refresh | Existing memory, docs, or skills may be stale. | `a-avengers-refresh`, `a-skill-pruner` | refresh report and smallest safe update |",
+        "| Handoff | Another session needs to continue. | `a-avengers-handoff` | concise continuation note |",
         "",
         "## Typical Chains",
         "",
@@ -812,6 +944,15 @@ def write_product_docs(manifest: list[dict]) -> None:
         "| Team split | `a-civil-war-conflict-map` -> `a-stark-cap-balance` -> `a-accords-governance` | \"Both sides are right and the team is fracturing.\" |",
         "| Safety system risk | `a-armor-around-world-check` -> `a-ultron-failure-review` -> `a-ethics-of-control` | \"This automation might become too controlling.\" |",
         "| Source-grounded answer | `a-source-grounded-synthesis` -> `a-quote-example-finder` -> `a-knowledge-index-curator` | \"Where do the transcripts support this idea?\" |",
+        "| Reusable lesson | `a-avengers-compound` -> `a-avengers-context` -> `a-avengers-refresh` | \"Save what this run taught us for next time.\" |",
+        "",
+        "## Memory Loop",
+        "",
+        "Use the memory layer when a run creates a reusable lesson, setup decision, context term, refresh report, or handoff.",
+        "",
+        "```text",
+        "request -> skill used -> sources consulted -> decision/result -> reusable lesson -> related skills -> stale/refresh status",
+        "```",
         "",
     ]
     (DOCS_DIR / "WORKFLOW.md").write_text("\n".join(workflow), encoding="utf-8")
@@ -857,6 +998,9 @@ def write_product_docs(manifest: list[dict]) -> None:
         "| \"The team is split.\" | `a-civil-war-conflict-map` | Maps competing legitimate values. |",
         "| \"This automation might become too powerful.\" | `a-armor-around-world-check` | Checks for overcontrol and ethical boundaries. |",
         "| \"Where did this idea come from?\" | `a-source-grounded-synthesis` | Uses local source hooks without dumping transcripts. |",
+        "| \"Save what we learned from this run.\" | `a-avengers-compound` | Writes a reusable learning note when the lesson should survive the chat. |",
+        "| \"Set Avengers up for this repo and Codex.\" | `a-avengers-setup` | Chooses local config, corpus, memory, and install paths safely. |",
+        "| \"Make a handoff for the next agent.\" | `a-avengers-handoff` | Captures repo state, tests, decisions, risks, and next action. |",
         "",
         "## Recipe: Mark 1 Product Sprint",
         "",
@@ -903,6 +1047,24 @@ def write_product_docs(manifest: list[dict]) -> None:
         "",
         "Keep full transcripts outside the repo and point scripts at them with `AVENGERS_CORPUS_DIR`.",
         "",
+        "## Recipe: Compound A Run",
+        "",
+        "```text",
+        "Use $a-avengers-compound after this run.",
+        "Save the request, skills used, source files, decision, reusable lesson, and refresh status.",
+        "Then use $a-avengers-context if a durable concept changed.",
+        "```",
+        "",
+        "Expected artifact:",
+        "",
+        "| Field | Meaning |",
+        "|---|---|",
+        "| Request | What the user asked for |",
+        "| Skills Used | The A-skills that shaped the answer |",
+        "| Sources Consulted | Corpus files, docs, or repo files used |",
+        "| Reusable Lesson | The part future agents should remember |",
+        "| Refresh Status | Fresh, stale, merged, or needs review |",
+        "",
     ]
     (DOCS_DIR / "EXAMPLES.md").write_text("\n".join(examples), encoding="utf-8")
 
@@ -910,23 +1072,28 @@ def write_product_docs(manifest: list[dict]) -> None:
 def update_plugin_json() -> None:
     path = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
     data = json.loads(path.read_text(encoding="utf-8"))
-    data["description"] = "An unofficial Avengers/Tony Stark operating-system skill pack with 107 A-prefixed skills."
+    data["description"] = f"{EXPECTED_SKILL_COUNT} A-prefixed skills. {PACK_DESCRIPTION}"
     data["author"] = {"name": "thepraggyverse"}
     data["interface"].update({
         "displayName": "Avengers",
-        "shortDescription": "107 A-prefixed Avengers and Tony Stark operating skills.",
-        "longDescription": "Avengers turns Tony Stark, Iron Man, MCU story analysis, leadership, risk, prototyping, resourcefulness, mentorship, and corpus knowledge into local Codex skills.",
+        "shortDescription": f"{EXPECTED_SKILL_COUNT} A-prefixed skills for Avengers-style operating modes.",
+        "longDescription": "Avengers turns problem solving, invention, leadership, pressure handling, strategy, iteration, MCU story analysis, and source-grounded reasoning into portable local skills with a lightweight memory layer for setup, compound learning, refresh reports, context, and handoffs.",
         "developerName": "thepraggyverse",
-        "capabilities": ["skills", "knowledge", "workflow"],
-        "defaultPrompt": "Use a-stark-router to choose and apply the right Avengers skill.",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Read", "Write", "Skills", "Knowledge"],
+        "defaultPrompt": [
+            "Use $a-stark-router to choose the right Avengers skill.",
+            "Use $a-avengers-compound to save the lesson.",
+            "Use $a-avengers-setup to configure local memory.",
+        ],
     })
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> None:
     manifest = build_manifest()
-    if len(manifest) != 107:
-        raise SystemExit(f"Expected 107 skills, got {len(manifest)}")
+    if len(manifest) != EXPECTED_SKILL_COUNT:
+        raise SystemExit(f"Expected {EXPECTED_SKILL_COUNT} skills, got {len(manifest)}")
 
     SKILLS_DIR.mkdir(parents=True, exist_ok=True)
     for entry in manifest:

@@ -15,6 +15,12 @@ Tier 2 Multiple Projects skill. Maintain a radar view of active bets, status, an
 - The request matches these triggers: portfolio radar, active projects.
 - The user asks for an Avengers, Tony Stark, Iron Man, MCU, or A-prefixed lens.
 
+## Inputs
+
+- The user's request, goal, or artifact.
+- Any explicit harness, repository, corpus, or source-file constraints.
+- Any related A-skills already selected by the user or router.
+
 ## Do Not Use When
 
 - The user asks for a simple factual answer that does not need an Avengers operating lens.
@@ -39,6 +45,12 @@ Return these fields unless the user asks for another format:
 - `Energy Match`
 - `Radar Update`
 
+## Example
+
+```text
+Use $a-project-portfolio-radar to organize these active projects without burning out.
+```
+
 ## Skill Chaining
 
 - Use `a-stark-router` if another Avengers skill may fit better.
@@ -50,6 +62,18 @@ Use these sources for grounding when source evidence is needed. Keep answers syn
 - `How Tony Stark Works on Multiple Projects at Once.txt` (1915 words)
 - `How Tony Stark Uses Lean and Six-Sigma.txt` (1245 words)
 - `10 Tony Stark Habits That Make You Unstoppable.txt` (366 words)
+
+## Safety And Grounding
+
+- Keep answers synthesized and practical.
+- Do not reproduce long copyrighted source passages.
+- Keep private corpus paths, secrets, and local machine details out of committed artifacts.
+- Mark speculation clearly when source grounding is thin.
+
+## Cross-Harness Notes
+
+- This skill is plain `SKILL.md` and should work through native plugins or flat skill-home symlinks.
+- The A-prefixed name is intentional so searching for `A`, `a-`, or `Avengers` surfaces the pack.
 
 ## Self-Test
 
