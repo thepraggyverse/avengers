@@ -45,8 +45,14 @@ The goal is not to clone their structure. The goal is to make Avengers complete 
 | Context vocabulary | Covered | `docs/AVENGERS_CONTEXT.md`. |
 | Handoff protocol | Covered | `docs/HANDOFF.md` and `a-avengers-handoff`. |
 | Testing docs | Covered | `docs/TESTING.md`. |
+| Focused Codex profile guidance | Covered | `docs/CODEX_PROFILES.md`. |
+| Version policy | Covered | `docs/VERSIONING.md`. |
+| Security policy | Covered | `SECURITY.md`. |
+| Support policy | Covered | `SUPPORT.md`. |
 | Public changelog | Covered | `CHANGELOG.md`. |
 | Documentation audit | Covered | This file. |
+| One-command health check | Covered | `scripts/doctor.py`. |
+| Continuous integration | Covered | `.github/workflows/ci.yml` runs the doctor on push and pull requests. |
 
 ## Intentional Differences
 
@@ -62,22 +68,19 @@ The goal is not to clone their structure. The goal is to make Avengers complete 
 
 | Gap | Trigger To Add |
 |---|---|
+| Release automation | Add when the repo is ready for tagged public releases. |
 | ADR folder | Add when a design decision changes public contracts, versioning, harness support, or memory policy. |
-| Release automation | Add when the repo is ready for tagged public releases and CI publishing. |
-| Security policy | Add if the repo grows executable integrations, networked tools, or accepted external contributions. |
-| Support policy | Add if issues/discussions are opened to outside users. |
-| Generated docs validation | Add if docs drift becomes common after regeneration. |
+| Generated docs validation beyond smoke tests | Add if docs drift becomes common after regeneration. |
 
 ## Closeout Checklist
 
 Before saying the pack is ready:
 
 1. Regenerate when generator-owned files change.
-2. Run `python3 scripts/validate_skill_pack.py`.
-3. Run `python3 -m unittest discover -s tests -v`.
-4. Run `git diff --check`.
-5. Scan for stale public wording and accidental local/private paths.
-6. Reinstall or refresh the plugin cache.
-7. Run at least one live harness skill-load test.
-8. Run autoreview for non-trivial changes.
-9. Update `CHANGELOG.md` and handoff notes.
+2. Run `python3 scripts/doctor.py`.
+3. If generation changed routing, run focused `scripts/simulate_routes.py` prompts.
+4. Scan the staged diff for docs and instruction consistency.
+5. Reinstall or refresh the plugin cache when plugin surfaces changed.
+6. Run at least one live harness skill-load test when install behavior changed.
+7. Run autoreview for non-trivial changes.
+8. Update `CHANGELOG.md` and handoff notes.

@@ -20,6 +20,10 @@ The format follows the spirit of Keep a Changelog, with plain-language entries f
 - Added reference-generated docs for workflow, skill inventory, examples, corpus use, testing, updates, and handoffs.
 - Added unit tests and routing simulations for generated skills, memory skills, config resolution, manifest consistency, and plugin metadata.
 - Added [docs/DOCUMENTATION_AUDIT.md](docs/DOCUMENTATION_AUDIT.md), comparing Avengers against Compound Engineering, the Every guide, and Matt Pocock's skills repo.
+- Added `scripts/doctor.py` as a one-command health check for validation, tests, manifest parsing, stale wording, private-path scans, whitespace, and generated caches.
+- Added GitHub Actions CI at `.github/workflows/ci.yml` to run the doctor on pushes and pull requests.
+- Added `SECURITY.md`, `SUPPORT.md`, `docs/VERSIONING.md`, and `docs/CODEX_PROFILES.md`.
+- Added docs drift tests for README, support/security docs, version policy, CI, and safe uninstall guidance.
 
 ### Changed
 
@@ -27,12 +31,14 @@ The format follows the spirit of Keep a Changelog, with plain-language entries f
 - Updated generated skills to include inputs, examples, safety/source-grounding notes, cross-harness notes, and self-tests.
 - Updated `scripts/generate_avengers_pack.py` so regeneration preserves the current manifest wording and skill count.
 - Updated `scripts/search_corpus.py` to resolve the corpus path from environment, local config, or a safe default.
+- Updated README, testing, update, and agent instructions to use the doctor as the default verification path.
 
 ### Verified
 
 - `python3 scripts/search_corpus.py "permission trap" --limit 2`
 - `python3 scripts/validate_skill_pack.py`
 - `python3 -m unittest discover -s tests -v`
+- `python3 scripts/doctor.py`
 - JSON parsing for plugin and extension manifests.
 - Stale wording scan for older affiliation disclaimers and 107-skill text.
 - `git diff --check`

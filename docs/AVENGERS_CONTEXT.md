@@ -25,6 +25,6 @@ This file defines durable Avengers skill-pack vocabulary. Keep it short and prac
 
 | Phrase | Preferred Wording | Reason |
 |---|---|---|
-| Unofficial operating system | Avengers-inspired skill pack | Clearer and less grandiose. |
+| Affiliation-framed operating system | Avengers-inspired skill pack | Clearer and less grandiose. |
 | Tony Stark plugin | Avengers skill/plugin pack | The pack includes leadership, MCU analysis, memory, and source-grounded work beyond one character. |
 | Dump the transcripts | Synthesize from local source files | Keeps the public repo and outputs copyright-safe. |

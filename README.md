@@ -41,6 +41,10 @@ Release notes: [CHANGELOG.md](CHANGELOG.md)
 
 Reference audit: [docs/DOCUMENTATION_AUDIT.md](docs/DOCUMENTATION_AUDIT.md)
 
+Security: [SECURITY.md](SECURITY.md)
+
+Support: [SUPPORT.md](SUPPORT.md)
+
 ## Main Loop
 
 ```text
@@ -93,8 +97,7 @@ Clone and validate:
 ```bash
 git clone https://github.com/thepraggyverse/avengers.git ~/plugins/avengers
 cd ~/plugins/avengers
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
 
 Install options:
@@ -112,6 +115,8 @@ Install options:
 
 Detailed install guide: [docs/INSTALL.md](docs/INSTALL.md)
 
+Focused Codex profile guide: [docs/CODEX_PROFILES.md](docs/CODEX_PROFILES.md)
+
 ## Update
 
 Checkout update:
@@ -125,8 +130,7 @@ Manual development update:
 
 ```bash
 AVENGERS_CORPUS_DIR="/path/to/private/corpus" python3 scripts/generate_avengers_pack.py
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
 
 Update details: [docs/UPDATE.md](docs/UPDATE.md)
@@ -134,6 +138,7 @@ Update details: [docs/UPDATE.md](docs/UPDATE.md)
 ## Testing
 
 ```bash
+python3 scripts/doctor.py
 python3 scripts/validate_skill_pack.py
 python3 -m unittest discover -s tests -v
 python3 scripts/simulate_routes.py "Save what we learned from this Avengers run."
@@ -141,16 +146,25 @@ python3 scripts/simulate_routes.py "Save what we learned from this Avengers run.
 
 Testing guide: [docs/TESTING.md](docs/TESTING.md)
 
+Versioning guide: [docs/VERSIONING.md](docs/VERSIONING.md)
+
 ## Uninstall
 
 Native plugin installs should be removed through the harness plugin UI or command.
 
-Flat symlink installs can be removed by deleting `a-*` symlinks from the skill home you installed into. The repo never needs your private corpus to be deleted.
+Flat symlink installs should be removed with the safe uninstall mode:
+
+```bash
+python3 scripts/install_symlinks.py --uninstall --apply --home ~/.codex/skills
+```
+
+It removes only symlinks that point back to this Avengers checkout. The repo never needs your private corpus to be deleted.
 
 ## Repo Layout
 
 ```text
 avengers/
+├── .github/workflows/ci.yml    # CI doctor check
 ├── .codex-plugin/              # Codex native plugin manifest
 ├── .claude-plugin/             # Claude-compatible plugin metadata
 ├── .cursor-plugin/             # Cursor plugin metadata
@@ -160,9 +174,11 @@ avengers/
 ├── .pi/                        # Pi extension helper
 ├── skills/                     # 112 generated A-prefixed skills
 ├── references/                 # manifest, source map, principles, corpus index
-├── scripts/                    # generate, validate, install, update, simulate, search
+├── scripts/                    # doctor, generate, validate, install, update, simulate, search
 ├── tests/                      # unit and routing-simulation tests
 ├── CHANGELOG.md                # release notes and verification history
+├── SECURITY.md                 # vulnerability and public-safety policy
+├── SUPPORT.md                  # support and issue-report guidance
 └── docs/                       # install, workflow, examples, memory, inventory, testing
 ```
 

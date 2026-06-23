@@ -68,6 +68,15 @@ Pull the repo, regenerate if needed, validate, and the symlinked homes see the n
 ```bash
 cd ~/plugins/avengers
 git pull --ff-only
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
+
+## Safe Uninstall
+
+Use uninstall mode instead of broad shell deletes:
+
+```bash
+python3 scripts/install_symlinks.py --uninstall --apply --home ~/.codex/skills
+```
+
+The script removes only symlinks that point back to this Avengers checkout.

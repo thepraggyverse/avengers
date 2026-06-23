@@ -3,6 +3,14 @@
 Run all checks:
 
 ```bash
+python3 scripts/doctor.py
+```
+
+The doctor runs the normal validation suite, JSON manifest parsing, stale wording scan, private path/token scan, diff whitespace check, and generated-cache check.
+
+For focused checks:
+
+```bash
 python3 scripts/validate_skill_pack.py
 python3 -m unittest discover -s tests -v
 ```
@@ -53,6 +61,7 @@ Manifest entries: 112
 - Plugin manifest basics.
 - Memory layer paths, schemas, and templates.
 - Cross-harness metadata for Claude-compatible, Cursor, shared marketplace, and Gemini surfaces.
+- Docs drift for README, install, support, security, versioning, Codex profiles, and CI.
 
 `tests/test_skill_simulations.py` checks realistic routing prompts:
 
@@ -100,6 +109,12 @@ python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
 python3 -m json.tool gemini-extension.json >/dev/null
 ```
 
+The doctor also parses the required JSON manifests:
+
+```bash
+python3 scripts/doctor.py --quick
+```
+
 ## Stale Wording Checks
 
 ```bash
@@ -131,4 +146,12 @@ The generator may update generated skills, references, and generated docs. It sh
 ```bash
 git diff --check
 find . \( -name '__pycache__' -o -name '*.pyc' -o -name '.DS_Store' \) -print
+```
+
+## CI
+
+GitHub Actions runs the same doctor command on pushes to `main` and on pull requests:
+
+```text
+.github/workflows/ci.yml
 ```

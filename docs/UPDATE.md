@@ -25,8 +25,7 @@ This runs:
 ```text
 git pull --ff-only
 python3 scripts/generate_avengers_pack.py
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
 
 If you have the private corpus locally, prefer:
@@ -116,8 +115,7 @@ AVENGERS_CORPUS_DIR="/path/to/private/corpus" python3 scripts/generate_avengers_
 Validate:
 
 ```bash
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
 
 Check for stale count or old wording:

@@ -17,8 +17,7 @@ No Python package install is required.
 ```bash
 git clone https://github.com/thepraggyverse/avengers.git ~/plugins/avengers
 cd ~/plugins/avengers
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
 
 Expected validation:
@@ -64,6 +63,8 @@ For a separate Codex profile:
 CODEX_HOME="$HOME/.codex/profiles/avengers-test" codex plugin marketplace add "$PWD"
 CODEX_HOME="$HOME/.codex/profiles/avengers-test" codex
 ```
+
+See [CODEX_PROFILES.md](CODEX_PROFILES.md) when your global Codex skill list is crowded or truncated.
 
 Direct skill fallback:
 

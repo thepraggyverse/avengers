@@ -18,10 +18,13 @@ Avengers is an Avengers-inspired skill pack for problem solving, invention, lead
 .pi/                             Pi extension helper
 skills/                          Generated A-prefixed skills
 references/                      Generated manifest, source map, corpus index, principles
-scripts/                         Generate, validate, install, update, search, simulate
+scripts/                         Doctor, generate, validate, install, update, search, simulate
 tests/                           Unit tests and route simulations
 docs/                            Install, update, workflow, examples, memory, harness notes
 CHANGELOG.md                     Release notes and verification history
+SECURITY.md                      Security and public-safety policy
+SUPPORT.md                       Support and issue-report guidance
+.github/workflows/ci.yml         CI doctor check
 ```
 
 ## Public-Safety Rule
@@ -110,8 +113,7 @@ Run after normal content changes:
 
 ```bash
 AVENGERS_CORPUS_DIR="/path/to/private/corpus" python3 scripts/generate_avengers_pack.py
-python3 scripts/validate_skill_pack.py
-python3 -m unittest discover -s tests -v
+python3 scripts/doctor.py
 ```
 
 Run after routing trigger changes:
@@ -126,14 +128,14 @@ python3 scripts/simulate_routes.py "Write a handoff for the next agent."
 Run before public commits:
 
 ```bash
-git diff --check
-find . \( -name '__pycache__' -o -name '*.pyc' -o -name '.DS_Store' \) -print
-rg -n "[u]nofficial|10[7] A-prefixed|Skills: 10[7]|Manifest entries: 10[7]" README.md AGENTS.md docs .codex-plugin .claude-plugin .cursor-plugin gemini-extension.json scripts tests
+python3 scripts/doctor.py
 ```
 
-Also run an appropriate local-path and secret scan before public pushes. Avoid writing sensitive strings into committed docs merely to demonstrate the scan.
+The doctor includes validation, tests, JSON parsing, stale wording scan, local-path/token scan, diff whitespace, and generated-cache checks. Avoid writing sensitive strings into committed docs merely to demonstrate the scan.
 
 When docs are part of the change, check that `README.md`, `CHANGELOG.md`, and `docs/DOCUMENTATION_AUDIT.md` still agree about skill count, install routes, memory paths, and limitations.
+
+When release or install behavior changes, also update `docs/VERSIONING.md`, `SECURITY.md`, `SUPPORT.md`, or `docs/CODEX_PROFILES.md` when relevant.
 
 ## Autoreview Closeout
 
