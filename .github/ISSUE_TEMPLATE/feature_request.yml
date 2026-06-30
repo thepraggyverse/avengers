@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest a new skill, workflow, doc, or harness surface.
+title: "Feature: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What should Avengers help with?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What would you add or change?
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Public-safety notes
+      description: Any corpus, trademark, privacy, or local-path concerns?

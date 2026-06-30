@@ -124,6 +124,13 @@ Check for stale count or old wording:
 rg -n "[u]nofficial|10[7] A-prefixed|Skills: 10[7]|Manifest entries: 10[7]" README.md AGENTS.md docs .codex-plugin .claude-plugin .cursor-plugin gemini-extension.json scripts tests
 ```
 
+For release version updates:
+
+```bash
+python3 scripts/prepare_release.py 0.2.0 --apply
+python3 scripts/doctor.py
+```
+
 ## Stale Skill Cleanup
 
 Current version exposes 112 skills. If a future version removes or renames a skill, old symlink installs may retain stale skill folders.

@@ -25,6 +25,8 @@ CHANGELOG.md                     Release notes and verification history
 SECURITY.md                      Security and public-safety policy
 SUPPORT.md                       Support and issue-report guidance
 .github/workflows/ci.yml         CI doctor check
+.github/workflows/release.yml    Tag-based GitHub release workflow
+assets/                          Public-safe visual assets
 ```
 
 ## Public-Safety Rule
@@ -136,6 +138,8 @@ The doctor includes validation, tests, JSON parsing, stale wording scan, local-p
 When docs are part of the change, check that `README.md`, `CHANGELOG.md`, and `docs/DOCUMENTATION_AUDIT.md` still agree about skill count, install routes, memory paths, and limitations.
 
 When release or install behavior changes, also update `docs/VERSIONING.md`, `SECURITY.md`, `SUPPORT.md`, or `docs/CODEX_PROFILES.md` when relevant.
+
+When changing release version, use `python3 scripts/prepare_release.py <version> --apply` so plugin manifests stay in sync.
 
 ## Autoreview Closeout
 

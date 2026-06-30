@@ -49,6 +49,11 @@ The goal is not to clone their structure. The goal is to make Avengers complete 
 | Version policy | Covered | `docs/VERSIONING.md`. |
 | Security policy | Covered | `SECURITY.md`. |
 | Support policy | Covered | `SUPPORT.md`. |
+| Issue templates | Covered | `.github/ISSUE_TEMPLATE/`. |
+| Release workflow | Covered | `.github/workflows/release.yml`. |
+| Marketplace assets | Covered | `assets/`. |
+| Public examples | Covered | `docs/USE_CASES.md`. |
+| Generated drift check | Covered | `scripts/doctor.py` runs generator drift in a temp copy. |
 | Public changelog | Covered | `CHANGELOG.md`. |
 | Documentation audit | Covered | This file. |
 | One-command health check | Covered | `scripts/doctor.py`. |
@@ -70,7 +75,6 @@ The goal is not to clone their structure. The goal is to make Avengers complete 
 |---|---|
 | Release automation | Add when the repo is ready for tagged public releases. |
 | ADR folder | Add when a design decision changes public contracts, versioning, harness support, or memory policy. |
-| Generated docs validation beyond smoke tests | Add if docs drift becomes common after regeneration. |
 
 ## Closeout Checklist
 

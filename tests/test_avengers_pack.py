@@ -23,7 +23,9 @@ CURSOR_PLUGIN_JSON_PATH = PLUGIN_ROOT / ".cursor-plugin" / "plugin.json"
 AGENTS_MARKETPLACE_PATH = PLUGIN_ROOT / ".agents" / "plugins" / "marketplace.json"
 GEMINI_EXTENSION_PATH = PLUGIN_ROOT / "gemini-extension.json"
 CI_WORKFLOW_PATH = PLUGIN_ROOT / ".github" / "workflows" / "ci.yml"
+RELEASE_WORKFLOW_PATH = PLUGIN_ROOT / ".github" / "workflows" / "release.yml"
 EXPECTED_SKILLS = 112
+EXPECTED_VERSION = "0.2.0"
 MEMORY_PATHS = [
     PLUGIN_ROOT / ".avengers" / "config.local.example.yaml",
     PLUGIN_ROOT / "docs" / "AVENGERS_MEMORY.md",
@@ -50,6 +52,7 @@ DOC_PATHS = [
     PLUGIN_ROOT / "docs" / "DOCUMENTATION_AUDIT.md",
     PLUGIN_ROOT / "docs" / "VERSIONING.md",
     PLUGIN_ROOT / "docs" / "CODEX_PROFILES.md",
+    PLUGIN_ROOT / "docs" / "USE_CASES.md",
 ]
 
 
@@ -228,6 +231,23 @@ class AvengersPackTests(unittest.TestCase):
         self.assertEqual("avengers-plugin", marketplace["name"])
         self.assertEqual("avengers", marketplace["plugins"][0]["name"])
 
+    def test_manifest_versions_match(self) -> None:
+        version_paths = [
+            PLUGIN_JSON_PATH,
+            CLAUDE_PLUGIN_JSON_PATH,
+            PLUGIN_ROOT / ".claude-plugin" / "marketplace.json",
+            CURSOR_PLUGIN_JSON_PATH,
+            PLUGIN_ROOT / ".cursor-plugin" / "marketplace.json",
+            GEMINI_EXTENSION_PATH,
+        ]
+        for path in version_paths:
+            with self.subTest(path=path):
+                data = json.loads(path.read_text(encoding="utf-8"))
+                if "version" in data:
+                    self.assertEqual(EXPECTED_VERSION, data["version"])
+                if isinstance(data.get("metadata"), dict) and "version" in data["metadata"]:
+                    self.assertEqual(EXPECTED_VERSION, data["metadata"]["version"])
+
     def test_release_and_support_docs_are_present(self) -> None:
         for path in [
             PLUGIN_ROOT / "CHANGELOG.md",
@@ -235,8 +255,18 @@ class AvengersPackTests(unittest.TestCase):
             PLUGIN_ROOT / "SUPPORT.md",
             PLUGIN_ROOT / "docs" / "VERSIONING.md",
             PLUGIN_ROOT / "docs" / "CODEX_PROFILES.md",
+            PLUGIN_ROOT / "docs" / "USE_CASES.md",
             CI_WORKFLOW_PATH,
+            RELEASE_WORKFLOW_PATH,
+            PLUGIN_ROOT / ".github" / "ISSUE_TEMPLATE" / "install_bug.yml",
+            PLUGIN_ROOT / ".github" / "ISSUE_TEMPLATE" / "skill_routing_bug.yml",
+            PLUGIN_ROOT / ".github" / "ISSUE_TEMPLATE" / "docs_bug.yml",
+            PLUGIN_ROOT / ".github" / "ISSUE_TEMPLATE" / "feature_request.yml",
+            PLUGIN_ROOT / ".github" / "ISSUE_TEMPLATE" / "config.yml",
+            PLUGIN_ROOT / "assets" / "icon.svg",
+            PLUGIN_ROOT / "assets" / "README.md",
             PLUGIN_ROOT / "scripts" / "doctor.py",
+            PLUGIN_ROOT / "scripts" / "prepare_release.py",
         ]:
             with self.subTest(path=path):
                 self.assertTrue(path.exists(), f"missing {path}")
@@ -246,11 +276,15 @@ class AvengersPackTests(unittest.TestCase):
         testing = (PLUGIN_ROOT / "docs" / "TESTING.md").read_text(encoding="utf-8")
         agents = (PLUGIN_ROOT / "AGENTS.md").read_text(encoding="utf-8")
         workflow = CI_WORKFLOW_PATH.read_text(encoding="utf-8")
+        release_workflow = RELEASE_WORKFLOW_PATH.read_text(encoding="utf-8")
 
         self.assertIn("python3 scripts/doctor.py", readme)
         self.assertIn("python3 scripts/doctor.py", testing)
         self.assertIn("python3 scripts/doctor.py", agents)
         self.assertIn("python3 scripts/doctor.py", workflow)
+        self.assertIn("install-smoke", workflow)
+        self.assertIn("install_symlinks.py --uninstall", workflow)
+        self.assertIn("python3 scripts/doctor.py", release_workflow)
 
     def test_docs_reference_safe_uninstall(self) -> None:
         for path in [
@@ -276,11 +310,45 @@ class AvengersPackTests(unittest.TestCase):
         self.assertIn("SUPPORT.md", readme)
         self.assertIn("docs/VERSIONING.md", readme)
         self.assertIn("docs/CODEX_PROFILES.md", readme)
+        self.assertIn("docs/USE_CASES.md", readme)
         self.assertIn("SECURITY.md", audit)
         self.assertIn("SUPPORT.md", audit)
-        self.assertIn("0.1.0", versioning)
+        self.assertIn(EXPECTED_VERSION, versioning)
         self.assertIn("private corpus", support.lower())
         self.assertIn(".avengers/config.local.yaml", security)
+
+    def test_use_cases_have_expected_skill_names(self) -> None:
+        text = (PLUGIN_ROOT / "docs" / "USE_CASES.md").read_text(encoding="utf-8")
+        for name in [
+            "a-stark-router",
+            "a-mark-one-prototype",
+            "a-mistake-to-upgrade",
+            "a-avengers-compound",
+            "a-avengers-refresh",
+            "a-avengers-handoff",
+        ]:
+            with self.subTest(skill=name):
+                self.assertIn(name, text)
+
+    def test_prepare_release_updates_versioning_policy(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            docs_dir = root / "docs"
+            docs_dir.mkdir(parents=True)
+            versioning = PLUGIN_ROOT / "docs" / "VERSIONING.md"
+            target = docs_dir / "VERSIONING.md"
+            target.write_text(versioning.read_text(encoding="utf-8"), encoding="utf-8")
+
+            import prepare_release  # noqa: PLC0415
+
+            with mock.patch.object(prepare_release, "PLUGIN_ROOT", root):
+                prepare_release.update_versioning_doc("0.3.0")
+
+            text = target.read_text(encoding="utf-8")
+            self.assertIn("```text\n0.3.0\n```", text)
+            self.assertIn("The latest release is 0.3.0.", text)
+            self.assertIn("git tag v<version>", text)
+            self.assertNotIn("git tag v0.2.0", text)
 
     def test_docs_do_not_reintroduce_stale_public_wording_or_private_paths(self) -> None:
         stale = re.compile(r"un" + "official|10" + "7 A-prefixed|Skills: " + "107|Manifest entries: " + "107", re.IGNORECASE)

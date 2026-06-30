@@ -1,0 +1,24 @@
+name: Docs bug
+description: Report outdated, confusing, or missing Avengers documentation.
+title: "Docs bug: "
+labels:
+  - docs
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      placeholder: docs/INSTALL.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: What is wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested fix

@@ -1,6 +1,6 @@
 {
   "name": "avengers",
   "description": "112 A-prefixed skills for Avengers-style problem solving, invention, leadership, pressure handling, strategy, iteration, memory, and source-grounded reasoning.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "contextFileName": "GEMINI.md"
 }

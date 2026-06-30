@@ -1,5 +1,10 @@
 # Avengers Skills
 
+[![CI](https://github.com/thepraggyverse/avengers/actions/workflows/ci.yml/badge.svg)](https://github.com/thepraggyverse/avengers/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/badge/version-0.2.0-blue)](docs/VERSIONING.md)
+[![Skills](https://img.shields.io/badge/skills-112-38bdf8)](docs/SKILL_INVENTORY.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Avengers is an Avengers-inspired skill pack for problem solving, invention, leadership, pressure handling, strategy, iteration, and source-grounded reasoning.
 
 It ships **112 A-prefixed skills**. The `a-` prefix is intentional: searching for `A`, `a-`, `Avengers`, `Tony Stark`, `Iron Man`, `Mark 1`, or `Ultron` should surface the pack in Codex and other skill harnesses.
@@ -40,6 +45,8 @@ Full inventory: [docs/SKILL_INVENTORY.md](docs/SKILL_INVENTORY.md)
 Release notes: [CHANGELOG.md](CHANGELOG.md)
 
 Reference audit: [docs/DOCUMENTATION_AUDIT.md](docs/DOCUMENTATION_AUDIT.md)
+
+Use cases: [docs/USE_CASES.md](docs/USE_CASES.md)
 
 Security: [SECURITY.md](SECURITY.md)
 
@@ -165,6 +172,7 @@ It removes only symlinks that point back to this Avengers checkout. The repo nev
 ```text
 avengers/
 ├── .github/workflows/ci.yml    # CI doctor check
+├── .github/workflows/release.yml # tag-based GitHub release
 ├── .codex-plugin/              # Codex native plugin manifest
 ├── .claude-plugin/             # Claude-compatible plugin metadata
 ├── .cursor-plugin/             # Cursor plugin metadata
@@ -172,6 +180,7 @@ avengers/
 ├── .avengers/                  # Example local config
 ├── .opencode/                  # OpenCode helper
 ├── .pi/                        # Pi extension helper
+├── assets/                     # public-safe icon and marketplace assets
 ├── skills/                     # 112 generated A-prefixed skills
 ├── references/                 # manifest, source map, principles, corpus index
 ├── scripts/                    # doctor, generate, validate, install, update, simulate, search

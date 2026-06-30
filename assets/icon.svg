@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Avengers Skills Icon</title>
+  <desc id="desc">A stylized letter A inside a circular reactor ring.</desc>
+  <rect width="256" height="256" rx="48" fill="#111827"/>
+  <circle cx="128" cy="128" r="82" fill="none" stroke="#38bdf8" stroke-width="12"/>
+  <path d="M128 54 58 202h36l13-32h43l13 32h36L128 54Zm-9 88 9-24 9 24h-18Z" fill="#f8fafc"/>
+  <path d="M65 219h126" stroke="#f59e0b" stroke-width="10" stroke-linecap="round"/>
+</svg>

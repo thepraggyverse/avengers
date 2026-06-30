@@ -5,7 +5,7 @@ Avengers uses SemVer-style versioning for plugin manifests.
 Current version:
 
 ```text
-0.1.0
+0.2.0
 ```
 
 ## Version Meaning
@@ -23,15 +23,29 @@ Before `1.0.0`, minor versions may still change structure, but the changelog mus
 1. Run `python3 scripts/doctor.py`.
 2. Update `CHANGELOG.md`.
 3. Update plugin manifest versions together:
-   - `.codex-plugin/plugin.json`
-   - `.claude-plugin/plugin.json`
-   - `.cursor-plugin/plugin.json`
-   - `gemini-extension.json`
+
+   ```bash
+   python3 scripts/prepare_release.py 0.2.0 --apply
+   ```
+
 4. Reinstall locally when plugin surfaces changed.
 5. Run at least one live harness load test when install behavior changed.
 6. Run autoreview for non-trivial changes.
 7. Commit, tag, and push only after checks pass.
 
-## Current Policy
+## Current Release Policy
 
-Keep the version at `0.1.0` until the first public release tag is cut. The next feature release should be `0.2.0`.
+```text
+The latest release is 0.2.0. The next feature release should bump the minor version.
+```
+
+## Tagging
+
+After the release commit is pushed:
+
+```bash
+git tag v<version>
+git push origin v<version>
+```
+
+Tag pushes run `.github/workflows/release.yml`.

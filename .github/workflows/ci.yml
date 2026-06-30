@@ -21,3 +21,32 @@ jobs:
 
       - name: Run doctor
         run: python3 scripts/doctor.py
+
+  install-smoke:
+    name: Symlink install smoke (${{ matrix.home-name }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        home-name:
+          - codex
+          - agents
+          - cursor
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install and uninstall symlinks
+        shell: bash
+        run: |
+          set -euo pipefail
+          home="$RUNNER_TEMP/${{ matrix.home-name }}-skills"
+          python3 scripts/install_symlinks.py --apply --home "$home" --skill a-avengers-setup
+          test -L "$home/a-avengers-setup"
+          python3 scripts/install_symlinks.py --uninstall --apply --home "$home"
+          test ! -e "$home/a-avengers-setup"

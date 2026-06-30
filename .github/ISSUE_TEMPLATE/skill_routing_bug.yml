@@ -1,0 +1,30 @@
+name: Skill routing bug
+description: Report a prompt selecting the wrong Avengers skill or missing the right one.
+title: "Routing bug: "
+labels:
+  - routing
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt
+      description: The prompt or request that routed poorly.
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected skill
+      placeholder: a-mark-one-prototype
+    validations:
+      required: true
+  - type: input
+    id: actual
+    attributes:
+      label: Actual skill
+      placeholder: a-mcu-easter-egg-breakdown
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Do not include private corpus text.

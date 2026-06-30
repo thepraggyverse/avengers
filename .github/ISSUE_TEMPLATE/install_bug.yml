@@ -1,0 +1,36 @@
+name: Install bug
+description: Report an Avengers install, update, or harness loading problem.
+title: "Install bug: "
+labels:
+  - install
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What failed?
+    validations:
+      required: true
+  - type: dropdown
+    id: harness
+    attributes:
+      label: Harness
+      options:
+        - Codex
+        - Claude Code
+        - Cursor
+        - OpenCode
+        - Pi
+        - Gemini CLI
+        - Generic symlink home
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands and output
+      description: Include `python3 scripts/doctor.py` output when possible. Do not include secrets or private corpus text.
+      render: shell
+    validations:
+      required: true

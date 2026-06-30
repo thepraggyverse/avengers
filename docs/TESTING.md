@@ -6,7 +6,7 @@ Run all checks:
 python3 scripts/doctor.py
 ```
 
-The doctor runs the normal validation suite, JSON manifest parsing, stale wording scan, private path/token scan, diff whitespace check, and generated-cache check.
+The doctor runs the normal validation suite, JSON manifest parsing, stale wording scan, private path/token scan, diff whitespace check, generated-cache check, and generated-file drift check.
 
 For focused checks:
 
@@ -62,6 +62,7 @@ Manifest entries: 112
 - Memory layer paths, schemas, and templates.
 - Cross-harness metadata for Claude-compatible, Cursor, shared marketplace, and Gemini surfaces.
 - Docs drift for README, install, support, security, versioning, Codex profiles, and CI.
+- Release workflow, issue templates, assets, use cases, and version bump surfaces.
 
 `tests/test_skill_simulations.py` checks realistic routing prompts:
 
@@ -154,4 +155,12 @@ GitHub Actions runs the same doctor command on pushes to `main` and on pull requ
 
 ```text
 .github/workflows/ci.yml
+```
+
+The CI workflow also runs a symlink install/uninstall smoke matrix against temporary Codex, `.agents`, and Cursor-style homes.
+
+Tag pushes matching `v*` run the release workflow:
+
+```text
+.github/workflows/release.yml
 ```

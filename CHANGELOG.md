@@ -6,6 +6,10 @@ The format follows the spirit of Keep a Changelog, with plain-language entries f
 
 ## [Unreleased]
 
+- No unreleased changes yet.
+
+## [0.2.0] - 2026-06-30
+
 ### Added
 
 - Added 112 A-prefixed skills under `skills/`, including the Avengers Memory layer:
@@ -24,6 +28,13 @@ The format follows the spirit of Keep a Changelog, with plain-language entries f
 - Added GitHub Actions CI at `.github/workflows/ci.yml` to run the doctor on pushes and pull requests.
 - Added `SECURITY.md`, `SUPPORT.md`, `docs/VERSIONING.md`, and `docs/CODEX_PROFILES.md`.
 - Added docs drift tests for README, support/security docs, version policy, CI, and safe uninstall guidance.
+- Added tag-based release workflow at `.github/workflows/release.yml`.
+- Added GitHub issue templates for install bugs, skill routing bugs, docs bugs, and feature requests.
+- Added `scripts/prepare_release.py` to update plugin manifest versions together.
+- Added public-safe `assets/icon.svg` and `assets/README.md`.
+- Added `docs/USE_CASES.md` with copy-paste prompt examples and chains.
+- Added generated-file drift checking to `scripts/doctor.py`.
+- Added CI symlink install/uninstall smoke matrix for temporary Codex, `.agents`, and Cursor-style homes.
 
 ### Changed
 
@@ -32,6 +43,7 @@ The format follows the spirit of Keep a Changelog, with plain-language entries f
 - Updated `scripts/generate_avengers_pack.py` so regeneration preserves the current manifest wording and skill count.
 - Updated `scripts/search_corpus.py` to resolve the corpus path from environment, local config, or a safe default.
 - Updated README, testing, update, and agent instructions to use the doctor as the default verification path.
+- Bumped plugin manifests to `0.2.0`.
 
 ### Verified
 
@@ -39,6 +51,7 @@ The format follows the spirit of Keep a Changelog, with plain-language entries f
 - `python3 scripts/validate_skill_pack.py`
 - `python3 -m unittest discover -s tests -v`
 - `python3 scripts/doctor.py`
+- `python3 scripts/prepare_release.py 0.2.0 --apply`
 - JSON parsing for plugin and extension manifests.
 - Stale wording scan for older affiliation disclaimers and 107-skill text.
 - `git diff --check`
